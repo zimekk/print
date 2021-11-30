@@ -8,16 +8,13 @@ export default () =>
   Router()
     .use(json())
     .get("/print/:name", async function (req, res) {
-      const { name } = req.params;
-      console.log({ name });
-
       // https://github.com/puppeteer/puppeteer#usage
       const browser = await puppeteer.launch({
         // headless: true,
         // args: ['--disable-dev-shm-usage']
       });
       const page = await browser.newPage();
-      const html = renderHtml(req.query);
+      const html = await renderHtml(req.params, req.query);
 
       // https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/
       await page.setContent(html);
@@ -25,12 +22,12 @@ export default () =>
       const pdf = await page.pdf({
         format: "a4",
         // printBackground: true,
-        // margin: {
-        //   top: "1.5cm",
-        //   right: "1.5cm",
-        //   bottom: "1.5cm",
-        //   left: "1.5cm",
-        // },
+        margin: {
+          top: "0.5cm",
+          right: "0.5cm",
+          bottom: "0.5cm",
+          left: "0.5cm",
+        },
       });
 
       await browser.close();

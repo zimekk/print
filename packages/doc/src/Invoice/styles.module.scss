@@ -1,0 +1,394 @@
+html {
+  font-size: 0.75em;
+  line-height: 1.2;
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+table {
+  font-family: Arial;
+  padding: 0.25em;
+}
+td {
+  padding: 0.25em;
+}
+
+.Invoice {
+  .entireStyle {
+    background-color: buttonshadow;
+    text-align: center;
+  }
+  .pageContainer {
+    /*
+	width: 250mm;
+	zoom:[[ZOOM]];
+*/
+    background-color: buttonshadow;
+    text-align: center;
+  }
+  .pageStyle {
+    /*
+	width:[[PAGE_WIDTH]];
+	height:[[PAGE_HEIGHT]];
+*/
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+    /*
+	margin:20px;
+*/
+  }
+  .marginStyle {
+    // width: 100%;
+    /*
+	height:[[MARGIN_HEIGHT]];
+*/
+    background-color: #ffffff;
+    margin: 15px 20px 15px 20px;
+    /*
+	border:1px solid;
+	border-color:#ff5050;
+	margin-left:[[MARGIN_MARGIN_LEFT]];
+	margin-right:[[MARGIN_MARGIN_RIGHT]];
+	margin-top:[[MARGIN_MARGIN_TOP]];
+	margin-bottom:[[MARGIN_MARGIN_BOTTOM]];
+*/
+  }
+  .topGroupStyle {
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .titleHeader {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: right;
+    font-size: 1.8em;
+    /*
+	font-size:22px;
+*/
+    font-weight: bold;
+  }
+  .titleSubHeader {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: right;
+    font-size: 1.2em;
+    /*
+	font-size:16px;
+*/
+    font-weight: bold;
+  }
+  .dateHeader {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 1em;
+    /*
+	font-size:12px;
+*/
+  }
+  .sellerHeader {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 1.1em;
+    /*
+	font-size:14px;
+*/
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+  }
+  .buyerHeader {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 1.1em;
+    /*
+	font-size:14px;
+*/
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+  }
+  .seller {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 1em;
+    /*
+	font-size:12px;
+*/
+    font-weight: normal;
+  }
+  .buyer {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 1em;
+    /*
+	font-size:12px;
+*/
+    font-weight: normal;
+  }
+  .productTable {
+    background-color: #ffffff;
+    border-collapse: collapse;
+  }
+  .productTd {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.8em;
+    /*
+	font-size:10px;
+*/
+    font-weight: normal;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  .productHeaderTd {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 0.8em;
+    /*
+	font-size:10px;
+*/
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  .endText {
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    /*
+	font-size:11px;
+*/
+    font-weight: normal;
+  }
+  .pageFooter {
+    width: 100%;
+    height: 40px;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    /*
+	font-size:11px;
+*/
+    font-weight: normal;
+    border: 1px solid;
+    border-color: #ffffff;
+  }
+  .correctLinkDoc {
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .correctReason {
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .correctNote {
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  .sellDate {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .payDate_payKind {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .summaryTable {
+    background-color: #ffffff;
+    border-collapse: collapse;
+  }
+  .summaryTd {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 10px;
+    font-weight: normal;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  .summaryHeaderTd {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  .summaryText1 {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .summaryAllTd {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: #000000;
+  }
+  .summaryBlankText {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: right;
+    font-size: 11px;
+    font-weight: normal;
+  }
+  .payText1 {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .payText2 {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .sellerPersonHeader {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 13px;
+    font-weight: normal;
+    border-bottom: 1px solid #000000;
+  }
+  .buyerPersonHeader {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 13px;
+    font-weight: normal;
+    border-bottom: 1px solid #000000;
+  }
+  .sellerPerson {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .buyerPerson {
+    width: 49%;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: left;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .borderHeader {
+    border-bottom: 1px solid #000000;
+  }
+  .titleHeader {
+    font-size: 1.8em;
+    /*
+	font-size:22px;
+*/
+  }
+  .titleSubHeader {
+    font-size: 1.4em;
+    /*
+	font-size:16px;
+*/
+  }
+  .sellerHeader,
+  .buyerHeader {
+    line-height: 1.3em;
+    font-size: 1.2em;
+    /*
+	font-size:14px;
+*/
+  }
+  .correctLinkDoc,
+  .correctReason,
+  .sellDate,
+  .payDate_payKind,
+  .payText1,
+  .payText2,
+  .sellerPerson,
+  .buyerPerson {
+    font-size: 1.2em;
+    /*
+	font-size:14px;
+*/
+  }
+  .sellerPersonHeader,
+  .buyerPersonHeader {
+    line-height: 1.3em;
+    font-size: 1.1em;
+    /*
+	font-size:13px;
+*/
+  }
+  .dateHeader,
+  .seller,
+  .buyer,
+  .summaryText1 {
+    font-size: 1em;
+    /*
+	font-size:12px;
+*/
+  }
+  .endText,
+  .pageFooter,
+  .summaryBlankText {
+    font-size: 0.9em;
+    /*
+	font-size:11px;
+*/
+  }
+  .productTd,
+  .productHeaderTd,
+  .correctNote,
+  .summaryTd,
+  .summaryHeaderTd,
+  .summaryAllTd {
+    line-height: 1.3em;
+    font-size: 0.8em;
+    /*
+	font-size:10px;
+*/
+  }
+}

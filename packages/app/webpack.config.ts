@@ -2,6 +2,9 @@ import path from "path";
 import { Subject } from "rxjs";
 import { withLatestFrom } from "rxjs/operators";
 
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+// const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
 class RequireResolvePlugin {
   options = {};
   constructor(options = {}) {
@@ -9,7 +12,7 @@ class RequireResolvePlugin {
   }
 
   emit(compilation, callback) {
-    const [asset]: any = Object.values(compilation.assets);
+    const asset = compilation.assets["index.js"];
     resolve(require("require-from-string")(asset.source()).router);
     return callback();
   }
@@ -49,6 +52,7 @@ const config = (_env, { mode }, dev = mode === "development") => ({
         test: /\.scss$/,
         // https://github.com/kriasoft/isomorphic-style-loader#getting-started
         use: [
+          // MiniCssExtractPlugin.loader,
           "isomorphic-style-loader",
           {
             loader: "css-loader",
@@ -82,6 +86,9 @@ const config = (_env, { mode }, dev = mode === "development") => ({
   },
   optimization: {
     minimize: false,
+    // minimizer: [
+    //   new CssMinimizerPlugin(),
+    // ],
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
@@ -93,7 +100,10 @@ const config = (_env, { mode }, dev = mode === "development") => ({
     },
     path: path.resolve(__dirname, "lib"),
   },
-  plugins: [dev && new RequireResolvePlugin()].filter(Boolean),
+  plugins: [
+    // new MiniCssExtractPlugin(),
+    dev && new RequireResolvePlugin(),
+  ].filter(Boolean),
 });
 
 export default (env, argv) =>

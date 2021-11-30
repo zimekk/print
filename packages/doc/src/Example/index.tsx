@@ -2,7 +2,7 @@ import React from "react";
 import withStyles from "isomorphic-style-loader/withStyles";
 import styles from "./styles.module.scss";
 
-function App(query) {
+function Example(query) {
   return (
     <div className={styles.App}>
       <h1>Print</h1>
@@ -11,4 +11,4 @@ function App(query) {
   );
 }
 
-export default withStyles(styles)(App);
+export default withStyles(styles)(Example);
