@@ -6,7 +6,7 @@ import App from "./App";
 // https://dev.to/zeka/generate-a-pdf-in-aws-lambda-with-nodejs-webpack-pug-and-puppeteer-4g59
 // https://github.com/kriasoft/isomorphic-style-loader
 export default (query) => {
-  const css = new Set(); // CSS for all rendered React components
+  const css = new Set() as any; // CSS for all rendered React components
   const insertCss = (...styles) =>
     styles.forEach((style) => css.add(style._getCss()));
 

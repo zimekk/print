@@ -1,6 +1,6 @@
 import { Router, json } from "express";
 import puppeteer from "puppeteer";
-import renderHtml from "./render";
+import renderHtml from "@dev/doc";
 
 // https://dev.to/zeka/generate-a-pdf-in-aws-lambda-with-nodejs-webpack-pug-and-puppeteer-4g59
 // https://github.com/kriasoft/isomorphic-style-loader
@@ -17,12 +17,7 @@ export default () =>
         // args: ['--disable-dev-shm-usage']
       });
       const page = await browser.newPage();
-      // await page.goto('https://blog.risingstack.com', {waitUntil: 'networkidle0'});
-      // await page.goto('https://example.com');
-      // await page.screenshot({ path: 'example.png' });
-
       const html = renderHtml(req.query);
-      // console.log({html})
 
       // https://www.smashingmagazine.com/2018/05/print-stylesheets-in-2018/
       await page.setContent(html);
