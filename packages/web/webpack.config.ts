@@ -41,7 +41,7 @@ export default (env, { mode }, dev = mode === "development") => ({
         exclude: /node_modules/,
         options: {
           presets: ["@babel/preset-react", "@babel/preset-typescript"],
-          plugins: [].concat(dev ? "react-hot-loader/babel" : []),
+          plugins: [],
         },
       },
     ],
@@ -50,7 +50,6 @@ export default (env, { mode }, dev = mode === "development") => ({
     extensions: [".tsx", ".ts", ".js"],
     alias: {
       events: "events",
-      "react-dom": "@hot-loader/react-dom",
     },
     // https://webpack.js.org/configuration/resolve/#resolvefallback
     fallback: {

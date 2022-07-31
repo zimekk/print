@@ -1,5 +1,4 @@
 import React from "react";
-import { hot } from "react-hot-loader/root";
 import styles from "./App.module.scss";
 
 function App() {
@@ -61,4 +60,4 @@ function App() {
   );
 }
 
-export default hot(App);
+export default App;
