@@ -1,63 +1,47 @@
-import React from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
+import history from "history/browser";
 import styles from "./App.module.scss";
 
-function App() {
-  const invoice = {
-    seldate: "2021-01-01",
-    paydate: "14 dni",
-    paykind: "przelew",
-    title: "1/2021",
-    type: 1,
-    seller: {
-      name: "",
-      street: "",
-      code: "",
-      city: "",
-      nip: "",
-      regon: "",
-      bank: "",
-      account: "",
-    },
-    buyer: {
-      name: "",
-      street: "",
-      code: "",
-      city: "",
-      nip: "",
-    },
-    products: [
-      {
-        name: "",
-        amount: 1.0,
-        netto: 100.0,
-        vat: 0.23,
-      },
-    ],
-  };
+const Spinner = () => <span>Loading...</span>;
+
+const PAGES = {
+  print: lazy(() => import("./Print")),
+};
+
+const getPage = (location: { hash: string }) => {
+  const [path, hash = Object.keys(PAGES)[0]] =
+    decodeURI(location.hash).match(/^#(.+)/) || [];
+  return hash;
+};
+
+export default function App() {
+  const [page, setPage] = useState(getPage(history.location));
+
+  useEffect(() =>
+    // location is an object like window.location
+    history.listen(({ location, action, ...rest }) =>
+      setPage(getPage(location))
+    )
+  );
+
+  const Page = PAGES[page] || null;
 
   return (
-    <section className={styles.App}>
-      <h1 className={styles.Nav}>Print</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="print/example.pdf?format=pdf">
-              print/example.pdf?format=pdf
+    <main className={styles.App}>
+      <header className={styles.Nav}>
+        <h1>Print</h1>
+        <nav>
+          {Object.keys(PAGES).map((page) => (
+            <a key={page} href={`#${page}`}>
+              {page}
             </a>
-          </li>
-          <li>
-            <a
-              href={`print/invoice.pdf?data=${encodeURIComponent(
-                JSON.stringify(invoice)
-              )}`}
-            >
-              print/invoice.pdf?data=
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+          ))}
+          [{page}]
+        </nav>
+      </header>
+      <Suspense fallback={<Spinner />}>
+        <Page />
+      </Suspense>
+    </main>
   );
 }
-
-export default App;

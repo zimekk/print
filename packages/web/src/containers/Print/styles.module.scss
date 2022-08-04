@@ -1,0 +1,9 @@
+.Section {
+  display: flex;
+  flex-direction: column;
+  ul {
+    a {
+      margin: 1em;
+    }
+  }
+}
