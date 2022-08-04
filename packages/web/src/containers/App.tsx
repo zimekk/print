@@ -6,6 +6,7 @@ const Spinner = () => <span>Loading...</span>;
 
 const PAGES = {
   print: lazy(() => import("./Print")),
+  crop: lazy(() => import("./Crop")),
 };
 
 const getPage = (location: { hash: string }) => {
