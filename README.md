@@ -1,14 +1,8 @@
+[![Deployment](https://github.com/zimekk/print/actions/workflows/deploy.yml/badge.svg)](https://github.com/zimekk/print/actions/workflows/deploy.yml)
+
 # print
 
 [zimekk.github.io/print](https://zimekk.github.io/print)
-
-## settings
-
-```sh
-ssh-keygen -t rsa -b 4096 -C "" -f /tmp/ACTIONS_DEPLOY_KEY -N ""
-pbcopy < /tmp/ACTIONS_DEPLOY_KEY.pub # Deploy keys - Add deploy key
-pbcopy < /tmp/ACTIONS_DEPLOY_KEY # Secrets - New repository secret
-```
 
 ## install
 
