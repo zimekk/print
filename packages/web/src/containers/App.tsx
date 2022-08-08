@@ -8,6 +8,7 @@ const PAGES = {
   print: lazy(() => import("./Print")),
   crop: lazy(() => import("./Crop")),
   cropper: lazy(() => import("./Cropper")),
+  reader: lazy(() => import("./Reader")),
 };
 
 const getPage = (location: { hash: string }) => {
