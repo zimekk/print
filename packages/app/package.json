@@ -22,24 +22,24 @@
   "dependencies": {
     "@dev/web": "1.0.0",
     "cors": "^2.8.5",
-    "express": "^4.18.1",
+    "express": "^4.18.2",
     "morgan": "^1.10.0",
-    "puppeteer": "^16.1.0",
-    "rxjs": "^7.5.6",
+    "puppeteer": "^19.7.2",
+    "rxjs": "^7.8.0",
     "web-push": "^3.5.0"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.12",
-    "@types/express": "^4.17.13",
-    "@types/node": "^18.6.5",
-    "babel-loader": "^8.2.5",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^18.14.1",
+    "babel-loader": "^9.1.2",
     "isomorphic-style-loader": "^5.3.2",
     "require-from-string": "^2.0.2",
     "ts-node": "^10.9.1",
-    "typescript": "^4.7.4",
-    "webpack": "^5.74.0",
-    "webpack-dev-middleware": "^5.3.3",
-    "webpack-hot-middleware": "^2.25.1",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-dev-middleware": "^6.0.1",
+    "webpack-hot-middleware": "^2.25.3",
     "webpack-node-externals": "^3.0.0"
   }
 }
