@@ -31,6 +31,7 @@ export default async (params, query) => {
   return `<!doctype html>
     <html>
       <head>
+        <meta charSet="utf-8">
         <style>${style}</style>
       </head>
       <body>

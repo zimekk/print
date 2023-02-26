@@ -26,7 +26,8 @@
     "morgan": "^1.10.0",
     "puppeteer": "^19.7.2",
     "rxjs": "^7.8.0",
-    "web-push": "^3.5.0"
+    "web-push": "^3.5.0",
+    "wkhtmltopdf": "^0.4.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",

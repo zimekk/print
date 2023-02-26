@@ -45,12 +45,26 @@ export default function Section() {
           </a>
         </li>
         <li>
+          <a href="wkhtmltopdf/example.pdf?format=pdf">
+            wkhtmltopdf/example.pdf?format=pdf
+          </a>
+        </li>
+        <li>
           <a
             href={`print/invoice.pdf?data=${encodeURIComponent(
               JSON.stringify(invoice)
             )}`}
           >
             print/invoice.pdf?data=
+          </a>
+        </li>
+        <li>
+          <a
+            href={`wkhtmltopdf/invoice.pdf?data=${encodeURIComponent(
+              JSON.stringify(invoice)
+            )}`}
+          >
+            wkhtmltopdf/invoice.pdf?data=
           </a>
         </li>
       </ul>

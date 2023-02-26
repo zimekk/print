@@ -1,5 +1,5 @@
 html {
-  font-size: 0.75em;
+  font-size: 1em;
   line-height: 1.2;
   margin: 0;
 }
@@ -16,7 +16,7 @@ td {
 
 .Invoice {
   .entireStyle {
-    background-color: buttonshadow;
+    // background-color: buttonshadow;
     text-align: center;
   }
   .pageContainer {
@@ -24,7 +24,7 @@ td {
 	width: 250mm;
 	zoom:[[ZOOM]];
 */
-    background-color: buttonshadow;
+    // background-color: buttonshadow;
     text-align: center;
   }
   .pageStyle {
@@ -45,7 +45,7 @@ td {
 	height:[[MARGIN_HEIGHT]];
 */
     background-color: #ffffff;
-    margin: 15px 20px 15px 20px;
+    // margin: 15px 20px 15px 20px;
     /*
 	border:1px solid;
 	border-color:#ff5050;

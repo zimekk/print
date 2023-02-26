@@ -1,6 +1,17 @@
 import { Router, json } from "express";
 import puppeteer from "puppeteer";
+import wkhtmltopdf from "wkhtmltopdf";
 import renderHtml from "@dev/doc";
+
+Object.assign(
+  wkhtmltopdf,
+  process.env.WKHTMLTOPDF_COMMAND && {
+    command: process.env.WKHTMLTOPDF_COMMAND,
+  },
+  process.env.WKHTMLTOPDF_SHELL && {
+    shell: process.env.WKHTMLTOPDF_SHELL,
+  }
+);
 
 // https://dev.to/zeka/generate-a-pdf-in-aws-lambda-with-nodejs-webpack-pug-and-puppeteer-4g59
 // https://github.com/kriasoft/isomorphic-style-loader
@@ -38,4 +49,23 @@ export default () =>
         "Content-Length": pdf.length,
       });
       res.send(pdf);
+    })
+    .get("/wkhtmltopdf/:name", async function (req, res) {
+      // https://github.com/devongovett/node-wkhtmltopdf
+      const html = await renderHtml(req.params, req.query);
+      wkhtmltopdf(html, {
+        // https://wkhtmltopdf.org/usage/wkhtmltopdf.txt
+        marginTop: "0.5cm",
+        marginRight: "1.0cm",
+        marginBottom: "0.5cm",
+        marginLeft: "1.0cm",
+        footerCenter: "[sitepage] / [sitepages]",
+        footerFontSize: "6",
+        // https://doc.qt.io/archives/qt-4.8/qprinter.html#Orientation-enum
+        orientation: "Portrait",
+        // orientation: 'Landscape',
+        // https://doc.qt.io/archives/qt-4.8/qprinter.html#PaperSize-enum
+        pageSize: "A4",
+        // pageSize: 'letter'
+      }).pipe(res);
     });
