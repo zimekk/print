@@ -45,6 +45,11 @@ export default function Section() {
           </a>
         </li>
         <li>
+          <a href="react/example.pdf?format=pdf">
+            react/example.pdf?format=pdf
+          </a>
+        </li>
+        <li>
           <a href="wkhtmltopdf/example.pdf?format=pdf">
             wkhtmltopdf/example.pdf?format=pdf
           </a>

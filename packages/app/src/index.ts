@@ -1,9 +1,10 @@
 import path from "path";
-import express, { Router, json } from "express";
+import express, { Router } from "express";
 
 export const router = Router()
-  .use("/api", (req, res) => res.json({ hello: "Hello" }))
+  .use("/api", (_req, res) => res.json({ hello: "Hello" }))
   .use(require("./print").default())
+  .use(require("./react").default())
   .use(require("./push").default());
 
 class Server {
