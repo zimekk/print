@@ -1,4 +1,4 @@
-FROM surnet/alpine-node-wkhtmltopdf:14.17.5-0.12.6-full
+FROM surnet/alpine-node-wkhtmltopdf:16.18.0-0.12.6-full
 
 ENV WORKDIR=/app
 WORKDIR $WORKDIR

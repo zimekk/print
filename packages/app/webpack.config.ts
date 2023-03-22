@@ -67,9 +67,6 @@ const config = (_env, { mode }, dev = mode === "development") => ({
             loader: "sass-loader",
             options: {
               implementation: require("sass"),
-              sassOptions: {
-                fiber: require("fibers"),
-              },
             },
           },
         ],

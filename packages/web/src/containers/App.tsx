@@ -12,9 +12,10 @@ const PAGES = {
 };
 
 const getPage = (location: { hash: string }) => {
-  const [path, hash = Object.keys(PAGES)[0]] =
-    decodeURI(location.hash).match(/^#(.+)/) || [];
-  return hash;
+  const [_, hash] = decodeURI(location.hash).match(/^#([-\w]+)/) || [];
+  return ((keys) => (keys.includes(hash) ? hash : keys[0]))(
+    Object.keys(PAGES)
+  ) as keyof typeof PAGES;
 };
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
     )
   );
 
-  const Page = PAGES[page] || null;
+  const Page = PAGES[page];
 
   return (
     <main className={styles.App}>
