@@ -21,11 +21,11 @@
   },
   "dependencies": {
     "@dev/web": "1.0.0",
-    "@react-pdf/renderer": "^3.1.8",
+    "@react-pdf/renderer": "^3.1.9",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
-    "puppeteer": "^19.7.5",
+    "puppeteer": "^19.8.0",
     "rxjs": "^7.8.0",
     "web-push": "^3.5.0",
     "wkhtmltopdf": "^0.4.0"
@@ -33,7 +33,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
-    "@types/node": "^18.15.5",
+    "@types/node": "^18.15.9",
     "babel-loader": "^9.1.2",
     "isomorphic-style-loader": "^5.3.2",
     "require-from-string": "^2.0.2",

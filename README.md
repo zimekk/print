@@ -7,13 +7,13 @@
 ## install
 
 ```sh
-nvm install v14 --with-intl=full-icu
+nvm install v16 --with-intl=full-icu
 npm i -g yarn
 ```
 
 ```sh
-node -v # v16.13.0
-yarn -v # 1.22.10
+node -v # v16.19.1
+yarn -v # 1.22.19
 ```
 
 ## run
