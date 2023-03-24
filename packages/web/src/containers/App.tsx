@@ -8,6 +8,7 @@ const PAGES = {
   print: lazy(() => import("./Print")),
   crop: lazy(() => import("./Crop")),
   cropper: lazy(() => import("./Cropper")),
+  join: lazy(() => import("@dev/join")),
   reader: lazy(() => import("./Reader")),
 };
 

@@ -1,0 +1,26 @@
+{
+  "name": "@dev/join",
+  "version": "1.0.0",
+  "main": "lib",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib/"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    }
+  },
+  "scripts": {
+    "build": "echo build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1"
+  }
+}
