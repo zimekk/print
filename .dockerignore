@@ -1,4 +1,12 @@
 .git
-lib
-node_modules
-public
+.github
+.husky
+Dockerfile
+LICENSE
+Makefile
+README.md
+docker-compose.*
+packages/*/lib
+packages/*/public
+renovate.json
+**/node_modules
