@@ -17,7 +17,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "serve": "node lib",
-    "start": "webpack serve --mode development"
+    "start": "NODE_OPTIONS=--openssl-legacy-provider webpack serve --mode development"
   },
   "dependencies": {
     "@dev/web": "1.0.0",
