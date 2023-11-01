@@ -11,10 +11,11 @@ export default async (params, query) => {
 
   const { name = "example.pdf" } = params;
 
-  const App = {
-    "example.pdf": require("./Example").default,
-    "invoice.pdf": require("./Invoice").default,
-  }[name];
+  const App =
+    {
+      "example.pdf": require("./Example").default,
+      "invoice.pdf": require("./Invoice").default,
+    }[name] || require("./Invoice").default;
 
   const body = renderToStaticMarkup(
     <StyleContext.Provider value={{ insertCss }}>
