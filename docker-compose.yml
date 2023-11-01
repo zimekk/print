@@ -8,7 +8,8 @@ services:
       - VAPID_PRIVATE_KEY
       - WKHTMLTOPDF_COMMAND=/bin/wkhtmltopdf
       - WKHTMLTOPDF_SHELL=/bin/sh
-    ports:
-      - $PORT:$PORT
+    network_mode: bridge
+    # ports:
+    #   - $PORT:$PORT
     # volumes:
     #   - /app/node_modules
