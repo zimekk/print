@@ -670,7 +670,7 @@ export default function Invoice({ query: { data } }) {
               )
             )}
 
-          <table cellSpacing="0" cellPadding="1" width="100%" align="center">
+          {/* <table cellSpacing="0" cellPadding="1" width="100%" align="center">
             <tbody>
               <tr>
                 <td className={styles.pageFooter} valign="bottom">
@@ -678,7 +678,7 @@ export default function Invoice({ query: { data } }) {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table> */}
         </div>
       </div>
     </div>

@@ -57,10 +57,10 @@ export default () =>
         // https://wkhtmltopdf.org/usage/wkhtmltopdf.txt
         marginTop: "0.5cm",
         marginRight: "1.0cm",
-        marginBottom: "0.5cm",
+        marginBottom: "4.0cm",
         marginLeft: "1.0cm",
-        footerCenter: "[sitepage] / [sitepages]",
-        footerFontSize: "6",
+        footerCenter: "[sitepage]/[sitepages]",
+        footerFontSize: "8",
         // https://doc.qt.io/archives/qt-4.8/qprinter.html#Orientation-enum
         orientation: "Portrait",
         // orientation: 'Landscape',
