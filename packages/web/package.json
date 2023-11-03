@@ -27,7 +27,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-perspective-cropper": "^0.2.2",
-    "tesseract.js": "^2.1.5"
+    "tesseract.js": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
