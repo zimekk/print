@@ -10,9 +10,9 @@
     }
   },
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production",
     "serve": "serve -l 8080 public",
-    "start": "webpack serve --mode development"
+    "start": "NODE_OPTIONS=--openssl-legacy-provider webpack serve --mode development"
   },
   "dependencies": {
     "@dev/join": "^1.0.0",

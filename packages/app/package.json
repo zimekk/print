@@ -15,7 +15,7 @@
     }
   },
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production",
     "serve": "node lib",
     "start": "NODE_OPTIONS=--openssl-legacy-provider webpack serve --mode development"
   },
