@@ -18,7 +18,7 @@
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "@types/node": "^18.15.9",
+    "@types/node": "^20.0.0",
     "isomorphic-style-loader": "^5.3.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.2",

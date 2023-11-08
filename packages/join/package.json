@@ -18,7 +18,7 @@
     "build": "echo build"
   },
   "devDependencies": {
-    "@types/node": "^18.15.9"
+    "@types/node": "^20.0.0"
   },
   "dependencies": {
     "pdf-lib": "^1.17.1"
