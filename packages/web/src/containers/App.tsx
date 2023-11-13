@@ -9,13 +9,14 @@ const PAGES = {
   crop: lazy(() => import("./Crop")),
   cropper: lazy(() => import("./Cropper")),
   join: lazy(() => import("@dev/join")),
+  render: lazy(() => import("@dev/render")),
   reader: lazy(() => import("./Reader")),
 };
 
 const getPage = (location: { hash: string }) => {
   const [_, hash] = decodeURI(location.hash).match(/^#([-\w]+)/) || [];
   return ((keys) => (keys.includes(hash) ? hash : keys[0]))(
-    Object.keys(PAGES)
+    Object.keys(PAGES),
   ) as keyof typeof PAGES;
 };
 
@@ -25,8 +26,8 @@ export default function App() {
   useEffect(() =>
     // location is an object like window.location
     history.listen(({ location, action, ...rest }) =>
-      setPage(getPage(location))
-    )
+      setPage(getPage(location)),
+    ),
   );
 
   const Page = PAGES[page];

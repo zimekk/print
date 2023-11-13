@@ -1,0 +1,27 @@
+{
+  "name": "@dev/render",
+  "version": "1.0.0",
+  "main": "lib",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib/"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    }
+  },
+  "scripts": {
+    "build": "echo build"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.9"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^3.11.174",
+    "react-pdf": "^7.5.1"
+  }
+}

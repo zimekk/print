@@ -7,6 +7,7 @@ COPY package.json yarn.lock ./
 COPY packages/app/package.json packages/app/
 COPY packages/doc/package.json packages/doc/
 COPY packages/join/package.json packages/join/
+COPY packages/render/package.json packages/render/
 COPY packages/web/package.json packages/web/
 RUN yarn --frozen-lockfile
 
