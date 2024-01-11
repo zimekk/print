@@ -1444,15 +1444,15 @@
     "@react-pdf/png-js" "^2.2.0"
     cross-fetch "^3.1.5"
 
-"@react-pdf/layout@^3.6.3":
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/@react-pdf/layout/-/layout-3.6.3.tgz#6f108d0910bed7ba02619cbb4d0393ba72411e8c"
-  integrity sha512-w6ACZ9o18Q5wbzsY9a4KW2Gqn6Drt3AN/kb/I6SBz/L7PAJ9rPQBIDq/s5qZJ+/WwWy33rcC8WC1givtDhjCHQ==
+"@react-pdf/layout@^3.6.4":
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/@react-pdf/layout/-/layout-3.6.4.tgz#7b9e0eafbe62cfac7a4569b049d31586a17fc799"
+  integrity sha512-lyJcMUJoF3/fPavxOvVWyOK5EYH6Rf1S9xRlOSnFGyD9zLbfOreeG8cEyVC3JEZA9/ZfWXa/fye+mVsHoaD6wA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@react-pdf/fns" "2.0.1"
     "@react-pdf/image" "^2.2.2"
-    "@react-pdf/pdfkit" "^3.0.2"
+    "@react-pdf/pdfkit" "^3.0.3"
     "@react-pdf/primitives" "^3.0.0"
     "@react-pdf/stylesheet" "^4.1.8"
     "@react-pdf/textkit" "^4.2.0"
@@ -1462,15 +1462,15 @@
     emoji-regex "^10.2.1"
     queue "^6.0.1"
 
-"@react-pdf/pdfkit@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@react-pdf/pdfkit/-/pdfkit-3.0.2.tgz#6ec17f416f464d86c06c0b0d8a76ea9acdff9ddb"
-  integrity sha512-+m5rwNCwyEH6lmnZWpsQJvdqb6YaCCR0nMWrc/KKDwznuPMrGmGWyNxqCja+bQPORcHZyl6Cd/iFL0glyB3QGw==
+"@react-pdf/pdfkit@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@react-pdf/pdfkit/-/pdfkit-3.0.3.tgz#c185fdb23c45c72a9c4c5f2a1ec90de21a1cdad1"
+  integrity sha512-il4VCkLduCSYv51y3r7/Sp3TUCATi34BsI8qo+/Btb51UN1Wat3A4xuEJkNlKFY2XZvgwS9jYyq2pBHiBLaEcA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@react-pdf/png-js" "^2.2.0"
     browserify-zlib "^0.2.0"
-    crypto-js "^4.0.0"
+    crypto-js "^4.2.0"
     fontkit "^2.0.2"
     vite-compatible-readable-stream "^3.6.1"
 
@@ -1503,14 +1503,14 @@
     svg-arc-to-cubic-bezier "^3.2.0"
 
 "@react-pdf/renderer@^3.1.9":
-  version "3.1.14"
-  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-3.1.14.tgz#37c4bc63db1b998faba594a05c5accc9a7ebd85b"
-  integrity sha512-Qk29uTamH6q+drK/YmiFbuQQ+yutesfIe+wyrsXFoUJUutIiDIaibO6zByMkhWb3M6CMt6NvG3NLHio1OF8U6Q==
+  version "3.1.15"
+  resolved "https://registry.yarnpkg.com/@react-pdf/renderer/-/renderer-3.1.15.tgz#7bed74010d61d869121f92dfd966f58dd3344654"
+  integrity sha512-j/MXTxhgBqvHoTo2MmJEYg9Jv3vlqerTNvVicSvNj6wagZnKjgByBl/FrTgNfbOyJs4QV6anKSOg9je1EJTOLw==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@react-pdf/font" "^2.3.7"
-    "@react-pdf/layout" "^3.6.3"
-    "@react-pdf/pdfkit" "^3.0.2"
+    "@react-pdf/layout" "^3.6.4"
+    "@react-pdf/pdfkit" "^3.0.3"
     "@react-pdf/primitives" "^3.0.0"
     "@react-pdf/render" "^3.2.7"
     "@react-pdf/types" "^2.3.4"
@@ -3230,10 +3230,10 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-crypto-js@^4.0.0:
+crypto-js@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
-  integrity "sha1-TZMWOezf0S/4DoGG26avLC6FZjE= sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q=="
+  integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
 
 crypto-random-string@^2.0.0:
   version "2.0.0"
