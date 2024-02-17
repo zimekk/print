@@ -3,6 +3,7 @@ import express, { Router } from "express";
 
 export const router = Router()
   .use("/api", (_req, res) => res.json({ hello: "Hello" }))
+  .use(require("./auth").default())
   .use(require("./print").default())
   .use(require("./react").default())
   .use(require("./push").default());
@@ -41,7 +42,7 @@ class Server {
       staticOption.publicPath.forEach((publicPath) => {
         this.app.use(
           publicPath,
-          express.static(staticOption.directory, staticOption.staticOptions)
+          express.static(staticOption.directory, staticOption.staticOptions),
         );
       });
     });
