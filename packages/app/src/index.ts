@@ -3,7 +3,8 @@ import express, { Router } from "express";
 
 export const router = Router()
   .use("/api", (_req, res) => res.json({ hello: "Hello" }))
-  .use(require("./auth").default())
+  .use(require("./auth-provider").default())
+  .use(require("./fulfillment").default())
   .use(require("./print").default())
   .use(require("./react").default())
   .use(require("./push").default());

@@ -1,4 +1,4 @@
-import { Router, json, urlencoded } from "express";
+import { Router, urlencoded } from "express";
 
 export default () =>
   Router()
