@@ -1,7 +1,17 @@
 import { Router, json } from "express";
 import puppeteer from "puppeteer";
 import wkhtmltopdf from "wkhtmltopdf";
+import { z } from "zod";
 import renderHtml from "@dev/doc";
+
+const { PUPPETEER_EXECUTABLE_PATH, WORKDIR } = z
+  .object({
+    PUPPETEER_EXECUTABLE_PATH: z
+      .string()
+      .default("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"),
+    WORKDIR: z.string().default(""),
+  })
+  .parse(process.env);
 
 Object.assign(
   wkhtmltopdf,
@@ -10,7 +20,7 @@ Object.assign(
   },
   process.env.WKHTMLTOPDF_SHELL && {
     shell: process.env.WKHTMLTOPDF_SHELL,
-  }
+  },
 );
 
 // https://dev.to/zeka/generate-a-pdf-in-aws-lambda-with-nodejs-webpack-pug-and-puppeteer-4g59
@@ -21,8 +31,16 @@ export default () =>
     .get("/print/:name", async function (req, res) {
       // https://github.com/puppeteer/puppeteer#usage
       const browser = await puppeteer.launch({
-        // headless: true,
-        // args: ['--disable-dev-shm-usage']
+        executablePath: PUPPETEER_EXECUTABLE_PATH,
+        // headless: "new",
+        args: WORKDIR
+          ? [
+              "--no-sandbox",
+              "--headless=new",
+              "--disable-gpu",
+              "--disable-dev-shm-usage",
+            ]
+          : [],
       });
       const page = await browser.newPage();
       const html = await renderHtml(req.params, req.query);
