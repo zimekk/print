@@ -1,17 +1,18 @@
 FROM surnet/alpine-node-wkhtmltopdf:20.11.0-0.12.6-full
 
 ENV WORKDIR=/app
-WORKDIR $WORKDIR
+RUN npm i -g pnpm
 
-COPY package.json yarn.lock ./
+WORKDIR $WORKDIR
+COPY package.json pnpm-*.yaml ./
 COPY packages/app/package.json packages/app/
 COPY packages/doc/package.json packages/doc/
 COPY packages/join/package.json packages/join/
 COPY packages/render/package.json packages/render/
 COPY packages/web/package.json packages/web/
-RUN yarn --frozen-lockfile
+RUN pnpm i
 
 COPY . ./
-RUN yarn build && yarn --prod
+RUN pnpm build && pnpm prune --prod --config.ignore-scripts=true
 
-CMD ["yarn", "serve"]
+CMD ["pnpm", "serve"]

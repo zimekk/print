@@ -17,10 +17,11 @@
   "scripts": {
     "build": "echo build"
   },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "react": "^18.2.0"
+  },
   "devDependencies": {
     "@types/node": "^18.15.9"
-  },
-  "dependencies": {
-    "pdf-lib": "^1.17.1"
   }
 }

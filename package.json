@@ -47,22 +47,17 @@
     "*.{json,js,jsx,md,scss,ts,tsx,css,yml,yaml}": "prettier --write"
   },
   "scripts": {
-    "build": "yarn workspaces run build",
-    "clean": "rm -rf packages/*/public packages/*/lib",
+    "build": "pnpm -r run build",
+    "clean": "rm -rf packages/*/dist packages/*/lib packages/*/node_modules/.vite packages/*/public",
+    "coverage": "pnpm -r run coverage",
     "lint": "eslint . --ext .json,.js,.jsx,.ts,.tsx",
     "reset": "rm -rf node_modules packages/*/node_modules",
-    "serve": "yarn workspace @dev/app serve",
-    "start": "yarn workspace @dev/app start",
-    "dedupe": "yarn-deduplicate && yarn",
-    "dedupe:list": "yarn-deduplicate --list",
-    "update": "yarn upgrade-interactive",
-    "update:dedupe": "yarn-deduplicate && yarn",
-    "update:latest": "yarn upgrade-interactive --latest",
+    "serve": "pnpm --filter=@dev/app run serve",
+    "start": "pnpm --filter=@dev/app run start",
+    "update:dedupe": "pnpm dedupe",
+    "update:latest": "pnpm -r up -i",
     "prepare": "husky"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "devDependencies": {
     "@commitlint/cli": "^18.0.0",
     "@commitlint/config-conventional": "^18.0.0",
