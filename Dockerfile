@@ -16,7 +16,8 @@ RUN apk add --no-cache \
 ENV TZ=Europe/Warsaw
 
 # Tell Puppeteer to skip installing Chrome. We'll be using the installed package.
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
+ENV PUPPETEER_SKIP_DOWNLOAD=true \
+    PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 ENV WORKDIR=/app
@@ -29,7 +30,7 @@ COPY packages/doc/package.json packages/doc/
 COPY packages/join/package.json packages/join/
 COPY packages/render/package.json packages/render/
 COPY packages/web/package.json packages/web/
-RUN pnpm i
+RUN pnpm i --frozen-lockfile
 
 COPY . ./
 RUN pnpm build && pnpm prune --prod --config.ignore-scripts=true
