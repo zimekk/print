@@ -25,7 +25,10 @@ const config = (_env, { mode }, dev = mode === "development") => ({
               // https://github.com/kriasoft/isomorphic-style-loader/issues/201
               esModule: false,
               importLoaders: 1,
-              modules: true,
+              // https://github.com/webpack-contrib/css-loader?tab=readme-ov-file#modules
+              modules: {
+                exportLocalsConvention: "asIs",
+              },
             },
           },
           {

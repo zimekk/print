@@ -60,7 +60,10 @@ const config = (_env, { mode }, dev = mode === "development") => ({
               // https://github.com/kriasoft/isomorphic-style-loader/issues/201
               esModule: false,
               importLoaders: 1,
-              modules: true,
+              // https://github.com/webpack-contrib/css-loader?tab=readme-ov-file#modules
+              modules: {
+                exportLocalsConvention: "asIs",
+              },
             },
           },
           {
@@ -110,11 +113,15 @@ export default (env, argv) =>
       ...config,
       devServer: {
         ...devServer,
-        onBeforeSetupMiddleware: async function (devServer) {
+        setupMiddlewares: (middlewares, devServer) => {
           if (!devServer) {
             throw new Error("webpack-dev-server is not defined");
           }
+
+          // onBeforeSetupMiddleware
           devServer.app.use(middleware);
+
+          return middlewares;
         },
       },
       output: {
