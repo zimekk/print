@@ -11,6 +11,7 @@ const PAGES = {
   join: lazy(() => import("@dev/join")),
   render: lazy(() => import("@dev/render")),
   reader: lazy(() => import("./Reader")),
+  wifi: lazy(() => import("@dev/wifi")),
 };
 
 const getPage = (location: { hash: string }) => {

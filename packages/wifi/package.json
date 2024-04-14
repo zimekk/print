@@ -1,0 +1,29 @@
+{
+  "name": "@dev/wifi",
+  "version": "1.0.0",
+  "main": "lib",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib/"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    }
+  },
+  "scripts": {
+    "build": "echo build"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.3",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.9",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.0.29"
+  }
+}

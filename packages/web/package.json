@@ -17,6 +17,7 @@
   "dependencies": {
     "@dev/join": "^1.0.0",
     "@dev/render": "^1.0.0",
+    "@dev/wifi": "^1.0.0",
     "buffer": "^6.0.3",
     "classnames": "^2.3.2",
     "events": "^3.3.0",
