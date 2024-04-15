@@ -9,6 +9,7 @@ const PAGES = {
   crop: lazy(() => import("./Crop")),
   cropper: lazy(() => import("./Cropper")),
   join: lazy(() => import("@dev/join")),
+  quiz: lazy(() => import("@dev/quiz")),
   render: lazy(() => import("@dev/render")),
   reader: lazy(() => import("./Reader")),
   wifi: lazy(() => import("@dev/wifi")),

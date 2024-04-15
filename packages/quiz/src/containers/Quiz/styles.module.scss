@@ -1,0 +1,16 @@
+.Section {
+  display: flex;
+  flex-direction: column;
+}
+.Notion {
+  span {
+    padding: 0 1em;
+    color: yellowgreen;
+  }
+}
+.Answer {
+  span {
+    padding: 0 1em;
+    color: darksalmon;
+  }
+}

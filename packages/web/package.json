@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@dev/join": "^1.0.0",
+    "@dev/quiz": "^1.0.0",
     "@dev/render": "^1.0.0",
     "@dev/wifi": "^1.0.0",
     "buffer": "^6.0.3",

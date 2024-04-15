@@ -28,6 +28,7 @@ COPY package.json pnpm-*.yaml ./
 COPY packages/app/package.json packages/app/
 COPY packages/doc/package.json packages/doc/
 COPY packages/join/package.json packages/join/
+COPY packages/quiz/package.json packages/quiz/
 COPY packages/render/package.json packages/render/
 COPY packages/web/package.json packages/web/
 COPY packages/wifi/package.json packages/wifi/
