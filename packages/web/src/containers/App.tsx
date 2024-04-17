@@ -12,6 +12,7 @@ const PAGES = {
   quiz: lazy(() => import("@dev/quiz")),
   render: lazy(() => import("@dev/render")),
   reader: lazy(() => import("./Reader")),
+  stl: lazy(() => import("@dev/stl")),
   wifi: lazy(() => import("@dev/wifi")),
 };
 
