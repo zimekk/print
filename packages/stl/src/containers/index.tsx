@@ -1,16 +1,18 @@
-import React, { memo, useCallback, useRef, useState } from "react";
+import React, { memo, useCallback, useMemo, useRef, useState } from "react";
 import {
-  Grid,
+  AccumulativeShadows,
   Center,
+  Edges,
+  Environment,
+  Extrude,
   GizmoHelper,
   GizmoViewport,
-  AccumulativeShadows,
-  RandomizedLight,
+  Grid,
   OrbitControls,
-  Environment,
+  RandomizedLight,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { type Mesh } from "three";
+import { type Mesh, Path, Shape } from "three";
 import { STLExporter } from "three/examples/jsm/exporters/STLExporter";
 import styles from "./styles.module.scss";
 
@@ -59,12 +61,33 @@ export default function Section() {
   });
 
   const meshRef = useRef<Mesh>();
+  const svgRef = useRef<SVGSVGElement>();
 
   const handleExport = useCallback(() => {
     const exporter = new STLExporter();
     const result = exporter.parse(meshRef.current, { binary: true });
-    saveArrayBuffer(result, "box.stl");
+    saveArrayBuffer(result, "shape.stl");
   }, []);
+
+  const shape = useMemo(() => {
+    // https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_shapes.html
+    const shape = new Shape()
+      .moveTo(0, 0)
+      .lineTo(1.1, 0)
+      .lineTo(2, 1)
+      .lineTo(1.1, 2)
+      .lineTo(0, 2)
+      .lineTo(0, 0);
+
+    const holePath = new Path()
+      .moveTo(1, 1)
+      .absarc(0.8, 1, 0.4, 0, Math.PI * 2, true);
+
+    shape.holes.push(holePath);
+    return shape;
+  }, []);
+
+  const extrudeSettings = { steps: 2, depth: 1, bevelEnabled: false };
 
   return (
     <section className={styles.Section}>
@@ -76,10 +99,15 @@ export default function Section() {
         <Canvas shadows camera={{ position: [10, 12, 12], fov: 10 }}>
           <group position={[0, -0.5, 0]}>
             <Center top>
-              <mesh ref={meshRef} castShadow rotation={[0, Math.PI / 4, 0]}>
-                <boxGeometry args={[0.7, 0.7, 0.7]} />
+              <Extrude
+                ref={meshRef}
+                args={[shape, extrudeSettings]}
+                rotation={[Math.PI / 2, 0, -Math.PI / 2]}
+                castShadow
+              >
                 <meshStandardMaterial color="#9d4b4b" />
-              </mesh>
+                <Edges />
+              </Extrude>
             </Center>
             <Shadows />
             <Grid
