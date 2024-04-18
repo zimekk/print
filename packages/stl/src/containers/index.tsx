@@ -12,7 +12,7 @@ import {
   RandomizedLight,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { type Mesh, Path, Shape } from "three";
+import { type Mesh, Path, Shape, Vector3 } from "three";
 import { STLExporter } from "three/examples/jsm/exporters/STLExporter";
 import styles from "./styles.module.scss";
 
@@ -48,13 +48,13 @@ const Shadows = memo(() => (
 export default function Section() {
   const [gridConfig] = useState({
     // gridSize: [10.5, 10.5],
-    cellSize: { value: 0.6, min: 0, max: 10, step: 0.1 }.value,
+    cellSize: { value: 10, min: 0, max: 10, step: 0.1 }.value,
     cellThickness: { value: 1, min: 0, max: 5, step: 0.1 }.value,
     cellColor: "#6f6f6f",
-    sectionSize: { value: 3.3, min: 0, max: 10, step: 0.1 }.value,
+    sectionSize: { value: 100, min: 0, max: 10, step: 0.1 }.value,
     sectionThickness: { value: 1.5, min: 0, max: 5, step: 0.1 }.value,
     sectionColor: "#9d4b4b",
-    fadeDistance: { value: 25, min: 0, max: 100, step: 1 }.value,
+    fadeDistance: { value: 250, min: 0, max: 100, step: 1 }.value,
     fadeStrength: { value: 1, min: 0, max: 1, step: 0.1 }.value,
     followCamera: false,
     infiniteGrid: true,
@@ -71,23 +71,22 @@ export default function Section() {
 
   const shape = useMemo(() => {
     // https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_shapes.html
-    const shape = new Shape()
-      .moveTo(0, 0)
-      .lineTo(1.1, 0)
-      .lineTo(2, 1)
-      .lineTo(1.1, 2)
-      .lineTo(0, 2)
-      .lineTo(0, 0);
+    const shape = new Shape().moveTo(-20, 0).lineTo(0, 30).lineTo(40, 0);
+    // .lineTo(1.1, 0)
+    // .lineTo(2, 1)
+    // .lineTo(1.1, 2)
+    // .lineTo(0, 2)
+    // .lineTo(0, 0);
 
-    const holePath = new Path()
-      .moveTo(1, 1)
-      .absarc(0.8, 1, 0.4, 0, Math.PI * 2, true);
+    // const holePath = new Path()
+    //   .moveTo(1, 1)
+    //   .absarc(0.8, 1, 0.4, 0, Math.PI * 2, true);
 
-    shape.holes.push(holePath);
+    // shape.holes.push(holePath);
     return shape;
   }, []);
 
-  const extrudeSettings = { steps: 2, depth: 1, bevelEnabled: false };
+  const extrudeSettings = { steps: 2, depth: 10, bevelEnabled: false };
 
   return (
     <section className={styles.Section}>
@@ -96,32 +95,45 @@ export default function Section() {
         <button onClick={handleExport}>export</button>
       </div>
       <div style={{ height: 400 }}>
-        <Canvas shadows camera={{ position: [10, 12, 12], fov: 10 }}>
-          <group position={[0, -0.5, 0]}>
-            <Center top>
-              <Extrude
-                ref={meshRef}
-                args={[shape, extrudeSettings]}
-                rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-                castShadow
-              >
-                <meshStandardMaterial color="#9d4b4b" />
-                <Edges />
-              </Extrude>
-            </Center>
-            <Shadows />
-            <Grid
-              position={[0, -0.01, 0]}
-              args={[10.5, 10.5]}
-              {...gridConfig}
-            />
-          </group>
+        <Canvas
+          shadows
+          camera={{
+            position: [100, 100, 100],
+            // localToWorld: new Vector3(1,1,1),
+            // rotation: [Math.PI / 4,Math.PI / 4,Math.PI / 4],
+            fov: 20,
+          }}
+        >
+          {/* <group position={[0, -0.5, 0]}> */}
+          {/* <group rotation={[0, 0, -Math.PI / 2]}> */}
+          {/* <group rotation={[0, Math.PI / 2, 0]}> */}
+          {/* <Center top> */}
+          <Extrude
+            ref={meshRef}
+            args={[shape, extrudeSettings]}
+            // rotation={[Math.PI / 2, 0, -Math.PI / 2]}
+            castShadow
+          >
+            <meshStandardMaterial color="#9d4b4b" />
+            {/* <Edges /> */}
+          </Extrude>
+          {/* </group> */}
+          {/* </Center> */}
+          {/* <Shadows /> */}
+          <Grid
+            position={[0, -0.01, 0]}
+            //  rotation={[Math.PI / 2, 0, 0]}
+            args={[10.5, 10.5]}
+            {...gridConfig}
+          />
+          {/* </group> */}
           <OrbitControls makeDefault />
           <Environment preset="city" />
           <GizmoHelper alignment="bottom-right" margin={[80, 80]}>
             <GizmoViewport
               axisColors={["#9d4b4b", "#2f7f4f", "#3b5b9d"]}
               labelColor="white"
+              // rotation={[Math.PI / 4, 0, 0]}
             />
           </GizmoHelper>
         </Canvas>
