@@ -1,8 +1,8 @@
 import React, { memo, useCallback, useMemo, useRef, useState } from "react";
 import {
   AccumulativeShadows,
-  Center,
-  Edges,
+  // Center,
+  // Edges,
   Environment,
   Extrude,
   GizmoHelper,
@@ -12,7 +12,7 @@ import {
   RandomizedLight,
 } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { type Mesh, Path, Shape, Vector3 } from "three";
+import { type Mesh, Shape } from "three";
 import { STLExporter } from "three/examples/jsm/exporters/STLExporter";
 import styles from "./styles.module.scss";
 
@@ -46,6 +46,8 @@ const Shadows = memo(() => (
 ));
 
 export default function Section() {
+  const [wireframe, setWireframe] = useState(true);
+  const [showCanvas] = useState(true);
   const [gridConfig] = useState({
     // gridSize: [10.5, 10.5],
     cellSize: { value: 10, min: 0, max: 10, step: 0.1 }.value,
@@ -61,7 +63,7 @@ export default function Section() {
   });
 
   const meshRef = useRef<Mesh>();
-  const svgRef = useRef<SVGSVGElement>();
+  // const svgRef = useRef<SVGSVGElement>();
 
   const handleExport = useCallback(() => {
     const exporter = new STLExporter();
@@ -69,20 +71,14 @@ export default function Section() {
     saveArrayBuffer(result, "shape.stl");
   }, []);
 
+  const handleToggle = useCallback(
+    ({ target }) => setWireframe(target.checked),
+    [],
+  );
+
   const shape = useMemo(() => {
     // https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_shapes.html
     const shape = new Shape().moveTo(-20, 0).lineTo(0, 30).lineTo(40, 0);
-    // .lineTo(1.1, 0)
-    // .lineTo(2, 1)
-    // .lineTo(1.1, 2)
-    // .lineTo(0, 2)
-    // .lineTo(0, 0);
-
-    // const holePath = new Path()
-    //   .moveTo(1, 1)
-    //   .absarc(0.8, 1, 0.4, 0, Math.PI * 2, true);
-
-    // shape.holes.push(holePath);
     return shape;
   }, []);
 
@@ -93,50 +89,42 @@ export default function Section() {
       <h2>Stl</h2>
       <div>
         <button onClick={handleExport}>export</button>
+        <label>
+          <input type="checkbox" onChange={handleToggle} checked={wireframe} />
+          <span>wireframe</span>
+        </label>
       </div>
-      <div style={{ height: 400 }}>
-        <Canvas
-          shadows
-          camera={{
-            position: [100, 100, 100],
-            // localToWorld: new Vector3(1,1,1),
-            // rotation: [Math.PI / 4,Math.PI / 4,Math.PI / 4],
-            fov: 20,
-          }}
-        >
-          {/* <group position={[0, -0.5, 0]}> */}
-          {/* <group rotation={[0, 0, -Math.PI / 2]}> */}
-          {/* <group rotation={[0, Math.PI / 2, 0]}> */}
-          {/* <Center top> */}
-          <Extrude
-            ref={meshRef}
-            args={[shape, extrudeSettings]}
-            // rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-            castShadow
+      <div style={{ height: 400, position: "relative" }}>
+        {showCanvas && (
+          <Canvas
+            shadows
+            camera={{
+              position: [100, 100, 100],
+              fov: 20,
+            }}
           >
-            <meshStandardMaterial color="#9d4b4b" />
-            {/* <Edges /> */}
-          </Extrude>
-          {/* </group> */}
-          {/* </Center> */}
-          {/* <Shadows /> */}
-          <Grid
-            position={[0, -0.01, 0]}
-            //  rotation={[Math.PI / 2, 0, 0]}
-            args={[10.5, 10.5]}
-            {...gridConfig}
-          />
-          {/* </group> */}
-          <OrbitControls makeDefault />
-          <Environment preset="city" />
-          <GizmoHelper alignment="bottom-right" margin={[80, 80]}>
-            <GizmoViewport
-              axisColors={["#9d4b4b", "#2f7f4f", "#3b5b9d"]}
-              labelColor="white"
-              // rotation={[Math.PI / 4, 0, 0]}
+            <Extrude ref={meshRef} args={[shape, extrudeSettings]} castShadow>
+              {wireframe ? (
+                <meshBasicMaterial color="#2f7f4f" wireframe />
+              ) : (
+                <meshStandardMaterial color="#9d4b4b" />
+              )}
+            </Extrude>
+            <Grid
+              position={[0, -0.01, 0]}
+              args={[10.5, 10.5]}
+              {...gridConfig}
             />
-          </GizmoHelper>
-        </Canvas>
+            <OrbitControls makeDefault />
+            {!wireframe && <Environment preset="city" />}
+            <GizmoHelper alignment="bottom-right" margin={[80, 80]}>
+              <GizmoViewport
+                axisColors={["#9d4b4b", "#2f7f4f", "#3b5b9d"]}
+                labelColor="white"
+              />
+            </GizmoHelper>
+          </Canvas>
+        )}
       </div>
     </section>
   );
