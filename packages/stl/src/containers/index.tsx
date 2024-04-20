@@ -46,6 +46,7 @@ const Shadows = memo(() => (
 ));
 
 export default function Section() {
+  const [preview, setPreview] = useState(null);
   const [wireframe, setWireframe] = useState(true);
   const [showCanvas] = useState(true);
   const [gridConfig] = useState({
@@ -76,6 +77,15 @@ export default function Section() {
     [],
   );
 
+  const handleFileChange = useCallback(({ target }) => {
+    // https://stackoverflow.com/questions/38049966/get-image-preview-before-uploading-in-react
+    const objectUrl = URL.createObjectURL(target.files[0]);
+    setPreview(objectUrl);
+
+    // free memory when ever this component is unmounted
+    return () => URL.revokeObjectURL(objectUrl);
+  }, []);
+
   const shape = useMemo(() => {
     // https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_shapes.html
     const shape = new Shape().moveTo(-20, 0).lineTo(0, 30).lineTo(40, 0);
@@ -89,12 +99,21 @@ export default function Section() {
       <h2>Stl</h2>
       <div>
         <button onClick={handleExport}>export</button>
+        <input type="file" onChange={handleFileChange} />
         <label>
           <input type="checkbox" onChange={handleToggle} checked={wireframe} />
           <span>wireframe</span>
         </label>
       </div>
       <div style={{ height: 400, position: "relative" }}>
+        {preview && (
+          <div style={{ position: "absolute", width: "100%", height: "100%" }}>
+            <img
+              style={{ width: "100%", height: "100%", objectFit: "contain" }}
+              src={preview}
+            />
+          </div>
+        )}
         {showCanvas && (
           <Canvas
             shadows
