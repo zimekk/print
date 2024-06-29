@@ -219,7 +219,7 @@ importers:
     dependencies:
       '@react-three/drei':
         specifier: ^9.105.4
-        version: 9.107.2(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@18.3.1)(react@18.3.1)(three@0.166.0)
+        version: 9.107.3(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@18.3.1)(react@18.3.1)(three@0.166.0)
       '@react-three/fiber':
         specifier: ^8.16.2
         version: 8.16.8(react-dom@18.3.1)(react@18.3.1)(three@0.166.0)
@@ -2586,8 +2586,8 @@ packages:
     resolution: {integrity: sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==}
     dev: false
 
-  /@react-three/drei@9.107.2(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@18.3.1)(react@18.3.1)(three@0.166.0):
-    resolution: {integrity: sha512-MQqRhq3bFKkYuhwp812JwdcYRy/601+jokri2m+PmuuWGy6Xi9n001pzeH47iy1Gb8KCiGHAilGXiXF87A/t4A==}
+  /@react-three/drei@9.107.3(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@18.3.1)(react@18.3.1)(three@0.166.0):
+    resolution: {integrity: sha512-00dC/MrpI/QE/n43+3GOqC5+7Z3LV+1fQKpStBMIRo0FyjYmdOJwQSDaXl/UecFvitHa7vKE3xdOPlIJGEUzRw==}
     peerDependencies:
       '@react-three/fiber': '>=8.0'
       react: '>=18.0'
@@ -3082,7 +3082,7 @@ packages:
     dependencies:
       '@tweenjs/tween.js': 23.1.2
       '@types/stats.js': 0.17.3
-      '@types/webxr': 0.5.18
+      '@types/webxr': 0.5.19
       fflate: 0.8.2
       meshoptimizer: 0.18.1
     dev: false
@@ -3144,6 +3144,10 @@ packages:
 
   /@types/webxr@0.5.18:
     resolution: {integrity: sha512-EM8P5wtYMPUlFbDgKfNoPc5PyhgZvwXz0Wf9gYBfJOpTI8AtPzoLJlvw/D9TmIW/LPLTmwMxWI0axBs3hjLSLg==}
+
+  /@types/webxr@0.5.19:
+    resolution: {integrity: sha512-4hxA+NwohSgImdTSlPXEqDqqFktNgmTXQ05ff1uWam05tNGroCMp4G+4XVl6qWm1p7GQ/9oD41kAYsSssF6Mzw==}
+    dev: false
 
   /@types/ws@8.5.10:
     resolution: {integrity: sha512-vmQSUcfalpIq0R9q7uTo2lXs6eGIpt9wtnLdMv9LVpIjCA/+ufZRozlVoVelIYixx1ugCBKDhn89vnsEGOCx9A==}
@@ -9361,7 +9365,7 @@ packages:
     dependencies:
       '@types/draco3d': 1.4.10
       '@types/offscreencanvas': 2019.7.3
-      '@types/webxr': 0.5.18
+      '@types/webxr': 0.5.19
       draco3d: 1.5.7
       fflate: 0.6.10
       potpack: 1.0.2
