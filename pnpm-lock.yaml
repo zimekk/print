@@ -219,7 +219,7 @@ importers:
     dependencies:
       '@react-three/drei':
         specifier: ^9.105.4
-        version: 9.107.3(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@18.3.1)(react@18.3.1)(three@0.166.0)
+        version: 9.108.1(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@18.3.1)(react@18.3.1)(three@0.166.0)
       '@react-three/fiber':
         specifier: ^8.16.2
         version: 8.16.8(react-dom@18.3.1)(react@18.3.1)(three@0.166.0)
@@ -2586,8 +2586,8 @@ packages:
     resolution: {integrity: sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==}
     dev: false
 
-  /@react-three/drei@9.107.3(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@18.3.1)(react@18.3.1)(three@0.166.0):
-    resolution: {integrity: sha512-00dC/MrpI/QE/n43+3GOqC5+7Z3LV+1fQKpStBMIRo0FyjYmdOJwQSDaXl/UecFvitHa7vKE3xdOPlIJGEUzRw==}
+  /@react-three/drei@9.108.1(@react-three/fiber@8.16.8)(@types/react@18.3.3)(@types/three@0.166.0)(react-dom@18.3.1)(react@18.3.1)(three@0.166.0):
+    resolution: {integrity: sha512-O2AkNeT/2gcLJCC3404HFlemBSaQWsyQ3xfwhpdvgSMYVkkxSOJvj5FYkH0gA4RR4ooucP+qfWRHmtb+PkxISw==}
     peerDependencies:
       '@react-three/fiber': '>=8.0'
       react: '>=18.0'
@@ -7796,8 +7796,8 @@ packages:
     dev: false
     optional: true
 
-  /path2d@0.2.0:
-    resolution: {integrity: sha512-KdPAykQX6kmLSOO6Jpu2KNcCED7CKjmaBNGGNuctOsG0hgYO1OdYQaan6cYXJiG0WmXOwZZPILPBimu5QAIw3A==}
+  /path2d@0.2.1:
+    resolution: {integrity: sha512-Fl2z/BHvkTNvkuBzYTpTuirHZg6wW9z8+4SND/3mDTEcYbbNKWAy21dz9D3ePNNwrrK8pqZO5vLPZ1hLF6T7XA==}
     engines: {node: '>=6'}
     requiresBuild: true
     dev: false
@@ -7828,7 +7828,7 @@ packages:
     engines: {node: '>=18'}
     optionalDependencies:
       canvas: 2.11.2
-      path2d: 0.2.0
+      path2d: 0.2.1
     transitivePeerDependencies:
       - encoding
       - supports-color
