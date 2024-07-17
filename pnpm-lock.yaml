@@ -31,7 +31,7 @@ importers:
         version: 7.34.4(eslint@9.7.0)
       husky:
         specifier: ^9.0.0
-        version: 9.0.11
+        version: 9.1.0
       lint-staged:
         specifier: ^15.0.2
         version: 15.2.7
@@ -6337,8 +6337,8 @@ packages:
     engines: {node: '>=16.17.0'}
     dev: true
 
-  /husky@9.0.11:
-    resolution: {integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==}
+  /husky@9.1.0:
+    resolution: {integrity: sha512-8XCjbomYTGdNF2h50dio3T3zghmZ9f/ZNzr99YwSkvDdhEjJGs5qzy8tbFx+SG8yCx2wn9nMVfZxVrr/yT8gNQ==}
     engines: {node: '>=18'}
     hasBin: true
     dev: true
@@ -8717,6 +8717,12 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  /semver@7.6.3:
+    resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dev: true
+
   /send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
     engines: {node: '>= 0.8.0'}
@@ -8849,7 +8855,7 @@ packages:
     dependencies:
       color: 4.2.3
       detect-libc: 2.0.3
-      semver: 7.6.2
+      semver: 7.6.3
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.33.4
       '@img/sharp-darwin-x64': 0.33.4
