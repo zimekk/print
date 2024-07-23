@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.0.0
-        version: 19.3.0(@types/node@20.14.12)(typescript@5.5.4)
+        version: 19.3.0(@types/node@18.19.42)(typescript@5.5.4)
       '@commitlint/config-conventional':
         specifier: ^19.0.0
         version: 19.2.2
@@ -115,8 +115,8 @@ importers:
         specifier: ^2.0.2
         version: 2.0.2
       sass-loader:
-        specifier: ^14.0.0
-        version: 14.2.1(sass@1.77.8)(webpack@5.93.0)
+        specifier: ^15.0.0
+        version: 15.0.0(sass@1.77.8)(webpack@5.93.0)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.93.0)
@@ -161,8 +161,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2(react-dom@18.3.1)(react@18.3.1)
       sass-loader:
-        specifier: ^14.0.0
-        version: 14.2.1(sass@1.77.8)(webpack@5.93.0)
+        specifier: ^15.0.0
+        version: 15.0.0(sass@1.77.8)(webpack@5.93.0)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@18.19.42)(typescript@5.5.4)
@@ -343,8 +343,8 @@ importers:
         specifier: ^1.60.0
         version: 1.77.8
       sass-loader:
-        specifier: ^14.0.0
-        version: 14.2.1(sass@1.77.8)(webpack@5.93.0)
+        specifier: ^15.0.0
+        version: 15.0.0(sass@1.77.8)(webpack@5.93.0)
       serve:
         specifier: ^14.2.0
         version: 14.2.3
@@ -1863,14 +1863,14 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@commitlint/cli@19.3.0(@types/node@20.14.12)(typescript@5.5.4):
+  /@commitlint/cli@19.3.0(@types/node@18.19.42)(typescript@5.5.4):
     resolution: {integrity: sha512-LgYWOwuDR7BSTQ9OLZ12m7F/qhNY+NpAyPBgo4YNMkACE7lGuUnuQq1yi9hz1KA4+3VqpOYl8H1rY/LYK43v7g==}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
       '@commitlint/format': 19.3.0
       '@commitlint/lint': 19.2.2
-      '@commitlint/load': 19.2.0(@types/node@20.14.12)(typescript@5.5.4)
+      '@commitlint/load': 19.2.0(@types/node@18.19.42)(typescript@5.5.4)
       '@commitlint/read': 19.2.1
       '@commitlint/types': 19.0.3
       execa: 8.0.1
@@ -1939,7 +1939,7 @@ packages:
       '@commitlint/types': 19.0.3
     dev: true
 
-  /@commitlint/load@19.2.0(@types/node@20.14.12)(typescript@5.5.4):
+  /@commitlint/load@19.2.0(@types/node@18.19.42)(typescript@5.5.4):
     resolution: {integrity: sha512-XvxxLJTKqZojCxaBQ7u92qQLFMMZc4+p9qrIq/9kJDy8DOrEa7P1yx7Tjdc2u2JxIalqT4KOGraVgCE7eCYJyQ==}
     engines: {node: '>=v18'}
     dependencies:
@@ -1949,7 +1949,7 @@ packages:
       '@commitlint/types': 19.0.3
       chalk: 5.3.0
       cosmiconfig: 9.0.0(typescript@5.5.4)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.14.12)(cosmiconfig@9.0.0)(typescript@5.5.4)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.19.42)(cosmiconfig@9.0.0)(typescript@5.5.4)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -4612,7 +4612,7 @@ packages:
       vary: 1.1.2
     dev: false
 
-  /cosmiconfig-typescript-loader@5.0.0(@types/node@20.14.12)(cosmiconfig@9.0.0)(typescript@5.5.4):
+  /cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.42)(cosmiconfig@9.0.0)(typescript@5.5.4):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
     peerDependencies:
@@ -4620,7 +4620,7 @@ packages:
       cosmiconfig: '>=8.2'
       typescript: '>=4'
     dependencies:
-      '@types/node': 20.14.12
+      '@types/node': 18.19.42
       cosmiconfig: 9.0.0(typescript@5.5.4)
       jiti: 1.21.0
       typescript: 5.5.4
@@ -8625,8 +8625,8 @@ packages:
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  /sass-loader@14.2.1(sass@1.77.8)(webpack@5.93.0):
-    resolution: {integrity: sha512-G0VcnMYU18a4N7VoNDegg2OuMjYtxnqzQWARVWCIVSZwJeiL9kg8QMsuIZOplsJgTzZLF6jGxI3AClj8I9nRdQ==}
+  /sass-loader@15.0.0(sass@1.77.8)(webpack@5.93.0):
+    resolution: {integrity: sha512-mbXAL7sI/fgt3skXR6xHxtKkaGyxRrGf7zrU4hLLWxBDJEcAe0QsoNy92qKttCb3zfMniTkU2kD9yakUKtW7vQ==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@rspack/core': 0.x || 1.x
@@ -9132,7 +9132,7 @@ packages:
       queue-tick: 1.0.1
       text-decoder: 1.1.0
     optionalDependencies:
-      bare-events: 2.2.2
+      bare-events: 2.4.2
     dev: false
     optional: true
 
