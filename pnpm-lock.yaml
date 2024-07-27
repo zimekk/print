@@ -115,8 +115,8 @@ importers:
         specifier: ^2.0.2
         version: 2.0.2
       sass-loader:
-        specifier: ^15.0.0
-        version: 15.0.0(sass@1.77.8)(webpack@5.93.0)
+        specifier: ^16.0.0
+        version: 16.0.0(sass@1.77.8)(webpack@5.93.0)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.93.0)
@@ -161,8 +161,8 @@ importers:
         specifier: ^5.3.2
         version: 5.3.2(react-dom@18.3.1)(react@18.3.1)
       sass-loader:
-        specifier: ^15.0.0
-        version: 15.0.0(sass@1.77.8)(webpack@5.93.0)
+        specifier: ^16.0.0
+        version: 16.0.0(sass@1.77.8)(webpack@5.93.0)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@18.19.42)(typescript@5.5.4)
@@ -343,8 +343,8 @@ importers:
         specifier: ^1.60.0
         version: 1.77.8
       sass-loader:
-        specifier: ^15.0.0
-        version: 15.0.0(sass@1.77.8)(webpack@5.93.0)
+        specifier: ^16.0.0
+        version: 16.0.0(sass@1.77.8)(webpack@5.93.0)
       serve:
         specifier: ^14.2.0
         version: 14.2.3
@@ -8621,8 +8621,8 @@ packages:
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  /sass-loader@15.0.0(sass@1.77.8)(webpack@5.93.0):
-    resolution: {integrity: sha512-mbXAL7sI/fgt3skXR6xHxtKkaGyxRrGf7zrU4hLLWxBDJEcAe0QsoNy92qKttCb3zfMniTkU2kD9yakUKtW7vQ==}
+  /sass-loader@16.0.0(sass@1.77.8)(webpack@5.93.0):
+    resolution: {integrity: sha512-n13Z+3rU9A177dk4888czcVFiC8CL9dii4qpXWUg3YIIgZEvi9TCFKjOQcbK0kJM7DJu9VucrZFddvNfYCPwtw==}
     engines: {node: '>= 18.12.0'}
     peerDependencies:
       '@rspack/core': 0.x || 1.x
