@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "pdfjs-dist": "^3.11.174",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-pdf": "^9.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.9"
+    "@types/node": "^18.19.48"
   }
 }
