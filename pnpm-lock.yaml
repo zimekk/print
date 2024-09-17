@@ -197,7 +197,7 @@ importers:
     devDependencies:
       '@types/react':
         specifier: ^18.3.5
-        version: 18.3.6
+        version: 18.3.7
 
   packages/render:
     dependencies:
@@ -209,7 +209,7 @@ importers:
         version: 18.3.1
       react-pdf:
         specifier: ^9.0.0
-        version: 9.1.0(@types/react@18.3.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 9.1.0(@types/react@18.3.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@types/node':
         specifier: ^18.19.48
@@ -219,7 +219,7 @@ importers:
     dependencies:
       '@react-three/drei':
         specifier: ^9.111.5
-        version: 9.112.0(@react-three/fiber@8.17.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0))(@types/react@18.3.6)(@types/three@0.168.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)
+        version: 9.112.0(@react-three/fiber@8.17.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0))(@types/react@18.3.7)(@types/three@0.168.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)
       '@react-three/fiber':
         specifier: ^8.17.6
         version: 8.17.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)
@@ -232,7 +232,7 @@ importers:
     devDependencies:
       '@types/react':
         specifier: ^18.3.5
-        version: 18.3.6
+        version: 18.3.7
       '@types/three':
         specifier: ^0.168.0
         version: 0.168.0
@@ -311,7 +311,7 @@ importers:
         version: 18.19.50
       '@types/react':
         specifier: ^18.3.5
-        version: 18.3.6
+        version: 18.3.7
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.0
@@ -387,7 +387,7 @@ importers:
         version: 1.5.5
       '@types/react':
         specifier: ^18.3.5
-        version: 18.3.6
+        version: 18.3.7
 
 packages:
 
@@ -1593,8 +1593,8 @@ packages:
   '@types/offscreencanvas@2019.7.3':
     resolution: {integrity: sha512-ieXiYmgSRXUDeOntE1InxjWyvEelZGP63M+cGuquuRLuIKKT1osnkXjxev9B7d1nXSug5vpunx+gNlbVxMlC9A==}
 
-  '@types/prop-types@15.7.12':
-    resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
+  '@types/prop-types@15.7.13':
+    resolution: {integrity: sha512-hCZTSvwbzWGvhqxp/RqVqwU999pBf2vp7hzIjiYOsl8wqOmUxkQ6ddw1cV3l8811+kdUFus/q4d1Y3E3SyEifA==}
 
   '@types/qrcode@1.5.5':
     resolution: {integrity: sha512-CdfBi/e3Qk+3Z/fXYShipBT13OJ2fDO2Q2w5CIP5anLTLIndQG9z6P1cnm+8zCWSpm5dnxMFd/uREtb0EXuQzg==}
@@ -1617,8 +1617,8 @@ packages:
   '@types/react-reconciler@0.28.8':
     resolution: {integrity: sha512-SN9c4kxXZonFhbX4hJrZy37yw9e7EIxcpHCxQv5JUS18wDE5ovkQKlqQEkufdJCCMfuI9BnjUJvhYeJ9x5Ra7g==}
 
-  '@types/react@18.3.6':
-    resolution: {integrity: sha512-CnGaRYNu2iZlkGXGrOYtdg5mLK8neySj0woZ4e2wF/eli2E6Sazmq5X+Nrj6OBrrFVQfJWTUFeqAzoRhWQXYvg==}
+  '@types/react@18.3.7':
+    resolution: {integrity: sha512-KUnDCJF5+AiZd8owLIeVHqmW9yM4sqmDVf2JRJiBMFkGvkoZ4/WyV2lL4zVsoinmRS/W3FeEdZLEWFRofnT2FQ==}
 
   '@types/relateurl@0.2.33':
     resolution: {integrity: sha512-bTQCKsVbIdzLqZhLkF5fcJQreE4y1ro4DIyVrlDNSCJRRwHhB8Z+4zXXa8jN6eDvc2HbRsEYgbvrnGvi54EpSw==}
@@ -6966,7 +6966,7 @@ snapshots:
 
   '@react-spring/types@9.6.1': {}
 
-  '@react-three/drei@9.112.0(@react-three/fiber@8.17.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0))(@types/react@18.3.6)(@types/three@0.168.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)':
+  '@react-three/drei@9.112.0(@react-three/fiber@8.17.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0))(@types/react@18.3.7)(@types/three@0.168.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)':
     dependencies:
       '@babel/runtime': 7.25.6
       '@mediapipe/tasks-vision': 0.10.8
@@ -6990,7 +6990,7 @@ snapshots:
       three-mesh-bvh: 0.7.6(three@0.168.0)
       three-stdlib: 2.32.2(three@0.168.0)
       troika-three-text: 0.49.1(three@0.168.0)
-      tunnel-rat: 0.1.2(@types/react@18.3.6)(react@18.3.1)
+      tunnel-rat: 0.1.2(@types/react@18.3.7)(react@18.3.1)
       utility-types: 3.11.0
       uuid: 9.0.1
       zustand: 3.7.2(react@18.3.1)
@@ -7214,7 +7214,7 @@ snapshots:
 
   '@types/offscreencanvas@2019.7.3': {}
 
-  '@types/prop-types@15.7.12': {}
+  '@types/prop-types@15.7.13': {}
 
   '@types/qrcode@1.5.5':
     dependencies:
@@ -7228,19 +7228,19 @@ snapshots:
 
   '@types/react-dom@18.3.0':
     dependencies:
-      '@types/react': 18.3.6
+      '@types/react': 18.3.7
 
   '@types/react-reconciler@0.26.7':
     dependencies:
-      '@types/react': 18.3.6
+      '@types/react': 18.3.7
 
   '@types/react-reconciler@0.28.8':
     dependencies:
-      '@types/react': 18.3.6
+      '@types/react': 18.3.7
 
-  '@types/react@18.3.6':
+  '@types/react@18.3.7':
     dependencies:
-      '@types/prop-types': 15.7.12
+      '@types/prop-types': 15.7.13
       csstype: 3.1.3
 
   '@types/relateurl@0.2.33': {}
@@ -9779,9 +9779,9 @@ snapshots:
 
   merge-descriptors@1.0.3: {}
 
-  merge-refs@1.3.0(@types/react@18.3.6):
+  merge-refs@1.3.0(@types/react@18.3.7):
     optionalDependencies:
-      '@types/react': 18.3.6
+      '@types/react': 18.3.7
 
   merge-stream@2.0.0: {}
 
@@ -10368,20 +10368,20 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-pdf@9.1.0(@types/react@18.3.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-pdf@9.1.0(@types/react@18.3.7)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       clsx: 2.1.0
       dequal: 2.0.3
       make-cancellable-promise: 1.3.2
       make-event-props: 1.6.2
-      merge-refs: 1.3.0(@types/react@18.3.6)
+      merge-refs: 1.3.0(@types/react@18.3.7)
       pdfjs-dist: 4.4.168
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       tiny-invariant: 1.3.3
       warning: 4.0.3
     optionalDependencies:
-      '@types/react': 18.3.6
+      '@types/react': 18.3.7
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -11188,9 +11188,9 @@ snapshots:
       tslib: 1.14.1
       typescript: 5.6.2
 
-  tunnel-rat@0.1.2(@types/react@18.3.6)(react@18.3.1):
+  tunnel-rat@0.1.2(@types/react@18.3.7)(react@18.3.1):
     dependencies:
-      zustand: 4.5.5(@types/react@18.3.6)(react@18.3.1)
+      zustand: 4.5.5(@types/react@18.3.7)(react@18.3.1)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -11855,9 +11855,9 @@ snapshots:
     optionalDependencies:
       react: 18.3.1
 
-  zustand@4.5.5(@types/react@18.3.6)(react@18.3.1):
+  zustand@4.5.5(@types/react@18.3.7)(react@18.3.1):
     dependencies:
       use-sync-external-store: 1.2.2(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.6
+      '@types/react': 18.3.7
       react: 18.3.1
