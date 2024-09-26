@@ -219,16 +219,16 @@ importers:
     dependencies:
       '@react-three/drei':
         specifier: ^9.111.5
-        version: 9.114.0(@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0))(@types/react@18.3.9)(@types/three@0.168.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)
+        version: 9.114.0(@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0))(@types/react@18.3.9)(@types/three@0.168.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0)
       '@react-three/fiber':
         specifier: ^8.17.6
-        version: 8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)
+        version: 8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0)
       react:
         specifier: ^18.3.1
         version: 18.3.1
       three:
-        specifier: ^0.168.0
-        version: 0.168.0
+        specifier: ^0.169.0
+        version: 0.169.0
     devDependencies:
       '@types/react':
         specifier: ^18.3.5
@@ -5097,8 +5097,8 @@ packages:
     peerDependencies:
       three: '>=0.128.0'
 
-  three@0.168.0:
-    resolution: {integrity: sha512-6m6jXtDwMJEK/GGMbAOTSAmxNdzKvvBzgd7q8bE/7Tr6m7PaBh5kKLrN7faWtlglXbzj7sVba48Idwx+NRsZXw==}
+  three@0.169.0:
+    resolution: {integrity: sha512-Ed906MA3dR4TS5riErd4QBsRGPcx+HBDX2O5yYE5GqJeFQTPU+M56Va/f/Oph9X7uZo3W3o4l2ZhBZ6f6qUv0w==}
 
   through@2.3.8:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
@@ -6809,10 +6809,10 @@ snapshots:
 
   '@mediapipe/tasks-vision@0.10.8': {}
 
-  '@monogrid/gainmap-js@3.0.6(three@0.168.0)':
+  '@monogrid/gainmap-js@3.0.6(three@0.169.0)':
     dependencies:
       promise-worker-transferable: 1.0.4
-      three: 0.168.0
+      three: 0.169.0
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -6978,42 +6978,42 @@ snapshots:
       '@react-spring/types': 9.6.1
       react: 18.3.1
 
-  '@react-spring/three@9.6.1(@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0))(react@18.3.1)(three@0.168.0)':
+  '@react-spring/three@9.6.1(@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0))(react@18.3.1)(three@0.169.0)':
     dependencies:
       '@react-spring/animated': 9.6.1(react@18.3.1)
       '@react-spring/core': 9.6.1(react@18.3.1)
       '@react-spring/shared': 9.6.1(react@18.3.1)
       '@react-spring/types': 9.6.1
-      '@react-three/fiber': 8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)
+      '@react-three/fiber': 8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0)
       react: 18.3.1
-      three: 0.168.0
+      three: 0.169.0
 
   '@react-spring/types@9.6.1': {}
 
-  '@react-three/drei@9.114.0(@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0))(@types/react@18.3.9)(@types/three@0.168.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)':
+  '@react-three/drei@9.114.0(@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0))(@types/react@18.3.9)(@types/three@0.168.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0)':
     dependencies:
       '@babel/runtime': 7.25.6
       '@mediapipe/tasks-vision': 0.10.8
-      '@monogrid/gainmap-js': 3.0.6(three@0.168.0)
-      '@react-spring/three': 9.6.1(@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0))(react@18.3.1)(three@0.168.0)
-      '@react-three/fiber': 8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)
+      '@monogrid/gainmap-js': 3.0.6(three@0.169.0)
+      '@react-spring/three': 9.6.1(@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0))(react@18.3.1)(three@0.169.0)
+      '@react-three/fiber': 8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0)
       '@use-gesture/react': 10.3.1(react@18.3.1)
-      camera-controls: 2.9.0(three@0.168.0)
+      camera-controls: 2.9.0(three@0.169.0)
       cross-env: 7.0.3
       detect-gpu: 5.0.49
       glsl-noise: 0.0.0
       hls.js: 1.3.5
-      maath: 0.10.8(@types/three@0.168.0)(three@0.168.0)
-      meshline: 3.3.1(three@0.168.0)
+      maath: 0.10.8(@types/three@0.168.0)(three@0.169.0)
+      meshline: 3.3.1(three@0.169.0)
       react: 18.3.1
       react-composer: 5.0.3(react@18.3.1)
       stats-gl: 2.2.8
       stats.js: 0.17.0
       suspend-react: 0.1.3(react@18.3.1)
-      three: 0.168.0
-      three-mesh-bvh: 0.7.8(three@0.168.0)
-      three-stdlib: 2.33.0(three@0.168.0)
-      troika-three-text: 0.49.1(three@0.168.0)
+      three: 0.169.0
+      three-mesh-bvh: 0.7.8(three@0.169.0)
+      three-stdlib: 2.33.0(three@0.169.0)
+      troika-three-text: 0.49.1(three@0.169.0)
       tunnel-rat: 0.1.2(@types/react@18.3.9)(react@18.3.1)
       utility-types: 3.11.0
       uuid: 9.0.1
@@ -7025,7 +7025,7 @@ snapshots:
       - '@types/three'
       - immer
 
-  '@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.168.0)':
+  '@react-three/fiber@8.17.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(three@0.169.0)':
     dependencies:
       '@babel/runtime': 7.25.6
       '@types/debounce': 1.2.4
@@ -7039,7 +7039,7 @@ snapshots:
       react-reconciler: 0.27.0(react@18.3.1)
       scheduler: 0.21.0
       suspend-react: 0.1.3(react@18.3.1)
-      three: 0.168.0
+      three: 0.169.0
       zustand: 3.7.2(react@18.3.1)
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
@@ -7976,9 +7976,9 @@ snapshots:
 
   camelcase@7.0.1: {}
 
-  camera-controls@2.9.0(three@0.168.0):
+  camera-controls@2.9.0(three@0.169.0):
     dependencies:
-      three: 0.168.0
+      three: 0.169.0
 
   caniuse-lite@1.0.30001663: {}
 
@@ -9778,10 +9778,10 @@ snapshots:
 
   lru-cache@7.18.3: {}
 
-  maath@0.10.8(@types/three@0.168.0)(three@0.168.0):
+  maath@0.10.8(@types/three@0.168.0)(three@0.169.0):
     dependencies:
       '@types/three': 0.168.0
-      three: 0.168.0
+      three: 0.169.0
 
   magic-string@0.25.9:
     dependencies:
@@ -9818,9 +9818,9 @@ snapshots:
 
   merge2@1.4.1: {}
 
-  meshline@3.3.1(three@0.168.0):
+  meshline@3.3.1(three@0.169.0):
     dependencies:
-      three: 0.168.0
+      three: 0.169.0
 
   meshoptimizer@0.18.1: {}
 
@@ -11145,11 +11145,11 @@ snapshots:
 
   text-table@0.2.0: {}
 
-  three-mesh-bvh@0.7.8(three@0.168.0):
+  three-mesh-bvh@0.7.8(three@0.169.0):
     dependencies:
-      three: 0.168.0
+      three: 0.169.0
 
-  three-stdlib@2.33.0(three@0.168.0):
+  three-stdlib@2.33.0(three@0.169.0):
     dependencies:
       '@types/draco3d': 1.4.10
       '@types/offscreencanvas': 2019.7.3
@@ -11157,9 +11157,9 @@ snapshots:
       draco3d: 1.5.7
       fflate: 0.6.10
       potpack: 1.0.2
-      three: 0.168.0
+      three: 0.169.0
 
-  three@0.168.0: {}
+  three@0.169.0: {}
 
   through@2.3.8: {}
 
@@ -11185,17 +11185,17 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  troika-three-text@0.49.1(three@0.168.0):
+  troika-three-text@0.49.1(three@0.169.0):
     dependencies:
       bidi-js: 1.0.3
-      three: 0.168.0
-      troika-three-utils: 0.49.0(three@0.168.0)
+      three: 0.169.0
+      troika-three-utils: 0.49.0(three@0.169.0)
       troika-worker-utils: 0.49.0
       webgl-sdf-generator: 1.1.1
 
-  troika-three-utils@0.49.0(three@0.168.0):
+  troika-three-utils@0.49.0(three@0.169.0):
     dependencies:
-      three: 0.168.0
+      three: 0.169.0
 
   troika-worker-utils@0.49.0: {}
 
