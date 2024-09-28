@@ -22,7 +22,7 @@
   "dependencies": {
     "@dev/doc": "workspace:*",
     "@dev/web": "workspace:*",
-    "@react-pdf/renderer": "^3.4.5",
+    "@react-pdf/renderer": "^4.0.0",
     "actions-on-google": "^3.0.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
