@@ -23,6 +23,6 @@
     "react-pdf": "^9.0.0"
   },
   "devDependencies": {
-    "@types/node": "^18.19.48"
+    "@types/node": "^20.0.0"
   }
 }
