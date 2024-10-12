@@ -219,7 +219,44 @@ export const Lathes = function ({ wireframe, meshRef }) {
   );
 };
 
+export const Caps = function ({ wireframe, meshRef }) {
+  const segments = 24;
+  const points = useMemo(() => {
+    const r1 = 15 / 2;
+    const r2 = 13 / 2;
+    let n = 0;
+    return [
+      new Vector2(0, n),
+      new Vector2(r1, n++),
+      new Vector2(r1, ++n),
+      new Vector2(r2, n),
+      new Vector2(r2, ++n),
+      new Vector2(r2 - 1, ++n),
+      new Vector2(r2, ++n),
+      new Vector2(r2 - 1, ++n),
+      new Vector2(r2, ++n),
+      new Vector2(r2 - 1, ++n),
+      new Vector2(r2, ++n),
+      new Vector2(r2 - 1, ++n),
+      new Vector2(r2, ++n),
+      new Vector2(r2 - 1, ++n),
+      new Vector2(0, n),
+    ];
+  }, []);
+
+  return (
+    <Lathe ref={meshRef} args={[points, segments]}>
+      {wireframe ? (
+        <meshBasicMaterial color="#2f7f4f" wireframe />
+      ) : (
+        <meshStandardMaterial color="#9d4b4b" />
+      )}
+    </Lathe>
+  );
+};
+
 const PAGES = {
+  caps: Caps,
   lathe: Lathes,
   shape: Shapes,
 };
