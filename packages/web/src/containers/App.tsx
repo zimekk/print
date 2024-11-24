@@ -6,6 +6,7 @@ const Spinner = () => <span>Loading...</span>;
 
 const PAGES = {
   print: lazy(() => import("./Print")),
+  boxes: lazy(() => import("@dev/box")),
   crop: lazy(() => import("./Crop")),
   cropper: lazy(() => import("./Cropper")),
   join: lazy(() => import("@dev/join")),

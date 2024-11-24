@@ -139,6 +139,19 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
 
+  packages/box:
+    dependencies:
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+    devDependencies:
+      '@types/react':
+        specifier: ^18.3.5
+        version: 18.3.12
+      '@types/three':
+        specifier: ^0.170.0
+        version: 0.170.0
+
   packages/doc:
     dependencies:
       react:
@@ -239,6 +252,9 @@ importers:
 
   packages/web:
     dependencies:
+      '@dev/box':
+        specifier: workspace:*
+        version: link:../box
       '@dev/join':
         specifier: workspace:*
         version: link:../join

@@ -1,0 +1,16 @@
+.Section {
+  display: flex;
+  flex-direction: column;
+}
+.Preview {
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid red;
+
+  .Layer {
+    position: absolute;
+    opacity: 0.8;
+    border: 2px solid blue;
+  }
+}

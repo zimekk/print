@@ -1,0 +1,27 @@
+{
+  "name": "@dev/box",
+  "version": "1.0.0",
+  "main": "lib",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib/"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    }
+  },
+  "scripts": {
+    "build": "echo build"
+  },
+  "dependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.5",
+    "@types/three": "^0.170.0"
+  }
+}

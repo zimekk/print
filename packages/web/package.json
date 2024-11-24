@@ -15,6 +15,7 @@
     "start": "NODE_OPTIONS=--openssl-legacy-provider webpack serve --mode development"
   },
   "dependencies": {
+    "@dev/box": "workspace:*",
     "@dev/join": "workspace:*",
     "@dev/quiz": "workspace:*",
     "@dev/render": "workspace:*",
