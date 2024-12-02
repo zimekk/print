@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import DATA from "./data";
 import styles from "./styles.module.scss";
 
@@ -55,14 +55,22 @@ export default function Section() {
   const [counter, setCounter] = useState<number[]>(() => []);
   const [correct, setCorrect] = useState<number[]>(() => []);
 
-  console.log(data, item);
+  const available = useMemo(
+    () =>
+      Object.keys(data)
+        .map(Number)
+        .filter((item) => !correct.includes(item)),
+    [correct],
+  );
+
+  console.log(data, item, available);
 
   const handleRandom = useCallback(
     () =>
       ((item) => (
         setItem(item), setCounter((counter) => counter.concat(item))
-      ))(Math.floor(Math.random() * data.length)),
-    [],
+      ))(available[Math.floor(Math.random() * available.length)]),
+    [available],
   );
 
   const handleCorrect = useCallback(
@@ -79,7 +87,9 @@ export default function Section() {
     <section className={styles.Section}>
       <h2>Quiz</h2>
       <div>
-        <button onClick={handleRandom}>random</button>
+        <button onClick={handleRandom} disabled={available.length === 0}>
+          random
+        </button>
         {item >= 0 && (
           <Notion key={item} item={data[item]} {...{ handleCorrect }} />
         )}
