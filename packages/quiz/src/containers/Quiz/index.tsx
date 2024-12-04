@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import DATA from "./data";
 import styles from "./styles.module.scss";
 
@@ -7,15 +7,16 @@ type DataType = {
   answer: string;
 };
 
-const parseData = (text: string) => {
+const parseData = (text: string, inverse) => {
   return text
     .split("\n")
     .filter(Boolean)
     .map((line) => line.replace(/^- +\[.\] +/, ""))
     .map((line) =>
-      (([, a, b]) => ({ notion: a.trim(), answer: b.trim() }))(
-        line.match(/([^-]+)-(.+)/),
-      ),
+      (([, a, b]) =>
+        inverse
+          ? { notion: b.trim(), answer: a.trim() }
+          : { notion: a.trim(), answer: b.trim() })(line.match(/([^-]+)-(.+)/)),
     );
 };
 
@@ -50,7 +51,12 @@ function Notion({
 }
 
 export default function Section() {
-  const [data] = useState<DataType[]>(() => parseData(DATA));
+  const [editable, setEditable] = useState(() => false);
+  const [inverse, setInverse] = useState(() => false);
+  const [content, setContent] = useState(() => DATA.trim());
+  const [data, setData] = useState<DataType[]>(() =>
+    parseData(content, inverse),
+  );
   const [item, setItem] = useState<number>(() => -1);
   const [counter, setCounter] = useState<number[]>(() => []);
   const [correct, setCorrect] = useState<number[]>(() => []);
@@ -83,21 +89,58 @@ export default function Section() {
     [],
   );
 
+  const handleUpdate = useCallback(
+    () => (
+      setCorrect([]),
+      setCounter([]),
+      setItem(-1),
+      setData(parseData(content, inverse))
+    ),
+    [content, inverse],
+  );
+
   return (
     <section className={styles.Section}>
       <h2>Quiz</h2>
       <div>
         <button onClick={handleRandom} disabled={available.length === 0}>
-          random
+          random ({available.length})
         </button>
         {item >= 0 && (
           <Notion key={item} item={data[item]} {...{ handleCorrect }} />
         )}
       </div>
-      <pre>{JSON.stringify({ counter, correct }, null, 2)}</pre>
-      <div>
-        <button onClick={handleReset}>reset</button>
+      <hr />
+      <div style={{ display: "flex", flexDirection: "column" }}>
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              checked={editable}
+              onChange={(e) => setEditable(e.target.checked)}
+            />
+            <span>editable</span>
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              checked={inverse}
+              onChange={(e) => setInverse(e.target.checked)}
+            />
+            <span>inverse</span>
+          </label>
+          <button onClick={handleUpdate}>update</button>
+          <button onClick={handleReset}>reset</button>
+        </div>
+        {editable && (
+          <textarea
+            rows={8}
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          />
+        )}
       </div>
+      <pre>{JSON.stringify({ counter, correct }, null, 2)}</pre>
     </section>
   );
 }

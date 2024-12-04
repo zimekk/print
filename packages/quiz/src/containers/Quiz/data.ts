@@ -1,4 +1,17 @@
 export default `
+- [ ] znudzony - aburrido
+- [ ] zadowolony - contento
+- [ ] rozczarowany - decepcionado
+- [ ] zagniewany - enfadado
+- [ ] zdenerwowany - estar nervioso
+- [ ] dumny - orgulloso
+- [ ] zmartwiony - preocupado
+- [ ] poważny - serio
+- [ ] zaskoczony - sorprendido
+- [ ] być smutny - estar triste
+- [ ] wesoły - alegre
+- [ ] przestraszony - asustado
+
 - [ ] żołądek - estómago
 - [ ] ząb/zęby - diente/dientes
 - [ ] szyja - cuello
