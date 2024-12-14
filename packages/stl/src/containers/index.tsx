@@ -145,6 +145,148 @@ function Screw() {
   );
 }
 
+export const Clip = function ({ wireframe, meshRef }) {
+  const shape = useMemo(() => {
+    const w = 53;
+    const h = 41;
+    const d = 1;
+    // https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_shapes.html
+    const shape = new Shape()
+      .moveTo(0, 0)
+      .lineTo(w / 2, 0)
+      .lineTo(w / 2, -h)
+      .lineTo(w / 2 - 4, -h)
+      .lineTo(w / 2 - 4, -h - d)
+      .lineTo(w / 2 + d, -h - d)
+      .lineTo(w / 2 + d, d)
+      .lineTo(d + 1, d)
+      .lineTo(d + 1, d + 14)
+      .lineTo(0 + 0.5, d + 12)
+      .lineTo(0 + 0.5, d + 10)
+      .lineTo(d + 0.5, d + 9)
+      .lineTo(0 + 0.5, d + 8)
+      .lineTo(d + 0.5, d + 7)
+      .lineTo(0 + 0.5, d + 6)
+      .lineTo(d + 0.5, d + 5)
+      .lineTo(0 + 0.5, d + 4)
+      .lineTo(d + 0.5, d + 3)
+      .lineTo(0 + 0.5, d + 2)
+      .lineTo(d + 0.5, d + 1)
+      .lineTo(0 - 0, d + 0)
+      .lineTo(-d - 0.5, d + 1)
+      .lineTo(-0 - 0.5, d + 2)
+      .lineTo(-d - 0.5, d + 3)
+      .lineTo(-0 - 0.5, d + 4)
+      .lineTo(-d - 0.5, d + 5)
+      .lineTo(-0 - 0.5, d + 6)
+      .lineTo(-d - 0.5, d + 7)
+      .lineTo(-0 - 0.5, d + 8)
+      .lineTo(-d - 0.5, d + 9)
+      .lineTo(-0 - 0.5, d + 10)
+      .lineTo(-0 - 0.5, d + 12)
+      .lineTo(-d - 1, d + 14)
+      .lineTo(-(d + 1), d)
+      .lineTo(-(w / 2 + d), d)
+      .lineTo(-(w / 2 + d), -h - d)
+      .lineTo(-(w / 2 - 4), -h - d)
+      .lineTo(-(w / 2 - 4), -h)
+      .lineTo(-(w / 2), -h)
+      .lineTo(-(w / 2), 0);
+    return shape;
+  }, []);
+
+  const extrudeSettings = { steps: 2, depth: 10, bevelEnabled: false };
+
+  return (
+    <>
+      <Extrude ref={meshRef} args={[shape, extrudeSettings]} castShadow>
+        {wireframe ? (
+          <meshBasicMaterial color="#2f7f4f" wireframe />
+        ) : (
+          <meshStandardMaterial color="#9d4b4b" />
+        )}
+      </Extrude>
+    </>
+  );
+};
+
+export const Clip2 = function ({ wireframe, meshRef }) {
+  const shape = useMemo(() => {
+    const w = 51;
+    const h = 41;
+    const d = 1.5;
+    const s = -4;
+    const z = 0.8;
+    // https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_shapes.html
+    const shape = new Shape()
+      .moveTo(0, 0)
+      .lineTo(w / 2, 0)
+      .lineTo(w / 2, -h)
+      .lineTo(w / 2 - 8, -h)
+      .lineTo(w / 2 - 8, -h - d)
+      .lineTo(w / 2 + d, -h - d)
+      .lineTo(w / 2 + d, d)
+      .lineTo(s + 18, d)
+      .lineTo(s + 16, d + z)
+      .lineTo(s + 15, d)
+      .lineTo(s + 14, d + z)
+      .lineTo(s + 13, d)
+      .lineTo(s + 12, d + z)
+      .lineTo(s + 11, d)
+      .lineTo(s + 10, d + z)
+      .lineTo(s + 9, d)
+      .lineTo(s + 8, d + z)
+      .lineTo(s + 7, d)
+      .lineTo(s + 6, d + z)
+      .lineTo(s + 5, d)
+      .lineTo(s + 4, d + z)
+      .lineTo(s + 3, d)
+      .lineTo(s + 2, d)
+      .lineTo(s + 1, d + z)
+      .lineTo(s + 1, d + 2 - z)
+      .lineTo(s + 2, d + 2)
+      .lineTo(s + 3, d + 2 - z)
+      .lineTo(s + 4, d + 2)
+      .lineTo(s + 5, d + 2 - z)
+      .lineTo(s + 6, d + 2)
+      .lineTo(s + 7, d + 2 - z)
+      .lineTo(s + 8, d + 2)
+      .lineTo(s + 9, d + 2 - z)
+      .lineTo(s + 10, d + 2)
+      .lineTo(s + 11, d + 2 - z)
+      .lineTo(s + 12, d + 2)
+      .lineTo(s + 13, d + 2 - z)
+      .lineTo(s + 14, d + 2)
+      .lineTo(s + 15, d + 2 - z)
+      .lineTo(s + 16, d + 2)
+      .lineTo(s + 18, d + 2)
+      .lineTo(s + 18, d + 2 + d)
+      .lineTo(s, d + 2 + d)
+      .lineTo(s - 2 * d, d)
+      .lineTo(-(w / 2 + d), d)
+      .lineTo(-(w / 2 + d), -h - d)
+      .lineTo(-(w / 2 - 8), -h - d)
+      .lineTo(-(w / 2 - 8), -h)
+      .lineTo(-(w / 2), -h)
+      .lineTo(-(w / 2), 0);
+    return shape;
+  }, []);
+
+  const extrudeSettings = { steps: 1, depth: 12, bevelEnabled: false };
+
+  return (
+    <>
+      <Extrude ref={meshRef} args={[shape, extrudeSettings]} castShadow>
+        {wireframe ? (
+          <meshBasicMaterial color="#2f7f4f" wireframe />
+        ) : (
+          <meshStandardMaterial color="#9d4b4b" />
+        )}
+      </Extrude>
+    </>
+  );
+};
+
 export const Shapes = function ({ wireframe, meshRef }) {
   // const meshRef = useRef<Mesh>();
   // const svgRef = useRef<SVGSVGElement>();
@@ -255,6 +397,8 @@ export const Caps = function ({ wireframe, meshRef }) {
 };
 
 const PAGES = {
+  clip2: Clip2,
+  clip: Clip,
   caps: Caps,
   lathe: Lathes,
   shape: Shapes,
