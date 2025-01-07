@@ -32,7 +32,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-perspective-cropper": "^0.2.2",
-    "tesseract.js": "^5.1.1"
+    "tesseract.js": "^6.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
