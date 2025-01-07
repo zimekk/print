@@ -339,6 +339,57 @@ export const Clip3 = function ({ wireframe, meshRef }) {
   );
 };
 
+export const Clip3 = function ({ wireframe, meshRef }) {
+  const shape = useMemo(() => {
+    const w = 35;
+    const h = 70;
+    const a = 2;
+    const b = 2;
+    const c = 2;
+    const d = 32;
+    const e = 2;
+    const f = 5;
+    // https://github.com/mrdoob/three.js/blob/master/examples/webgl_geometry_shapes.html
+    const shape = new Shape()
+      .moveTo(0, 0)
+      .lineTo(w, 0)
+      .lineTo(w, a)
+
+      .lineTo(-b - 55, a)
+      .lineTo(-b - 55, -10)
+      .lineTo(-b, -10)
+
+      .lineTo(-b, a)
+      .lineTo(-b, -h - c)
+      .lineTo(-b + d + e, -h - c)
+      .lineTo(-b + d + e, -h + f)
+      .lineTo(-b + d, -h + f)
+      .lineTo(-b + d, -h)
+      .lineTo(0, -h)
+      .lineTo(0, 0);
+    return shape;
+  }, []);
+
+  const extrudeSettings = {
+    steps: 4,
+    depth: 2,
+    bevelEnabled: true,
+    bevelThickness: 0.1,
+  };
+
+  return (
+    <>
+      <Extrude ref={meshRef} args={[shape, extrudeSettings]} castShadow>
+        {wireframe ? (
+          <meshBasicMaterial color="#2f7f4f" wireframe />
+        ) : (
+          <meshStandardMaterial color="#9d4b4b" />
+        )}
+      </Extrude>
+    </>
+  );
+};
+
 export const Shapes = function ({ wireframe, meshRef }) {
   // const meshRef = useRef<Mesh>();
   // const svgRef = useRef<SVGSVGElement>();
