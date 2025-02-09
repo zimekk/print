@@ -232,10 +232,10 @@ importers:
     dependencies:
       '@react-three/drei':
         specifier: ^9.111.5
-        version: 9.121.4(@react-three/fiber@9.0.0-rc.6(@types/react@19.0.8)(react@19.0.0)(three@0.173.0))(@types/react@19.0.8)(@types/three@0.173.0)(react@19.0.0)(three@0.173.0)(use-sync-external-store@1.4.0(react@19.0.0))
+        version: 9.121.4(@react-three/fiber@9.0.0-rc.7(@types/react@19.0.8)(react@19.0.0)(three@0.173.0))(@types/react@19.0.8)(@types/three@0.173.0)(react@19.0.0)(three@0.173.0)(use-sync-external-store@1.4.0(react@19.0.0))
       '@react-three/fiber':
-        specifier: 9.0.0-rc.6
-        version: 9.0.0-rc.6(@types/react@19.0.8)(react@19.0.0)(three@0.173.0)
+        specifier: 9.0.0-rc.7
+        version: 9.0.0-rc.7(@types/react@19.0.8)(react@19.0.0)(three@0.173.0)
       react:
         specifier: ^19.0.0
         version: 19.0.0
@@ -1437,8 +1437,8 @@ packages:
       react-dom:
         optional: true
 
-  '@react-three/fiber@9.0.0-rc.6':
-    resolution: {integrity: sha512-H4NY1jZcOxi5t86jH1/gQyJg9g0kiRuLaQ6frW1hwcRer2Kv4UhafcEnU8UslUpxJkfwVnlgL01eNH2ZpO5tew==}
+  '@react-three/fiber@9.0.0-rc.7':
+    resolution: {integrity: sha512-RRdEMfFps7/y/B+EQNhCISuAZYOWrDEGVEKCcPCrCDa3vkPU6R4kVscUr6RmbnChGjBdVoHb8jtLH39w5Rr4kA==}
     peerDependencies:
       expo: '>=43.0'
       expo-asset: '>=8.4'
@@ -7063,25 +7063,25 @@ snapshots:
       '@react-spring/types': 9.7.5
       react: 19.0.0
 
-  '@react-spring/three@9.7.5(@react-three/fiber@9.0.0-rc.6(@types/react@19.0.8)(react@19.0.0)(three@0.173.0))(react@19.0.0)(three@0.173.0)':
+  '@react-spring/three@9.7.5(@react-three/fiber@9.0.0-rc.7(@types/react@19.0.8)(react@19.0.0)(three@0.173.0))(react@19.0.0)(three@0.173.0)':
     dependencies:
       '@react-spring/animated': 9.7.5(react@19.0.0)
       '@react-spring/core': 9.7.5(react@19.0.0)
       '@react-spring/shared': 9.7.5(react@19.0.0)
       '@react-spring/types': 9.7.5
-      '@react-three/fiber': 9.0.0-rc.6(@types/react@19.0.8)(react@19.0.0)(three@0.173.0)
+      '@react-three/fiber': 9.0.0-rc.7(@types/react@19.0.8)(react@19.0.0)(three@0.173.0)
       react: 19.0.0
       three: 0.173.0
 
   '@react-spring/types@9.7.5': {}
 
-  '@react-three/drei@9.121.4(@react-three/fiber@9.0.0-rc.6(@types/react@19.0.8)(react@19.0.0)(three@0.173.0))(@types/react@19.0.8)(@types/three@0.173.0)(react@19.0.0)(three@0.173.0)(use-sync-external-store@1.4.0(react@19.0.0))':
+  '@react-three/drei@9.121.4(@react-three/fiber@9.0.0-rc.7(@types/react@19.0.8)(react@19.0.0)(three@0.173.0))(@types/react@19.0.8)(@types/three@0.173.0)(react@19.0.0)(three@0.173.0)(use-sync-external-store@1.4.0(react@19.0.0))':
     dependencies:
       '@babel/runtime': 7.26.7
       '@mediapipe/tasks-vision': 0.10.17
       '@monogrid/gainmap-js': 3.1.0(three@0.173.0)
-      '@react-spring/three': 9.7.5(@react-three/fiber@9.0.0-rc.6(@types/react@19.0.8)(react@19.0.0)(three@0.173.0))(react@19.0.0)(three@0.173.0)
-      '@react-three/fiber': 9.0.0-rc.6(@types/react@19.0.8)(react@19.0.0)(three@0.173.0)
+      '@react-spring/three': 9.7.5(@react-three/fiber@9.0.0-rc.7(@types/react@19.0.8)(react@19.0.0)(three@0.173.0))(react@19.0.0)(three@0.173.0)
+      '@react-three/fiber': 9.0.0-rc.7(@types/react@19.0.8)(react@19.0.0)(three@0.173.0)
       '@use-gesture/react': 10.3.1(react@19.0.0)
       camera-controls: 2.9.0(three@0.173.0)
       cross-env: 7.0.3
@@ -7108,7 +7108,7 @@ snapshots:
       - immer
       - use-sync-external-store
 
-  '@react-three/fiber@9.0.0-rc.6(@types/react@19.0.8)(react@19.0.0)(three@0.173.0)':
+  '@react-three/fiber@9.0.0-rc.7(@types/react@19.0.8)(react@19.0.0)(three@0.173.0)':
     dependencies:
       '@babel/runtime': 7.26.7
       '@types/react-reconciler': 0.28.8
