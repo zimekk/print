@@ -40,7 +40,7 @@
     "@types/cors": "^2.8.13",
     "@types/express": "^5.0.0",
     "@types/node": "^22.0.0",
-    "babel-loader": "^9.1.2",
+    "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
     "require-from-string": "^2.0.2",
