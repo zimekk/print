@@ -116,7 +116,7 @@ importers:
         version: 2.0.2
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.86.0)(webpack@5.98.0)
+        version: 16.0.5(sass@1.86.1)(webpack@5.98.0)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.98.0)
@@ -175,7 +175,7 @@ importers:
         version: 5.4.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.86.0)(webpack@5.98.0)
+        version: 16.0.5(sass@1.86.1)(webpack@5.98.0)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@22.13.14)(typescript@5.8.2)
@@ -357,10 +357,10 @@ importers:
         version: 5.6.3(webpack@5.98.0)
       sass:
         specifier: ^1.77.8
-        version: 1.86.0
+        version: 1.86.1
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.86.0)(webpack@5.98.0)
+        version: 16.0.5(sass@1.86.1)(webpack@5.98.0)
       serve:
         specifier: ^14.2.3
         version: 14.2.4
@@ -3397,8 +3397,8 @@ packages:
   immutability-helper@3.1.1:
     resolution: {integrity: sha512-Q0QaXjPjwIju/28TsugCHNEASwoCcJSyJV3uO1sOIQGI0jKgm9f41Lvz0DZj3n46cNCyAZTsEYoY4C2bVRUzyQ==}
 
-  immutable@5.0.3:
-    resolution: {integrity: sha512-P8IdPQHq3lA1xVeBRi5VPqUm5HDgKnx0Ru51wZz5mjxHr5n3RWhjIpOFU7ybkUxfB+5IToy+OLaHYDBIWsv+uw==}
+  immutable@5.1.1:
+    resolution: {integrity: sha512-3jatXi9ObIsPGr3N5hGw/vWWcTkq6hUYhpQz4k0wLC+owqWi/LiugIw9x0EdNZ2yGedKN/HzePiBvaJRXa0Ujg==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -4766,8 +4766,8 @@ packages:
       webpack:
         optional: true
 
-  sass@1.86.0:
-    resolution: {integrity: sha512-zV8vGUld/+mP4KbMLJMX7TyGCuUp7hnkOScgCMsWuHtns8CWBoz+vmEhoGMXsaJrbUP8gj+F1dLvVe79sK8UdA==}
+  sass@1.86.1:
+    resolution: {integrity: sha512-Yaok4XELL1L9Im/ZUClKu//D2OP1rOljKj0Gf34a+GzLbMveOzL7CfqYo+JUa5Xt1nhTCW+OcKp/FtR7/iqj1w==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -9377,7 +9377,7 @@ snapshots:
 
   immutability-helper@3.1.1: {}
 
-  immutable@5.0.3: {}
+  immutable@5.1.1: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -10711,17 +10711,17 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@16.0.5(sass@1.86.0)(webpack@5.98.0):
+  sass-loader@16.0.5(sass@1.86.1)(webpack@5.98.0):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
-      sass: 1.86.0
+      sass: 1.86.1
       webpack: 5.98.0(webpack-cli@6.0.1)
 
-  sass@1.86.0:
+  sass@1.86.1:
     dependencies:
       chokidar: 4.0.3
-      immutable: 5.0.3
+      immutable: 5.1.1
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.1
