@@ -91,7 +91,7 @@ importers:
         version: 0.4.0
       zod:
         specifier: ^3.23.8
-        version: 3.24.3
+        version: 3.24.4
     devDependencies:
       '@types/cors':
         specifier: ^2.8.13
@@ -5810,6 +5810,9 @@ packages:
   zod@3.24.3:
     resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
 
+  zod@3.24.4:
+    resolution: {integrity: sha512-OdqJE9UDRPwWsrHjLN2F8bPxvwJBK22EHLWtanu0LSYr5YqzsaaW3RMgmjwr8Rypg5k+meEJdSPXJZXE/yqOMg==}
+
   zustand@4.5.6:
     resolution: {integrity: sha512-ibr/n1hBzLLj5Y+yUcU7dYw8p6WnIVzdJbnX+1YpaScvZVF2ziugqHs+LAmHw4lWO9c/zRj+K1ncgWDQuthEdQ==}
     engines: {node: '>=12.7.0'}
@@ -8158,7 +8161,7 @@ snapshots:
     dependencies:
       devtools-protocol: 0.0.1439962
       mitt: 3.0.1
-      zod: 3.24.3
+      zod: 3.24.4
 
   classnames@2.5.1: {}
 
@@ -12191,6 +12194,8 @@ snapshots:
       zod: 3.24.3
 
   zod@3.24.3: {}
+
+  zod@3.24.4: {}
 
   zustand@4.5.6(@types/react@19.1.2)(react@19.1.0):
     dependencies:
