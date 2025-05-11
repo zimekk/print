@@ -116,7 +116,7 @@ importers:
         version: 2.0.2
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.87.0)(webpack@5.99.8)
+        version: 16.0.5(sass@1.88.0)(webpack@5.99.8)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.99.8)
@@ -175,7 +175,7 @@ importers:
         version: 5.4.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.87.0)(webpack@5.99.8)
+        version: 16.0.5(sass@1.88.0)(webpack@5.99.8)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@22.15.17)(typescript@5.8.3)
@@ -357,10 +357,10 @@ importers:
         version: 5.6.3(webpack@5.99.8)
       sass:
         specifier: ^1.77.8
-        version: 1.87.0
+        version: 1.88.0
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.87.0)(webpack@5.99.8)
+        version: 16.0.5(sass@1.88.0)(webpack@5.99.8)
       serve:
         specifier: ^14.2.3
         version: 14.2.4
@@ -4828,8 +4828,8 @@ packages:
       webpack:
         optional: true
 
-  sass@1.87.0:
-    resolution: {integrity: sha512-d0NoFH4v6SjEK7BoX810Jsrhj7IQSYHAHLi/iSpgqKc7LaIDshFRlSg5LOymf9FqQhxEHs2W5ZQXlvy0KD45Uw==}
+  sass@1.88.0:
+    resolution: {integrity: sha512-sF6TWQqjFvr4JILXzG4ucGOLELkESHL+I5QJhh7CNaE+Yge0SI+ehCatsXhJ7ymU1hAFcIS3/PBpjdIbXoyVbg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -10885,14 +10885,14 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@16.0.5(sass@1.87.0)(webpack@5.99.8):
+  sass-loader@16.0.5(sass@1.88.0)(webpack@5.99.8):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
-      sass: 1.87.0
+      sass: 1.88.0
       webpack: 5.99.8(webpack-cli@6.0.1)
 
-  sass@1.87.0:
+  sass@1.88.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.1
