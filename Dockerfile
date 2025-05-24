@@ -34,7 +34,7 @@ COPY packages/render/package.json packages/render/
 COPY packages/stl/package.json packages/stl/
 COPY packages/web/package.json packages/web/
 COPY packages/wifi/package.json packages/wifi/
-RUN pnpm i --frozen-lockfile
+RUN pnpm i --frozen-lockfile --ignore-scripts
 
 COPY . ./
 RUN pnpm build && pnpm prune --prod --config.ignore-scripts=true
