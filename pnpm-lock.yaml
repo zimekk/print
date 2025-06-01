@@ -91,7 +91,7 @@ importers:
         version: 0.4.0
       zod:
         specifier: ^3.23.8
-        version: 3.25.42
+        version: 3.25.46
     devDependencies:
       '@types/cors':
         specifier: ^2.8.13
@@ -5808,8 +5808,8 @@ packages:
   zlibjs@0.3.1:
     resolution: {integrity: sha512-+J9RrgTKOmlxFSDHo0pI1xM6BLVUv+o0ZT9ANtCxGkjIVCCUdx9alUF8Gm+dGLKbkkkidWIHFDZHDMpfITt4+w==}
 
-  zod@3.25.42:
-    resolution: {integrity: sha512-PcALTLskaucbeHc41tU/xfjfhcz8z0GdhhDcSgrCTmSazUuqnYqiXO63M0QUBVwpBlsLsNVn5qHSC5Dw3KZvaQ==}
+  zod@3.25.46:
+    resolution: {integrity: sha512-IqRxcHEIjqLd4LNS/zKffB3Jzg3NwqJxQQ0Ns7pdrvgGkwQsEBdEQcOHaBVqvvZArShRzI39+aMST3FBGmTrLQ==}
 
   zustand@4.5.6:
     resolution: {integrity: sha512-ibr/n1hBzLLj5Y+yUcU7dYw8p6WnIVzdJbnX+1YpaScvZVF2ziugqHs+LAmHw4lWO9c/zRj+K1ncgWDQuthEdQ==}
@@ -8175,7 +8175,7 @@ snapshots:
     dependencies:
       devtools-protocol: 0.0.1439962
       mitt: 3.0.1
-      zod: 3.25.42
+      zod: 3.25.46
 
   classnames@2.5.1: {}
 
@@ -12176,7 +12176,7 @@ snapshots:
 
   zlibjs@0.3.1: {}
 
-  zod@3.25.42: {}
+  zod@3.25.46: {}
 
   zustand@4.5.6(@types/react@19.1.6)(react@19.1.0):
     dependencies:
