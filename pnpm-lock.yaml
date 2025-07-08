@@ -232,7 +232,7 @@ importers:
     dependencies:
       '@react-three/drei':
         specifier: ^10.0.0
-        version: 10.4.4(@react-three/fiber@9.2.0(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0))(@types/react@19.1.8)(@types/three@0.178.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0)
+        version: 10.5.0(@react-three/fiber@9.2.0(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0))(@types/react@19.1.8)(@types/three@0.178.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0)
       '@react-three/fiber':
         specifier: 9.2.0
         version: 9.2.0(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0)
@@ -1495,8 +1495,8 @@ packages:
   '@react-pdf/types@2.9.0':
     resolution: {integrity: sha512-ckj80vZLlvl9oYrQ4tovEaqKWP3O06Eb1D48/jQWbdwz1Yh7Y9v1cEmwlP8ET+a1Whp8xfdM0xduMexkuPANCQ==}
 
-  '@react-three/drei@10.4.4':
-    resolution: {integrity: sha512-IrWgRyBsVb8rQOLZaTGiNucGvyfgD9g0ieedawparMA7TpNa6vvIPzckh9wsfps4Uz37JweuAKNGHM88FnhA0A==}
+  '@react-three/drei@10.5.0':
+    resolution: {integrity: sha512-8VHFmwiIixw0MhTt8ZiLPZH/JrJVsRQiosHqBrV2qRKhYB4aPJ1A9MkqQdKnxUfvvbsi0zu2iXeRCH1HhUaNsg==}
     peerDependencies:
       '@react-three/fiber': ^9.0.0
       react: ^19
@@ -2320,8 +2320,9 @@ packages:
     resolution: {integrity: sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==}
     engines: {node: '>=14.16'}
 
-  camera-controls@2.10.1:
-    resolution: {integrity: sha512-KnaKdcvkBJ1Irbrzl8XD6WtZltkRjp869Jx8c0ujs9K+9WD+1D7ryBsCiVqJYUqt6i/HR5FxT7RLASieUD+Q5w==}
+  camera-controls@3.0.0:
+    resolution: {integrity: sha512-tTZYhGMrYsSabTCMHw9njvwt1Fd+CSFtP2xrul/vSCYyj8AfIFsJNiaIFAeJsK6MWu8Y89/ow4SbuVGGLgmIrQ==}
+    engines: {node: '>=20.11.0', npm: '>=10.8.2'}
     peerDependencies:
       three: '>=0.126.1'
 
@@ -3364,8 +3365,8 @@ packages:
   history@5.3.0:
     resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
 
-  hls.js@1.6.6:
-    resolution: {integrity: sha512-S4uTCwTHOtImW+/jxMjzG7udbHy5z682YQRbm/4f7VXuVNEoGBRjPJnD3Fxrufomdhzdtv24KnxRhPMXSvL6Fw==}
+  hls.js@1.6.7:
+    resolution: {integrity: sha512-QW2fnwDGKGc9DwQUGLbmMOz8G48UZK7PVNJPcOUql1b8jubKx4/eMHNP5mGqr6tYlJNDG1g10Lx2U/qPzL6zwQ==}
 
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
@@ -7175,18 +7176,18 @@ snapshots:
       '@react-pdf/primitives': 4.1.1
       '@react-pdf/stylesheet': 6.1.0
 
-  '@react-three/drei@10.4.4(@react-three/fiber@9.2.0(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0))(@types/react@19.1.8)(@types/three@0.178.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0)':
+  '@react-three/drei@10.5.0(@react-three/fiber@9.2.0(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0))(@types/react@19.1.8)(@types/three@0.178.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0)':
     dependencies:
       '@babel/runtime': 7.27.6
       '@mediapipe/tasks-vision': 0.10.17
       '@monogrid/gainmap-js': 3.1.0(three@0.178.0)
       '@react-three/fiber': 9.2.0(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(three@0.178.0)
       '@use-gesture/react': 10.3.1(react@19.1.0)
-      camera-controls: 2.10.1(three@0.178.0)
+      camera-controls: 3.0.0(three@0.178.0)
       cross-env: 7.0.3
       detect-gpu: 5.0.70
       glsl-noise: 0.0.0
-      hls.js: 1.6.6
+      hls.js: 1.6.7
       maath: 0.10.8(@types/three@0.178.0)(three@0.178.0)
       meshline: 3.3.1(three@0.178.0)
       react: 19.1.0
@@ -8172,7 +8173,7 @@ snapshots:
 
   camelcase@7.0.1: {}
 
-  camera-controls@2.10.1(three@0.178.0):
+  camera-controls@3.0.0(three@0.178.0):
     dependencies:
       three: 0.178.0
 
@@ -9395,7 +9396,7 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.26.0
 
-  hls.js@1.6.6: {}
+  hls.js@1.6.7: {}
 
   hoist-non-react-statics@3.3.2:
     dependencies:
