@@ -34,7 +34,7 @@
     "rxjs": "^7.8.0",
     "web-push": "^3.5.0",
     "wkhtmltopdf": "^0.4.0",
-    "zod": "^3.23.8"
+    "zod": "^4.0.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
