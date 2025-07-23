@@ -1,4 +1,4 @@
-FROM surnet/alpine-node-wkhtmltopdf:22.17.0-0.12.6-full
+FROM surnet/alpine-node-wkhtmltopdf:22.17.0-0.12.6-full AS base
 
 # https://pptr.dev/troubleshooting#running-on-alpine
 # Installs latest Chromium (100) package.
@@ -21,22 +21,28 @@ ENV PUPPETEER_SKIP_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 ENV WORKDIR=/app
-RUN npm i -g pnpm
 
+# https://pnpm.io/docker#example-3-build-on-cicd
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
+RUN corepack enable
+
+FROM base AS prod
 WORKDIR $WORKDIR
-COPY package.json pnpm-*.yaml ./
-COPY packages/app/package.json packages/app/
-COPY packages/box/package.json packages/box/
-COPY packages/doc/package.json packages/doc/
-COPY packages/join/package.json packages/join/
-COPY packages/quiz/package.json packages/quiz/
-COPY packages/render/package.json packages/render/
-COPY packages/stl/package.json packages/stl/
-COPY packages/web/package.json packages/web/
-COPY packages/wifi/package.json packages/wifi/
-RUN pnpm i --frozen-lockfile --ignore-scripts
+COPY pnpm-lock.yaml .
+# RUN pnpm fetch --prod
+RUN pnpm fetch
 
-COPY . ./
-RUN pnpm build && pnpm prune --prod --config.ignore-scripts=true
+COPY . .
+RUN pnpm install --offline --config.ignore-scripts=true
+RUN pnpm build
+RUN pnpm prune --prod --config.ignore-scripts=true
+
+FROM base
+WORKDIR $WORKDIR
+# COPY --from=prod /app/node_modules /app/node_modules
+# COPY --from=prod /app/dist /app/dist
+COPY --from=prod $WORKDIR .
 
 CMD ["pnpm", "serve"]

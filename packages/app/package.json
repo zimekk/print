@@ -37,6 +37,8 @@
     "zod": "^4.0.0"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.27.1",
+    "@babel/preset-typescript": "^7.27.1",
     "@types/cors": "^2.8.13",
     "@types/express": "^5.0.0",
     "@types/node": "^22.0.0",
@@ -44,6 +46,7 @@
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
     "require-from-string": "^2.0.2",
+    "sass": "^1.89.2",
     "sass-loader": "^16.0.0",
     "style-loader": "^4.0.0",
     "ts-node": "^10.9.1",
