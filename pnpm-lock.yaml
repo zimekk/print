@@ -122,10 +122,10 @@ importers:
         version: 2.0.2
       sass:
         specifier: ^1.89.2
-        version: 1.90.0
+        version: 1.91.0
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.90.0)(webpack@5.101.3)
+        version: 16.0.5(sass@1.91.0)(webpack@5.101.3)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.101.3)
@@ -190,10 +190,10 @@ importers:
         version: 5.4.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       sass:
         specifier: ^1.89.2
-        version: 1.90.0
+        version: 1.91.0
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.90.0)(webpack@5.101.3)
+        version: 16.0.5(sass@1.91.0)(webpack@5.101.3)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@22.18.0)(typescript@5.9.2)
@@ -375,10 +375,10 @@ importers:
         version: 5.6.4(webpack@5.101.3)
       sass:
         specifier: ^1.77.8
-        version: 1.90.0
+        version: 1.91.0
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.90.0)(webpack@5.101.3)
+        version: 16.0.5(sass@1.91.0)(webpack@5.101.3)
       serve:
         specifier: ^14.2.3
         version: 14.2.4
@@ -4843,8 +4843,8 @@ packages:
       webpack:
         optional: true
 
-  sass@1.90.0:
-    resolution: {integrity: sha512-9GUyuksjw70uNpb1MTYWsH9MQHOHY6kwfnkafC24+7aOMZn9+rVMBxRbLvw756mrBFbIsFg6Xw9IkR2Fnn3k+Q==}
+  sass@1.91.0:
+    resolution: {integrity: sha512-aFOZHGf+ur+bp1bCHZ+u8otKGh77ZtmFyXDo4tlYvT7PWql41Kwd8wdkPqhhT+h2879IVblcHFglIMofsFd1EA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -10807,14 +10807,14 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@16.0.5(sass@1.90.0)(webpack@5.101.3):
+  sass-loader@16.0.5(sass@1.91.0)(webpack@5.101.3):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
-      sass: 1.90.0
+      sass: 1.91.0
       webpack: 5.101.3(webpack-cli@6.0.1)
 
-  sass@1.90.0:
+  sass@1.91.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.3
