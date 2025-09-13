@@ -25,6 +25,7 @@ ENV WORKDIR=/app
 # https://pnpm.io/docker#example-3-build-on-cicd
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
+# ENV CI=1
 ENV COREPACK_ENABLE_DOWNLOAD_PROMPT=0
 RUN corepack enable
 
@@ -37,7 +38,8 @@ RUN pnpm fetch
 COPY . .
 RUN pnpm install --offline --config.ignore-scripts=true
 RUN pnpm build
-RUN pnpm prune --prod --config.ignore-scripts=true
+# ENV CI=1
+# RUN pnpm prune --prod --config.ignore-scripts=true
 
 FROM base
 WORKDIR $WORKDIR
