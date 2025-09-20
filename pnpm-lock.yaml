@@ -122,10 +122,10 @@ importers:
         version: 2.0.2
       sass:
         specifier: ^1.89.2
-        version: 1.92.1
+        version: 1.93.0
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.92.1)(webpack@5.101.3)
+        version: 16.0.5(sass@1.93.0)(webpack@5.101.3)
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.101.3)
@@ -190,10 +190,10 @@ importers:
         version: 5.4.0(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       sass:
         specifier: ^1.89.2
-        version: 1.92.1
+        version: 1.93.0
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.92.1)(webpack@5.101.3)
+        version: 16.0.5(sass@1.93.0)(webpack@5.101.3)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@22.18.6)(typescript@5.9.2)
@@ -375,10 +375,10 @@ importers:
         version: 5.6.4(webpack@5.101.3)
       sass:
         specifier: ^1.77.8
-        version: 1.92.1
+        version: 1.93.0
       sass-loader:
         specifier: ^16.0.0
-        version: 16.0.5(sass@1.92.1)(webpack@5.101.3)
+        version: 16.0.5(sass@1.93.0)(webpack@5.101.3)
       serve:
         specifier: ^14.2.3
         version: 14.2.5
@@ -2789,10 +2789,6 @@ packages:
     engines: {node: '>=0.10'}
     hasBin: true
 
-  detect-libc@2.0.4:
-    resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
-    engines: {node: '>=8'}
-
   detect-libc@2.1.0:
     resolution: {integrity: sha512-vEtk+OcP7VBRtQZ1EJ3bdgzSfBjgnEalLTp5zjJrS+2Z1w2KZly4SBdac/WDU3hhsNAZ9E8SC96ME4Ey8MZ7cg==}
     engines: {node: '>=8'}
@@ -4926,8 +4922,8 @@ packages:
       webpack:
         optional: true
 
-  sass@1.92.1:
-    resolution: {integrity: sha512-ffmsdbwqb3XeyR8jJR6KelIXARM9bFQe8A6Q3W4Klmwy5Ckd5gz7jgUNHo4UOqutU5Sk1DtKLbpDP0nLCg1xqQ==}
+  sass@1.93.0:
+    resolution: {integrity: sha512-CQi5/AzCwiubU3dSqRDJ93RfOfg/hhpW1l6wCIvolmehfwgCI35R/0QDs1+R+Ygrl8jFawwwIojE2w47/mf94A==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -7025,7 +7021,7 @@ snapshots:
 
   '@mapbox/node-pre-gyp@1.0.11':
     dependencies:
-      detect-libc: 2.0.4
+      detect-libc: 2.1.0
       https-proxy-agent: 5.0.1
       make-dir: 3.1.0
       node-fetch: 2.7.0
@@ -8683,9 +8679,6 @@ snapshots:
       webgl-constants: 1.1.1
 
   detect-libc@1.0.3:
-    optional: true
-
-  detect-libc@2.0.4:
     optional: true
 
   detect-libc@2.1.0: {}
@@ -10988,14 +10981,14 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@16.0.5(sass@1.92.1)(webpack@5.101.3):
+  sass-loader@16.0.5(sass@1.93.0)(webpack@5.101.3):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
-      sass: 1.92.1
+      sass: 1.93.0
       webpack: 5.101.3(webpack-cli@6.0.1)
 
-  sass@1.92.1:
+  sass@1.93.0:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.3
