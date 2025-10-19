@@ -1,0 +1,67 @@
+import fs from "node:fs/promises";
+import express from "express";
+
+// Constants
+const isProduction = process.env.NODE_ENV === "production";
+const port = process.env.PORT || 5173;
+const base = process.env.BASE || "/";
+
+// Cached production assets
+const template = isProduction
+  ? await fs.readFile("./dist/client/index.html", "utf-8")
+  : "";
+
+// Create http server
+const app = express();
+
+// Add Vite or respective production middlewares
+/** @type {import('vite').ViteDevServer | undefined} */
+let vite;
+if (!isProduction) {
+  const { createServer } = await import("vite");
+  vite = await createServer({
+    server: { middlewareMode: true },
+    appType: "custom",
+    base,
+  });
+  app.use(vite.middlewares);
+} else {
+  const compression = (await import("compression")).default;
+  const sirv = (await import("sirv")).default;
+  app.use(compression());
+  app.use(base, sirv("./dist/client", { extensions: [] }));
+}
+
+// Serve HTML
+app
+  .get("/", async (req, res) => {
+    try {
+      const url = req.originalUrl.replace(base, "");
+      const html = !isProduction
+        ? await vite.transformIndexHtml(
+            url,
+            await fs.readFile("./index.html", "utf-8"),
+          )
+        : template;
+
+      res.status(200).set({ "Content-Type": "text/html" }).send(html);
+    } catch (e) {
+      vite?.ssrFixStacktrace(e);
+      console.log(e.stack);
+      res.status(500).end(e.stack);
+    }
+  })
+  .use(
+    !isProduction
+      ? async (req, res, next) => {
+          const { middleware } = await vite.ssrLoadModule(
+            "/src/entry-server.ts",
+          );
+          return middleware(req, res, next);
+        }
+      : (await import("./dist/server/entry-server.js")).middleware,
+  )
+  // Start http server
+  .listen(port, () => {
+    console.log(`Server started at http://localhost:${port}`);
+  });

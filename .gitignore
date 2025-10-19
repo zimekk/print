@@ -1,5 +1,5 @@
 *.log
 node_modules
-packages/*/dist
+apps/*/dist
 packages/*/lib
 packages/*/public
