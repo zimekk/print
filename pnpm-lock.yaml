@@ -119,7 +119,7 @@ importers:
         version: 1.10.1
       puppeteer:
         specifier: ^24.0.0
-        version: 24.28.0(typescript@5.9.3)
+        version: 24.29.0(typescript@5.9.3)
       react:
         specifier: ^19.0.0
         version: 19.2.0
@@ -4971,12 +4971,12 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  puppeteer-core@24.28.0:
-    resolution: {integrity: sha512-QpAqaYgeZHF5/xAZ4jAOzsU+l0Ed4EJoWkRdfw8rNqmSN7itcdYeCJaSPQ0s5Pyn/eGNC4xNevxbgY+5bzNllw==}
+  puppeteer-core@24.29.0:
+    resolution: {integrity: sha512-WTxTpGBJMETB4tQ8heMK9XozjpmCNfoA8iov8H65upwhoQpcosZWGTZkPFNndEjILww9IKg/mbTlg8BnZ8L6wQ==}
     engines: {node: '>=18'}
 
-  puppeteer@24.28.0:
-    resolution: {integrity: sha512-KLRGFNCGmXJpocEBbEIoHJB0vNRZLQNBjl5ExXEv0z7MIU+qqVEQcfWTyat+qxPDk/wZvSf+b30cQqAfWxX0zg==}
+  puppeteer@24.29.0:
+    resolution: {integrity: sha512-1F8Jh32IxpIYvL1NflR/DyT6xPGM136M9I1noWYY24zOVt/q/zr0TJr/7rO6IUCO9+Np1twzqJQVyTC3QixbhQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -5272,8 +5272,8 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
-  sax@1.4.2:
-    resolution: {integrity: sha512-FySGAa0RGcFiN6zfrO9JvK1r7TB59xuzCcTHOBXBNoKgDejlOQCR2KL/FGk3/iDlsqyYg1ELZpOmlg09B01Czw==}
+  sax@1.4.3:
+    resolution: {integrity: sha512-yqYn1JhPczigF94DMS+shiDMjDowYO6y9+wB/4WgO0Y19jWYk0lQ4tuG5KI7kj4FTp1wxPj5IFfcrz/s1c3jjQ==}
 
   scheduler@0.20.2:
     resolution: {integrity: sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==}
@@ -11249,7 +11249,7 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  puppeteer-core@24.28.0:
+  puppeteer-core@24.29.0:
     dependencies:
       '@puppeteer/browsers': 2.10.13
       chromium-bidi: 10.5.1(devtools-protocol@0.0.1521046)
@@ -11266,13 +11266,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  puppeteer@24.28.0(typescript@5.9.3):
+  puppeteer@24.29.0(typescript@5.9.3):
     dependencies:
       '@puppeteer/browsers': 2.10.13
       chromium-bidi: 10.5.1(devtools-protocol@0.0.1521046)
       cosmiconfig: 9.0.0(typescript@5.9.3)
       devtools-protocol: 0.0.1521046
-      puppeteer-core: 24.28.0
+      puppeteer-core: 24.29.0
       typed-query-selector: 2.12.0
     transitivePeerDependencies:
       - bare-abort-controller
@@ -11619,7 +11619,7 @@ snapshots:
     optionalDependencies:
       '@parcel/watcher': 2.5.1
 
-  sax@1.4.2: {}
+  sax@1.4.3: {}
 
   scheduler@0.20.2:
     dependencies:
@@ -12852,7 +12852,7 @@ snapshots:
 
   xml2js@0.6.2:
     dependencies:
-      sax: 1.4.2
+      sax: 1.4.3
       xmlbuilder: 11.0.1
 
   xmlbuilder@11.0.1: {}
