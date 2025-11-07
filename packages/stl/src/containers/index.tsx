@@ -19,6 +19,7 @@ import { STLExporter } from "three/examples/jsm/exporters/STLExporter";
 import { Caps } from "./Caps";
 import { Clip, Clip2, Clip3 } from "./Clip";
 import { Lathes } from "./Lathes";
+import { Rims, Rim2 } from "./Rims";
 import { Shapes } from "./Shapes";
 import styles from "./styles.module.scss";
 
@@ -43,11 +44,13 @@ const PAGES = {
   clip: Clip,
   caps: Caps,
   lathe: Lathes,
+  rims: Rims,
+  rim2: Rim2,
   shape: Shapes,
 };
 
 export default function Section() {
-  const [page, setPage] = useState(() => Object.keys(PAGES)[0]);
+  const [page, setPage] = useState(() => Object.keys(PAGES)[6]);
   const [preview, setPreview] = useState(null);
   const [wireframe, setWireframe] = useState(true);
   const [showCanvas] = useState(true);

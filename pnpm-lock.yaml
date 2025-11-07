@@ -294,6 +294,9 @@ importers:
 
   packages/stl:
     dependencies:
+      '@react-three/csg':
+        specifier: ^4.0.0
+        version: 4.0.0(three@0.181.0)
       '@react-three/drei':
         specifier: ^10.0.0
         version: 10.7.6(@react-three/fiber@9.4.0(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(three@0.181.0))(@types/react@19.2.2)(@types/three@0.181.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(three@0.181.0)
@@ -1741,6 +1744,9 @@ packages:
 
   '@react-pdf/types@2.9.1':
     resolution: {integrity: sha512-5GoCgG0G5NMgpPuHbKG2xcVRQt7+E5pg3IyzVIIozKG3nLcnsXW4zy25vG1ZBQA0jmo39q34au/sOnL/0d1A4w==}
+
+  '@react-three/csg@4.0.0':
+    resolution: {integrity: sha512-IMLKGINdyQEUfyg3CE1gYoH9lK5RDR90vhXG21vHyo2kVAuslTnsH9GTVat69YglvNqHoEIMExTGLdhzm5/ygQ==}
 
   '@react-three/drei@10.7.6':
     resolution: {integrity: sha512-ZSFwRlRaa4zjtB7yHO6Q9xQGuyDCzE7whXBhum92JslcMRC3aouivp0rAzszcVymIoJx6PXmibyP+xr+zKdwLg==}
@@ -5670,6 +5676,17 @@ packages:
     peerDependencies:
       tslib: ^2
 
+  three-bvh-csg@0.0.16:
+    resolution: {integrity: sha512-RgC5dY0hAKdfd1bmD3o2CDfmK9GTkvsA1ECzoqTMhSkjSc2zp1z4Wpa5+emLi/EosF5P6+aK2veTxTLZA9+Mhw==}
+    peerDependencies:
+      three: '>=0.151.0'
+      three-mesh-bvh: '>=0.6.6'
+
+  three-mesh-bvh@0.6.8:
+    resolution: {integrity: sha512-EGebF9DZx1S8+7OZYNNTT80GXJZVf+UYXD/HyTg/e2kR/ApofIFfUS4ZzIHNnUVIadpnLSzM4n96wX+l7GMbnQ==}
+    peerDependencies:
+      three: '>= 0.151.0'
+
   three-mesh-bvh@0.8.3:
     resolution: {integrity: sha512-4G5lBaF+g2auKX3P0yqx+MJC6oVt6sB5k+CchS6Ob0qvH0YIhuUk1eYr7ktsIpY+albCqE80/FVQGV190PmiAg==}
     peerDependencies:
@@ -7734,6 +7751,13 @@ snapshots:
       '@react-pdf/font': 4.0.3
       '@react-pdf/primitives': 4.1.1
       '@react-pdf/stylesheet': 6.1.1
+
+  '@react-three/csg@4.0.0(three@0.181.0)':
+    dependencies:
+      three-bvh-csg: 0.0.16(three-mesh-bvh@0.6.8(three@0.181.0))(three@0.181.0)
+      three-mesh-bvh: 0.6.8(three@0.181.0)
+    transitivePeerDependencies:
+      - three
 
   '@react-three/drei@10.7.6(@react-three/fiber@9.4.0(@types/react@19.2.2)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(three@0.181.0))(@types/react@19.2.2)(@types/three@0.181.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(three@0.181.0)':
     dependencies:
@@ -12173,6 +12197,15 @@ snapshots:
   thingies@2.5.0(tslib@2.8.1):
     dependencies:
       tslib: 2.8.1
+
+  three-bvh-csg@0.0.16(three-mesh-bvh@0.6.8(three@0.181.0))(three@0.181.0):
+    dependencies:
+      three: 0.181.0
+      three-mesh-bvh: 0.6.8(three@0.181.0)
+
+  three-mesh-bvh@0.6.8(three@0.181.0):
+    dependencies:
+      three: 0.181.0
 
   three-mesh-bvh@0.8.3(three@0.181.0):
     dependencies:
