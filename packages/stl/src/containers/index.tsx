@@ -21,6 +21,7 @@ import { Clip, Clip2, Clip3 } from "./Clip";
 import { Lathes } from "./Lathes";
 import { Rims, Rim2 } from "./Rims";
 import { Shapes } from "./Shapes";
+import { Twist } from "./Twist";
 import styles from "./styles.module.scss";
 
 // https://threejs.org/examples/#misc_exporter_stl
@@ -47,6 +48,7 @@ const PAGES = {
   rims: Rims,
   rim2: Rim2,
   shape: Shapes,
+  twist: Twist,
 };
 
 export default function Section() {
