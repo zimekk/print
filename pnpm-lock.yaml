@@ -58,10 +58,10 @@ importers:
         version: 5.2.1
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
       react-dom:
         specifier: ^19.0.0
-        version: 19.2.1(react@19.2.1)
+        version: 19.2.3(react@19.2.3)
       sirv:
         specifier: ^3.0.2
         version: 3.0.2
@@ -101,7 +101,7 @@ importers:
         version: link:../web
       '@react-pdf/renderer':
         specifier: ^4.0.0
-        version: 4.3.1(react@19.2.1)
+        version: 4.3.1(react@19.2.3)
       actions-on-google:
         specifier: ^3.0.0
         version: 3.0.0
@@ -113,7 +113,7 @@ importers:
         version: 5.2.1
       isomorphic-style-loader:
         specifier: ^5.3.2
-        version: 5.4.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        version: 5.4.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       morgan:
         specifier: ^1.10.0
         version: 1.10.1
@@ -122,10 +122,10 @@ importers:
         version: 24.32.1(typescript@5.9.3)
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
       react-dom:
         specifier: ^19.0.0
-        version: 19.2.1(react@19.2.1)
+        version: 19.2.3(react@19.2.3)
       rxjs:
         specifier: ^7.8.0
         version: 7.8.2
@@ -198,7 +198,7 @@ importers:
     dependencies:
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
     devDependencies:
       '@types/react':
         specifier: ^19.0.0
@@ -211,10 +211,10 @@ importers:
     dependencies:
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
       react-dom:
         specifier: ^19.0.0
-        version: 19.2.1(react@19.2.1)
+        version: 19.2.3(react@19.2.3)
     devDependencies:
       '@babel/preset-react':
         specifier: ^7.27.1
@@ -233,7 +233,7 @@ importers:
         version: 7.1.2(webpack@5.103.0)
       isomorphic-style-loader:
         specifier: ^5.3.2
-        version: 5.4.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        version: 5.4.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       sass:
         specifier: ^1.89.2
         version: 1.96.0
@@ -260,7 +260,7 @@ importers:
         version: 1.17.1
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -270,7 +270,7 @@ importers:
     dependencies:
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
     devDependencies:
       '@types/react':
         specifier: ^19.0.0
@@ -283,10 +283,10 @@ importers:
         version: 3.11.174
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
       react-pdf:
         specifier: ^10.0.0
-        version: 10.2.0(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        version: 10.2.0(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -299,13 +299,13 @@ importers:
         version: 4.0.0(three@0.182.0)
       '@react-three/drei':
         specifier: ^10.0.0
-        version: 10.7.7(@react-three/fiber@9.4.2(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(three@0.182.0))(@types/react@19.2.7)(@types/three@0.182.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(three@0.182.0)
+        version: 10.7.7(@react-three/fiber@9.4.2(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(three@0.182.0))(@types/react@19.2.7)(@types/three@0.182.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(three@0.182.0)
       '@react-three/fiber':
         specifier: 9.4.2
-        version: 9.4.2(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(three@0.182.0)
+        version: 9.4.2(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(three@0.182.0)
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
       three:
         specifier: ^0.182.0
         version: 0.182.0
@@ -363,13 +363,13 @@ importers:
         version: 3.4.1
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
       react-dom:
         specifier: ^19.0.0
-        version: 19.2.1(react@19.2.1)
+        version: 19.2.3(react@19.2.3)
       react-perspective-cropper:
         specifier: ^0.2.2
-        version: 0.2.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+        version: 0.2.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       tesseract.js:
         specifier: ^6.0.0
         version: 6.0.1
@@ -385,7 +385,7 @@ importers:
         version: 7.28.5(@babel/core@7.28.5)
       '@hot-loader/react-dom':
         specifier: ^17.0.2
-        version: 17.0.2(react@19.2.1)
+        version: 17.0.2(react@19.2.3)
       '@types/html-webpack-plugin':
         specifier: ^3.2.6
         version: 3.2.9
@@ -460,7 +460,7 @@ importers:
         version: 1.5.4
       react:
         specifier: ^19.0.0
-        version: 19.2.1
+        version: 19.2.3
     devDependencies:
       '@types/node':
         specifier: ^24.0.0
@@ -5042,10 +5042,10 @@ packages:
     resolution: {integrity: sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==}
     hasBin: true
 
-  react-dom@19.2.1:
-    resolution: {integrity: sha512-ibrK8llX2a4eOskq1mXKu/TGZj9qzomO+sNfO98M6d9zIPOEhlBkMkBUBLd1vgS0gQsLDBzA+8jJBVXDnfHmJg==}
+  react-dom@19.2.3:
+    resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
     peerDependencies:
-      react: ^19.2.1
+      react: ^19.2.3
 
   react-draggable@4.4.6:
     resolution: {integrity: sha512-LtY5Xw1zTPqHkVmtM3X8MUOxNDOUhv/khTgBgrUvwaS064bwVvxT+q5El0uUFNx5IEPKXuRejr7UqLwBIg5pdw==}
@@ -5091,8 +5091,8 @@ packages:
       react-dom:
         optional: true
 
-  react@19.2.1:
-    resolution: {integrity: sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==}
+  react@19.2.3:
+    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
     engines: {node: '>=0.10.0'}
 
   readable-stream@2.3.8:
@@ -7340,11 +7340,11 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hot-loader/react-dom@17.0.2(react@19.2.1)':
+  '@hot-loader/react-dom@17.0.2(react@19.2.3)':
     dependencies:
       loose-envify: 1.4.0
       object-assign: 4.1.1
-      react: 19.2.1
+      react: 19.2.3
       scheduler: 0.20.2
 
   '@humanfs/core@0.19.1': {}
@@ -7724,10 +7724,10 @@ snapshots:
 
   '@react-pdf/primitives@4.1.1': {}
 
-  '@react-pdf/reconciler@1.1.4(react@19.2.1)':
+  '@react-pdf/reconciler@1.1.4(react@19.2.3)':
     dependencies:
       object-assign: 4.1.1
-      react: 19.2.1
+      react: 19.2.3
       scheduler: 0.25.0-rc-603e6108-20241029
 
   '@react-pdf/render@4.3.1':
@@ -7743,7 +7743,7 @@ snapshots:
       parse-svg-path: 0.1.2
       svg-arc-to-cubic-bezier: 3.2.0
 
-  '@react-pdf/renderer@4.3.1(react@19.2.1)':
+  '@react-pdf/renderer@4.3.1(react@19.2.3)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@react-pdf/fns': 3.1.2
@@ -7751,14 +7751,14 @@ snapshots:
       '@react-pdf/layout': 4.4.1
       '@react-pdf/pdfkit': 4.0.4
       '@react-pdf/primitives': 4.1.1
-      '@react-pdf/reconciler': 1.1.4(react@19.2.1)
+      '@react-pdf/reconciler': 1.1.4(react@19.2.3)
       '@react-pdf/render': 4.3.1
       '@react-pdf/types': 2.9.1
       events: 3.3.0
       object-assign: 4.1.1
       prop-types: 15.8.1
       queue: 6.0.2
-      react: 19.2.1
+      react: 19.2.3
 
   '@react-pdf/stylesheet@6.1.1':
     dependencies:
@@ -7789,13 +7789,13 @@ snapshots:
     transitivePeerDependencies:
       - three
 
-  '@react-three/drei@10.7.7(@react-three/fiber@9.4.2(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(three@0.182.0))(@types/react@19.2.7)(@types/three@0.182.0)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(three@0.182.0)':
+  '@react-three/drei@10.7.7(@react-three/fiber@9.4.2(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(three@0.182.0))(@types/react@19.2.7)(@types/three@0.182.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(three@0.182.0)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@mediapipe/tasks-vision': 0.10.17
       '@monogrid/gainmap-js': 3.1.0(three@0.182.0)
-      '@react-three/fiber': 9.4.2(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(three@0.182.0)
-      '@use-gesture/react': 10.3.1(react@19.2.1)
+      '@react-three/fiber': 9.4.2(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(three@0.182.0)
+      '@use-gesture/react': 10.3.1(react@19.2.3)
       camera-controls: 3.1.1(three@0.182.0)
       cross-env: 7.0.3
       detect-gpu: 5.0.70
@@ -7803,43 +7803,43 @@ snapshots:
       hls.js: 1.6.14
       maath: 0.10.8(@types/three@0.182.0)(three@0.182.0)
       meshline: 3.3.1(three@0.182.0)
-      react: 19.2.1
+      react: 19.2.3
       stats-gl: 2.4.2(@types/three@0.182.0)(three@0.182.0)
       stats.js: 0.17.0
-      suspend-react: 0.1.3(react@19.2.1)
+      suspend-react: 0.1.3(react@19.2.3)
       three: 0.182.0
       three-mesh-bvh: 0.8.3(three@0.182.0)
       three-stdlib: 2.36.1(three@0.182.0)
       troika-three-text: 0.52.4(three@0.182.0)
-      tunnel-rat: 0.1.2(@types/react@19.2.7)(react@19.2.1)
-      use-sync-external-store: 1.6.0(react@19.2.1)
+      tunnel-rat: 0.1.2(@types/react@19.2.7)(react@19.2.3)
+      use-sync-external-store: 1.6.0(react@19.2.3)
       utility-types: 3.11.0
-      zustand: 5.0.8(@types/react@19.2.7)(react@19.2.1)(use-sync-external-store@1.6.0(react@19.2.1))
+      zustand: 5.0.8(@types/react@19.2.7)(react@19.2.3)(use-sync-external-store@1.6.0(react@19.2.3))
     optionalDependencies:
-      react-dom: 19.2.1(react@19.2.1)
+      react-dom: 19.2.3(react@19.2.3)
     transitivePeerDependencies:
       - '@types/react'
       - '@types/three'
       - immer
 
-  '@react-three/fiber@9.4.2(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(three@0.182.0)':
+  '@react-three/fiber@9.4.2(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(three@0.182.0)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@types/react-reconciler': 0.32.0(@types/react@19.2.7)
       '@types/webxr': 0.5.24
       base64-js: 1.5.1
       buffer: 6.0.3
-      its-fine: 2.0.0(@types/react@19.2.7)(react@19.2.1)
-      react: 19.2.1
-      react-reconciler: 0.31.0(react@19.2.1)
-      react-use-measure: 2.1.7(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      its-fine: 2.0.0(@types/react@19.2.7)(react@19.2.3)
+      react: 19.2.3
+      react-reconciler: 0.31.0(react@19.2.3)
+      react-use-measure: 2.1.7(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       scheduler: 0.25.0
-      suspend-react: 0.1.3(react@19.2.1)
+      suspend-react: 0.1.3(react@19.2.3)
       three: 0.182.0
-      use-sync-external-store: 1.6.0(react@19.2.1)
-      zustand: 5.0.8(@types/react@19.2.7)(react@19.2.1)(use-sync-external-store@1.6.0(react@19.2.1))
+      use-sync-external-store: 1.6.0(react@19.2.3)
+      zustand: 5.0.8(@types/react@19.2.7)(react@19.2.3)(use-sync-external-store@1.6.0(react@19.2.3))
     optionalDependencies:
-      react-dom: 19.2.1(react@19.2.1)
+      react-dom: 19.2.3(react@19.2.3)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -8354,10 +8354,10 @@ snapshots:
 
   '@use-gesture/core@10.3.1': {}
 
-  '@use-gesture/react@10.3.1(react@19.2.1)':
+  '@use-gesture/react@10.3.1(react@19.2.3)':
     dependencies:
       '@use-gesture/core': 10.3.1
-      react: 19.2.1
+      react: 19.2.3
 
   '@vitejs/plugin-react@5.1.2(vite@7.2.7(@types/node@25.0.0)(jiti@2.6.1)(sass@1.96.0)(terser@5.44.1)(yaml@2.8.1))':
     dependencies:
@@ -10533,13 +10533,13 @@ snapshots:
 
   isobject@3.0.1: {}
 
-  isomorphic-style-loader@5.4.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  isomorphic-style-loader@5.4.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       hoist-non-react-statics: 3.3.2
       loader-utils: 1.4.2
       prop-types: 15.8.1
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
   iterator.prototype@1.1.5:
     dependencies:
@@ -10550,10 +10550,10 @@ snapshots:
       has-symbols: 1.1.0
       set-function-name: 2.0.2
 
-  its-fine@2.0.0(@types/react@19.2.7)(react@19.2.1):
+  its-fine@2.0.0(@types/react@19.2.7)(react@19.2.3):
     dependencies:
       '@types/react-reconciler': 0.28.9(@types/react@19.2.7)
-      react: 19.2.1
+      react: 19.2.3
     transitivePeerDependencies:
       - '@types/react'
 
@@ -11055,9 +11055,9 @@ snapshots:
 
   opencollective-postinstall@2.0.3: {}
 
-  opencv-react@0.0.4(react@19.2.1):
+  opencv-react@0.0.4(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
 
   optionator@0.9.4:
     dependencies:
@@ -11407,21 +11407,21 @@ snapshots:
       minimist: 1.2.8
       strip-json-comments: 2.0.1
 
-  react-dom@19.2.1(react@19.2.1):
+  react-dom@19.2.3(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
       scheduler: 0.27.0
 
-  react-draggable@4.4.6(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  react-draggable@4.4.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       clsx: 1.2.1
       prop-types: 15.8.1
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
 
   react-is@16.13.1: {}
 
-  react-pdf@10.2.0(@types/react@19.2.7)(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  react-pdf@10.2.0(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
       clsx: 2.1.1
       dequal: 2.0.3
@@ -11429,36 +11429,36 @@ snapshots:
       make-event-props: 2.0.0
       merge-refs: 2.0.0(@types/react@19.2.7)
       pdfjs-dist: 5.4.296
-      react: 19.2.1
-      react-dom: 19.2.1(react@19.2.1)
+      react: 19.2.3
+      react-dom: 19.2.3(react@19.2.3)
       tiny-invariant: 1.3.3
       warning: 4.0.3
     optionalDependencies:
       '@types/react': 19.2.7
 
-  react-perspective-cropper@0.2.2(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  react-perspective-cropper@0.2.2(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
-      opencv-react: 0.0.4(react@19.2.1)
+      opencv-react: 0.0.4(react@19.2.3)
       prop-types: 15.8.1
-      react: 19.2.1
-      react-draggable: 4.4.6(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      react: 19.2.3
+      react-draggable: 4.4.6(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
     transitivePeerDependencies:
       - react-dom
 
-  react-reconciler@0.31.0(react@19.2.1):
+  react-reconciler@0.31.0(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
       scheduler: 0.25.0
 
   react-refresh@0.18.0: {}
 
-  react-use-measure@2.1.7(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+  react-use-measure@2.1.7(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
     optionalDependencies:
-      react-dom: 19.2.1(react@19.2.1)
+      react-dom: 19.2.3(react@19.2.3)
 
-  react@19.2.1: {}
+  react@19.2.3: {}
 
   readable-stream@2.3.8:
     dependencies:
@@ -12171,9 +12171,9 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  suspend-react@0.1.3(react@19.2.1):
+  suspend-react@0.1.3(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
 
   svg-arc-to-cubic-bezier@3.2.0: {}
 
@@ -12370,9 +12370,9 @@ snapshots:
       tslib: 1.14.1
       typescript: 5.9.3
 
-  tunnel-rat@0.1.2(@types/react@19.2.7)(react@19.2.1):
+  tunnel-rat@0.1.2(@types/react@19.2.7)(react@19.2.3):
     dependencies:
-      zustand: 4.5.7(@types/react@19.2.7)(react@19.2.1)
+      zustand: 4.5.7(@types/react@19.2.7)(react@19.2.3)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -12510,9 +12510,9 @@ snapshots:
 
   url-template@2.0.8: {}
 
-  use-sync-external-store@1.6.0(react@19.2.1):
+  use-sync-external-store@1.6.0(react@19.2.3):
     dependencies:
-      react: 19.2.1
+      react: 19.2.3
 
   util-deprecate@1.0.2: {}
 
@@ -13013,15 +13013,15 @@ snapshots:
 
   zod@4.1.13: {}
 
-  zustand@4.5.7(@types/react@19.2.7)(react@19.2.1):
+  zustand@4.5.7(@types/react@19.2.7)(react@19.2.3):
     dependencies:
-      use-sync-external-store: 1.6.0(react@19.2.1)
+      use-sync-external-store: 1.6.0(react@19.2.3)
     optionalDependencies:
       '@types/react': 19.2.7
-      react: 19.2.1
+      react: 19.2.3
 
-  zustand@5.0.8(@types/react@19.2.7)(react@19.2.1)(use-sync-external-store@1.6.0(react@19.2.1)):
+  zustand@5.0.8(@types/react@19.2.7)(react@19.2.3)(use-sync-external-store@1.6.0(react@19.2.3)):
     optionalDependencies:
       '@types/react': 19.2.7
-      react: 19.2.1
-      use-sync-external-store: 1.6.0(react@19.2.1)
+      react: 19.2.3
+      use-sync-external-store: 1.6.0(react@19.2.3)
