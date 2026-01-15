@@ -1,4 +1,4 @@
-FROM surnet/alpine-node-wkhtmltopdf:22.17.0-0.12.6-full AS base
+FROM surnet/alpine-node-wkhtmltopdf:22.22.0-0.12.6-full AS base
 
 # https://pptr.dev/troubleshooting#running-on-alpine
 # Installs latest Chromium (100) package.
