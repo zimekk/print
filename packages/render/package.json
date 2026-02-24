@@ -18,7 +18,7 @@
     "build": "echo build"
   },
   "dependencies": {
-    "pdfjs-dist": "^3.11.174",
+    "pdfjs-dist": "^5.0.0",
     "react": "^19.0.0",
     "react-pdf": "^10.0.0"
   },
