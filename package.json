@@ -70,6 +70,6 @@
     "lint-staged": "^16.0.0",
     "prettier": "^3.3.3",
     "type-coverage": "^2.29.1",
-    "typescript": "^5.5.4"
+    "typescript": "^6.0.0"
   }
 }
