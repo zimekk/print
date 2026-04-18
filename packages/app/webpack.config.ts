@@ -1,6 +1,13 @@
 import path from "path";
 import { Subject } from "rxjs";
 import { withLatestFrom } from "rxjs/operators";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -37,7 +44,7 @@ const config = (_env, { mode }, dev = mode === "development") => ({
   target: "node",
   devtool: dev ? "eval" : "source-map",
   entry: {
-    index: require.resolve("./src"),
+    index: require.resolve("./src/index.ts"),
   },
   externalsPresets: { node: true },
   externals: [
@@ -128,6 +135,6 @@ export default (env, argv) =>
         ...output,
         path: path.resolve(__dirname, "public"),
       },
-    }))(require("@dev/web/webpack.config").default(env, argv)),
+    }))(require("@dev/web/webpack.config.ts").default(env, argv)),
     config(env, argv),
   ]);
