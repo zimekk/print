@@ -1,10 +1,19 @@
 import path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+import { createRequire } from "node:module";
 
-const config = (_env, { mode }, dev = mode === "development") => ({
+const require = createRequire(import.meta.url);
+// const pathName = require.resolve('vue.runtime.esm.js');
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+export default (_env, { mode }, dev = mode === "development") => ({
   target: "node",
   devtool: dev ? "eval" : "source-map",
   entry: {
-    index: require.resolve("./src"),
+    index: require.resolve("./src/index.tsx"),
   },
   externalsPresets: { node: true },
   externals: [
@@ -63,5 +72,3 @@ const config = (_env, { mode }, dev = mode === "development") => ({
     path: path.resolve(__dirname, "lib"),
   },
 });
-
-export default config;

@@ -1,6 +1,13 @@
 import path from "path";
 import webpack from "webpack";
 import env from "dotenv";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 env.config({ path: path.resolve(__dirname, "../../.env") });
 
@@ -8,7 +15,7 @@ export default (env, { mode }, dev = mode === "development") => ({
   target: "web",
   devtool: dev ? "eval-cheap-source-map" : "source-map",
   entry: {
-    main: require.resolve("./src"),
+    main: require.resolve("./src/index.tsx"),
   },
   module: {
     rules: [
