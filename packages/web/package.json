@@ -17,6 +17,7 @@
   "dependencies": {
     "@dev/box": "workspace:*",
     "@dev/join": "workspace:*",
+    "@dev/lp": "workspace:*",
     "@dev/quiz": "workspace:*",
     "@dev/render": "workspace:*",
     "@dev/stl": "workspace:*",

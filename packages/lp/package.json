@@ -1,0 +1,28 @@
+{
+  "name": "@dev/lp",
+  "version": "1.0.0",
+  "main": "lib",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "lib/"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    }
+  },
+  "scripts": {
+    "build": "echo build"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/react": "^19.0.0"
+  }
+}

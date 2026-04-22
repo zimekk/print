@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "@dev/doc": "workspace:*",
+    "@dev/lp": "workspace:*",
     "@dev/web": "workspace:*",
     "@react-pdf/renderer": "^4.0.0",
     "actions-on-google": "^3.0.0",

@@ -96,6 +96,9 @@ importers:
       '@dev/doc':
         specifier: workspace:*
         version: link:../doc
+      '@dev/lp':
+        specifier: workspace:*
+        version: link:../lp
       '@dev/web':
         specifier: workspace:*
         version: link:../web
@@ -271,10 +274,16 @@ importers:
 
   packages/lp:
     dependencies:
+      express:
+        specifier: ^5.1.0
+        version: 5.2.1
       react:
         specifier: ^19.0.0
         version: 19.2.5
     devDependencies:
+      '@types/express':
+        specifier: ^5.0.3
+        version: 5.0.6
       '@types/react':
         specifier: ^19.0.0
         version: 19.2.14
@@ -338,6 +347,9 @@ importers:
       '@dev/join':
         specifier: workspace:*
         version: link:../join
+      '@dev/lp':
+        specifier: workspace:*
+        version: link:../lp
       '@dev/quiz':
         specifier: workspace:*
         version: link:../quiz

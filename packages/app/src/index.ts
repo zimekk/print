@@ -3,6 +3,7 @@ import express, { Router } from "express";
 
 export const router = Router()
   .use("/api", (_req, res) => res.json({ hello: "Hello" }))
+  .use("/lp", require("@dev/lp/api").router)
   .use(require("./auth-provider").default())
   .use(require("./fulfillment").default())
   .use(require("./print").default())
