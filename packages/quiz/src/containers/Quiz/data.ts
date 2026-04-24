@@ -1,32 +1,46 @@
 export default `
-- [ ] znudzony - aburrido
-- [ ] zadowolony - contento
-- [ ] rozczarowany - decepcionado
-- [ ] zagniewany - enfadado
-- [ ] zdenerwowany - estar nervioso
-- [ ] dumny - orgulloso
-- [ ] zmartwiony - preocupado
-- [ ] poważny - serio
-- [ ] zaskoczony - sorprendido
-- [ ] być smutny - estar triste
-- [ ] wesoły - alegre
-- [ ] przestraszony - asustado
-
-- [ ] żołądek - estómago
+- [ ] czoło - la frente
+- [ ] rzęsa - la pestana
+- [ ] nos - la nariz
 - [ ] ząb/zęby - diente/dientes
-- [ ] szyja - cuello
-- [ ] ręka - mano
-- [ ] oczy - ojos
-- [ ] stopa - pie
+- [ ] bark - el hombro
 - [ ] ramię - brazo
-- [ ] twarz - cara
-- [ ] włosy - pelo
-- [ ] głowa - cabeza
-- [ ] gardło - garganta
-- [ ] ucho - oreja
-- [ ] nos - nariz
-- [ ] plecy - espalda
+- [ ] brew - la ceja
+- [ ] ucho - la oreja
+- [ ] warga - el labio
+- [ ] język - la lengua
+- [ ] podbródek - la barbilla
+- [ ] klatka piersiowa - el pecho
 `;
+// export default `
+// - [ ] znudzony - aburrido
+// - [ ] zadowolony - contento
+// - [ ] rozczarowany - decepcionado
+// - [ ] zagniewany - enfadado
+// - [ ] zdenerwowany - estar nervioso
+// - [ ] dumny - orgulloso
+// - [ ] zmartwiony - preocupado
+// - [ ] poważny - serio
+// - [ ] zaskoczony - sorprendido
+// - [ ] być smutny - estar triste
+// - [ ] wesoły - alegre
+// - [ ] przestraszony - asustado
+
+// - [ ] żołądek - estómago
+// - [ ] ząb/zęby - diente/dientes
+// - [ ] szyja - cuello
+// - [ ] ręka - mano
+// - [ ] oczy - ojos
+// - [ ] stopa - pie
+// - [ ] ramię - brazo
+// - [ ] twarz - cara
+// - [ ] włosy - pelo
+// - [ ] głowa - cabeza
+// - [ ] gardło - garganta
+// - [ ] ucho - oreja
+// - [ ] nos - nariz
+// - [ ] plecy - espalda
+// `;
 // export default `
 // - [x] aplikacja - program komputerowy wykonujący określone zadania (np. excel, word)
 // - [x] arkusz kalkulacyjny - program komputerowy przedstawiający dane w postaci tabeli (kolumn i wierszy) (np. excel)
