@@ -1,6 +1,8 @@
 import path from "path";
 import express, { Router } from "express";
 
+const subscriptionEndpoint = "/lp/logs";
+
 export const router = Router()
   .use("/api", (_req, res) => res.json({ hello: "Hello" }))
   .use("/lp", require("@dev/lp/api").router)
@@ -9,6 +11,26 @@ export const router = Router()
   .use(require("./print").default())
   .use(require("./react").default())
   .use(require("./push").default());
+
+export const useServer = (server) => {
+  const { event, events, log } = require("@dev/lp/api");
+  console.log(["useServer"], event);
+  server.on("connection", (ws) => {
+    console.log(["server.connection"]);
+
+    const send = (json: object) => ws.send(JSON.stringify(json));
+
+    log("logs:server.connection");
+
+    events.on(event, send);
+    ws.on("message", () => {
+      console.log(["ws.message"]);
+    }).on("close", () => {
+      console.log(["ws.close"]);
+      events.off(event, send);
+    });
+  });
+};
 
 class Server {
   options: Object;
@@ -169,6 +191,14 @@ if (process.mainModule.filename === __filename) {
       if (!devServer) {
         throw new Error("webpack-dev-server is not defined");
       }
+
+      // https://github.com/websockets/ws#client-authentication
+      useServer(
+        new (require("ws").Server)({
+          server: devServer.server,
+          path: subscriptionEndpoint,
+        }),
+      );
 
       const port = devServer.server.address().port;
       console.log(`Listening on port: ${port}`);

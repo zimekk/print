@@ -1,9 +1,11 @@
 import path from "path";
 import { Subject } from "rxjs";
-import { withLatestFrom } from "rxjs/operators";
+import { first, withLatestFrom } from "rxjs/operators";
 
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+
+const subscriptionEndpoint = "/lp/logs";
 
 class RequireResolvePlugin {
   options = {};
@@ -13,7 +15,7 @@ class RequireResolvePlugin {
 
   emit(compilation, callback) {
     const asset = compilation.assets["index.js"];
-    resolve(require("require-from-string")(asset.source()).router);
+    resolve(require("require-from-string")(asset.source()));
     return callback();
   }
 
@@ -30,7 +32,7 @@ const resolve = (fn: any) => resolve$.next(fn);
 const middleware = (...args: any) => subject$.next(args);
 subject$
   .pipe(withLatestFrom(resolve$))
-  .subscribe(([args, fn]: any) => fn(...args));
+  .subscribe(([args, { router }]: any) => router(...args));
 
 const config = (_env, { mode }, dev = mode === "development") => ({
   name: "server",
@@ -113,7 +115,15 @@ export default (env, argv) =>
       ...config,
       devServer: {
         ...devServer,
-        setupMiddlewares: (middlewares, devServer) => {
+        proxy: [
+          // https://stackoverflow.com/questions/57768951/webpack-dev-server-and-websockets
+          {
+            context: [subscriptionEndpoint],
+            target: "ws://0.0.0.0:8081",
+            ws: true,
+          },
+        ],
+        setupMiddlewares(middlewares, devServer) {
           if (!devServer) {
             throw new Error("webpack-dev-server is not defined");
           }
@@ -122,6 +132,15 @@ export default (env, argv) =>
           devServer.app.use(middleware);
 
           return middlewares;
+        },
+        onListening(_devServer) {
+          const wss = new (require("ws").WebSocketServer)({
+            port: 8081,
+            path: subscriptionEndpoint,
+          });
+          resolve$
+            .pipe(first())
+            .subscribe(({ useServer }: any) => useServer(wss));
         },
       },
       output: {

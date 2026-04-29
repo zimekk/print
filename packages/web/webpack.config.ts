@@ -59,7 +59,7 @@ export default (env, { mode }, dev = mode === "development") => ({
     },
     // https://webpack.js.org/configuration/resolve/#resolvefallback
     fallback: {
-      buffer: require.resolve("buffer"),
+      buffer: require.resolve("buffer/"),
       stream: require.resolve("stream-browserify"),
     },
   },
