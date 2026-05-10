@@ -31,12 +31,13 @@ RUN corepack enable
 
 FROM base AS prod
 WORKDIR $WORKDIR
+ENV CI=true
 COPY pnpm-lock.yaml .
 # RUN pnpm fetch --prod
 RUN pnpm fetch
 
 COPY . .
-RUN pnpm install --offline --config.ignore-scripts=true
+RUN pnpm install --prefer-offline --config.ignore-scripts=true
 RUN pnpm build
 # ENV CI=1
 # RUN pnpm prune --prod --config.ignore-scripts=true
