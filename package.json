@@ -6,7 +6,7 @@
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=18"
+    "node": "^22.0.0 || ^24.0.0"
   },
   "eslintConfig": {
     "env": {
@@ -46,6 +46,7 @@
   "lint-staged": {
     "*.{json,js,jsx,md,scss,ts,tsx,css,yml,yaml}": "prettier --write"
   },
+  "packageManager": "pnpm@10.30.3",
   "scripts": {
     "build": "pnpm -r run build",
     "clean": "rm -rf packages/*/dist packages/*/lib packages/*/node_modules/.vite packages/*/public",
