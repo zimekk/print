@@ -1,17 +1,74 @@
 export default `
-- [ ] czoło - la frente
-- [ ] rzęsa - la pestana
-- [ ] nos - la nariz
-- [ ] ząb/zęby - diente/dientes
-- [ ] bark - el hombro
-- [ ] ramię - brazo
-- [ ] brew - la ceja
-- [ ] ucho - la oreja
-- [ ] warga - el labio
-- [ ] język - la lengua
-- [ ] podbródek - la barbilla
-- [ ] klatka piersiowa - el pecho
+- [ ] bobas - es un bebe
+- [ ] dziecko - niño
+- [ ] nastolatek - adolescente
+- [ ] młoda osoba - persona joven
+- [ ] osoba dorosła - persona adulta
+- [ ] senior - persona mayor
+- [ ] wysoki - alto
+- [ ] niski - bajo
+- [ ] średniego wzrostu - estatura media
+- [ ] gruby - gordo
+- [ ] szczupły - delgada
+- [ ] wysportowany - en forma / atlética
+- [ ] jasna skóra - piel clara
+- [ ] biała skóra - piel blanca
+- [ ] ciemna skóra - piel oscura
+- [ ] piegi - pecas
+- [ ] zmarszczki - arrugas
+- [ ] pieprzyk - lunar
+- [ ] owalna twarz - cara ovalada
+- [ ] kwadratowa twarz - cara cuadrada
+- [ ] podłóżna twarz - cara alargada
+- [ ] okrągła twarz - cara redonda
+- [ ] trójkątna twarz - cara triangular
+- [ ] blond - rubia
+- [ ] ciemne / brązowe włosy - pelo moreno
+- [ ] kasztanowe włosy - pelo castaño
+- [ ] ruda - pelirrojo
+- [ ] siwe włosy - pelo canoso
+- [ ] łysy - calvo
+- [ ] włosy długie - pelo largo
+- [ ] włosy krótkie - pelo corto
+- [ ] włosy kręcone - pelo rizado
+- [ ] włosy proste - pelo liso
+- [ ] grzywka - flequillo
+- [ ] kucyk - cola
+- [ ] oczy ciemne - ojos oscuros
+- [ ] oczy jasne - ojos claros
+- [ ] oczy niebieskie - ojos azules
+- [ ] oczy brązowe - ojos marrones
+- [ ] oczy zielone - ojos verdes
+- [ ] oczy szare - ojos grises
+- [ ] oczy czarne - ojos negros
+- [ ] nos mały - nariz pequeña
+- [ ] nos duży - nariz grande
+- [ ] zadarty nos - nariz respingona
+- [ ] nos garbaty - nariz aguileña
+- [ ] nos spłaszczony - nariz chata
+- [ ] broda - barba
+- [ ] okulary - gafas
+- [ ] wąsy - bigote
+- [ ] bakobrody - patillas
+- [ ] małe uszy - orejas pequeñas
+- [ ] duże uszy - orejas grandes
+- [ ] ładna / przystojny - guapo
+- [ ] brzydki - feo
 `;
+// export default `
+// - [ ] czoło - la frente
+// - [ ] rzęsa - la pestana
+// - [ ] nos - la nariz
+// - [ ] ząb/zęby - diente/dientes
+// - [ ] bark - el hombro
+// - [ ] ramię - brazo
+// - [ ] brew - la ceja
+// - [ ] ucho - la oreja
+// - [ ] warga - el labio
+// - [ ] język - la lengua
+// - [ ] podbródek - la barbilla
+// - [ ] klatka piersiowa - el pecho
+// `;
 // export default `
 // - [ ] znudzony - aburrido
 // - [ ] zadowolony - contento
