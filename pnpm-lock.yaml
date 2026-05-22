@@ -80,7 +80,7 @@ importers:
         version: 19.2.3(@types/react@19.2.15)
       '@vitejs/plugin-react':
         specifier: ^6.0.0
-        version: 6.0.2(vite@8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.99.0)(terser@5.47.1)(yaml@2.9.0))
+        version: 6.0.2(vite@8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.100.0)(terser@5.47.1)(yaml@2.9.0))
       eslint:
         specifier: ^10.0.0
         version: 10.4.0(jiti@2.6.1)
@@ -89,7 +89,7 @@ importers:
         version: 6.0.3
       vite:
         specifier: ^8.0.0
-        version: 8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.99.0)(terser@5.47.1)(yaml@2.9.0)
+        version: 8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.100.0)(terser@5.47.1)(yaml@2.9.0)
 
   packages/app:
     dependencies:
@@ -174,10 +174,10 @@ importers:
         version: 2.0.2
       sass:
         specifier: ^1.89.2
-        version: 1.99.0
+        version: 1.100.0
       sass-loader:
         specifier: ^17.0.0
-        version: 17.0.0(sass@1.99.0)(webpack@5.107.1(postcss@8.5.10))
+        version: 17.0.0(sass@1.100.0)(webpack@5.107.1(postcss@8.5.10))
       style-loader:
         specifier: ^4.0.0
         version: 4.0.0(webpack@5.107.1(postcss@8.5.10))
@@ -245,10 +245,10 @@ importers:
         version: 5.4.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       sass:
         specifier: ^1.89.2
-        version: 1.99.0
+        version: 1.100.0
       sass-loader:
         specifier: ^17.0.0
-        version: 17.0.0(sass@1.99.0)(webpack@5.107.1)
+        version: 17.0.0(sass@1.100.0)(webpack@5.107.1)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@24.12.4)(typescript@6.0.3)
@@ -455,10 +455,10 @@ importers:
         version: 5.6.7(webpack@5.107.1)
       sass:
         specifier: ^1.77.8
-        version: 1.99.0
+        version: 1.100.0
       sass-loader:
         specifier: ^17.0.0
-        version: 17.0.0(sass@1.99.0)(webpack@5.107.1)
+        version: 17.0.0(sass@1.100.0)(webpack@5.107.1)
       serve:
         specifier: ^14.2.3
         version: 14.2.6
@@ -3175,9 +3175,9 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
-  chokidar@4.0.3:
-    resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
-    engines: {node: '>= 14.16.0'}
+  chokidar@5.0.0:
+    resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
+    engines: {node: '>= 20.19.0'}
 
   chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
@@ -5464,9 +5464,9 @@ packages:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
 
-  readdirp@4.1.2:
-    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
-    engines: {node: '>= 14.18.0'}
+  readdirp@5.0.0:
+    resolution: {integrity: sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==}
+    engines: {node: '>= 20.19.0'}
 
   rechoir@0.8.0:
     resolution: {integrity: sha512-/vxpCXddiX8NGfGO/mTafwjq4aFa/71pvamip0++IQk3zG8cbCj0fifNPrjjF1XMXUne91jL9OoxmdykoEtifQ==}
@@ -5644,9 +5644,9 @@ packages:
       webpack:
         optional: true
 
-  sass@1.99.0:
-    resolution: {integrity: sha512-kgW13M54DUB7IsIRM5LvJkNlpH+WhMpooUcaWGFARkF1Tc82v9mIWkCbCYf+MBvpIUBSeSOTilpZjEPr2VYE6Q==}
-    engines: {node: '>=14.0.0'}
+  sass@1.100.0:
+    resolution: {integrity: sha512-B5j0rYMlinhhOo9tjQebMVVn0TfyXAF+wB3b2ggZUuJ/is/Y+7+JGjirAMxHZ9Z3hIP98NPfamlAkBHa1lAaXQ==}
+    engines: {node: '>=20.19.0'}
     hasBin: true
 
   sax@1.6.0:
@@ -5688,6 +5688,11 @@ packages:
 
   semver@7.8.0:
     resolution: {integrity: sha512-AcM7dV/5ul4EekoQ29Agm5vri8JNqRyj39o0qpX6vDF2GZrtutZl5RwgD1XnZjiTAfncsJhMI48QQH3sN87YNA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
+  semver@7.8.1:
+    resolution: {integrity: sha512-rkVq3IXh+4FDGch+KwzX3aV9W3kO54GyEgpvBzSyctDA6Xtd7RJQV1xmXbeQp5v7+VzLOfVqiutSE6GICgPFvg==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -9090,10 +9095,10 @@ snapshots:
       '@use-gesture/core': 10.3.1
       react: 19.2.6
 
-  '@vitejs/plugin-react@6.0.2(vite@8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.99.0)(terser@5.47.1)(yaml@2.9.0))':
+  '@vitejs/plugin-react@6.0.2(vite@8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.100.0)(terser@5.47.1)(yaml@2.9.0))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.99.0)(terser@5.47.1)(yaml@2.9.0)
+      vite: 8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.100.0)(terser@5.47.1)(yaml@2.9.0)
 
   '@webassemblyjs/ast@1.14.1':
     dependencies:
@@ -9679,9 +9684,9 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  chokidar@4.0.3:
+  chokidar@5.0.0:
     dependencies:
-      readdirp: 4.1.2
+      readdirp: 5.0.0
 
   chownr@2.0.0:
     optional: true
@@ -12162,7 +12167,7 @@ snapshots:
     dependencies:
       picomatch: 2.3.2
 
-  readdirp@4.1.2: {}
+  readdirp@5.0.0: {}
 
   rechoir@0.8.0:
     dependencies:
@@ -12382,19 +12387,19 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@17.0.0(sass@1.99.0)(webpack@5.107.1(postcss@8.5.10)):
+  sass-loader@17.0.0(sass@1.100.0)(webpack@5.107.1(postcss@8.5.10)):
     optionalDependencies:
-      sass: 1.99.0
+      sass: 1.100.0
       webpack: 5.107.1(postcss@8.5.10)
 
-  sass-loader@17.0.0(sass@1.99.0)(webpack@5.107.1):
+  sass-loader@17.0.0(sass@1.100.0)(webpack@5.107.1):
     optionalDependencies:
-      sass: 1.99.0
+      sass: 1.100.0
       webpack: 5.107.1
 
-  sass@1.99.0:
+  sass@1.100.0:
     dependencies:
-      chokidar: 4.0.3
+      chokidar: 5.0.0
       immutable: 5.1.5
       source-map-js: 1.2.1
     optionalDependencies:
@@ -12436,6 +12441,8 @@ snapshots:
   semver@7.7.4: {}
 
   semver@7.8.0: {}
+
+  semver@7.8.1: {}
 
   send@0.19.2:
     dependencies:
@@ -12565,7 +12572,7 @@ snapshots:
     dependencies:
       color: 4.2.3
       detect-libc: 2.1.2
-      semver: 7.8.0
+      semver: 7.8.1
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.33.5
       '@img/sharp-darwin-x64': 0.33.5
@@ -13235,7 +13242,7 @@ snapshots:
       string_decoder: 1.3.0
       util-deprecate: 1.0.2
 
-  vite@8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.99.0)(terser@5.47.1)(yaml@2.9.0):
+  vite@8.0.14(@types/node@25.7.0)(esbuild@0.27.2)(jiti@2.6.1)(sass@1.100.0)(terser@5.47.1)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -13247,7 +13254,7 @@ snapshots:
       esbuild: 0.27.2
       fsevents: 2.3.3
       jiti: 2.6.1
-      sass: 1.99.0
+      sass: 1.100.0
       terser: 5.47.1
       yaml: 2.9.0
 
