@@ -27,7 +27,7 @@
     "actions-on-google": "^3.0.0",
     "cors": "^2.8.5",
     "express": "^5.0.0",
-    "isomorphic-style-loader": "^5.3.2",
+    "isomorphic-style-loader": "^6.0.0",
     "morgan": "^1.10.0",
     "puppeteer": "^25.0.0",
     "react": "^19.0.0",

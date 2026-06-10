@@ -27,7 +27,7 @@
     "@types/node": "^24.0.0",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
-    "isomorphic-style-loader": "^5.3.2",
+    "isomorphic-style-loader": "^6.0.0",
     "sass": "^1.89.2",
     "sass-loader": "^17.0.0",
     "ts-node": "^10.9.1",
