@@ -39,8 +39,8 @@
     "zod": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.27.1",
-    "@babel/preset-typescript": "^7.27.1",
+    "@babel/preset-react": "^8.0.0",
+    "@babel/preset-typescript": "^8.0.0",
     "@types/cors": "^2.8.13",
     "@types/express": "^5.0.0",
     "@types/node": "^24.0.0",
