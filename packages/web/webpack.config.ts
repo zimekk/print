@@ -46,7 +46,15 @@ export default (env, { mode }, dev = mode === "development") => ({
         loader: "babel-loader",
         exclude: /node_modules/,
         options: {
-          presets: ["@babel/preset-react", "@babel/preset-typescript"],
+          presets: [
+            [
+              "@babel/preset-react",
+              {
+                runtime: "classic",
+              },
+            ],
+            "@babel/preset-typescript",
+          ],
           plugins: [],
         },
       },
