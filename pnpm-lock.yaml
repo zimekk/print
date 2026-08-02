@@ -40,7 +40,7 @@ importers:
         version: 3.9.6
       type-coverage:
         specifier: ^2.29.1
-        version: 2.29.7(typescript@6.0.3)
+        version: 2.30.1(typescript@6.0.3)
       typescript:
         specifier: ^6.0.0
         version: 6.0.3
@@ -3604,8 +3604,8 @@ packages:
     resolution: {integrity: sha512-eRnCtTTtGZFpQCwhJiUOuxPQWRXVKYDn0b2PeHfXL6/Zi53SLAzAHfVhVWK2AryC/WH05kGfxhFIPvTF0SXQzg==}
     engines: {node: '>= 4.9.1'}
 
-  fastq@1.19.1:
-    resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
+  fastq@1.20.1:
+    resolution: {integrity: sha512-GGToxJ/w1x32s/D2EKND7kTil4n8OVk/9mycTc4VDza13lOvpUZTGX3mFSCtV9ksdGBVzvsyAVLM6mHFThxXxw==}
 
   favicons-webpack-plugin@6.0.1:
     resolution: {integrity: sha512-Gl0Co4zIZq74EKXdpfe8FaoJqbuf0undV4UgpsL34vqICRAYUDwQdp3D+z+uxEOV0i9o+vHDn7Q6jaSxRiDJUA==}
@@ -5737,13 +5737,13 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
-  type-coverage-core@2.29.7:
-    resolution: {integrity: sha512-bt+bnXekw3p5NnqiZpNupOOxfUKGw2Z/YJedfGHkxpeyGLK7DZ59a6Wds8eq1oKjJc5Wulp2xL207z8FjFO14Q==}
+  type-coverage-core@2.30.1:
+    resolution: {integrity: sha512-TFzqUvaZW5bTpKGBj3FwN8bYLsWA/smTOslISDg9rBMrpn5KadMQy9l3q068q+dXkn27CAdyfGTDlsH0PguG3A==}
     peerDependencies:
-      typescript: 2 || 3 || 4 || 5
+      typescript: 2 || 3 || 4 || 5 || 6 || 7
 
-  type-coverage@2.29.7:
-    resolution: {integrity: sha512-E67Chw7SxFe++uotisxt/xzB1UxxvLztzzQqVyUZ/jKujsejVqvoO5vn25oMvqJydqYrASBVBCQCy082E2qQYQ==}
+  type-coverage@2.30.1:
+    resolution: {integrity: sha512-+Y05UXYBaeonULHdpkc7kr0BF5Ix+IsdI/UzI2S6hnkCacTA4ktpi9EnKWMYyISW6xRaLYIEqK+4fz1GLpHQFg==}
     hasBin: true
 
   type-fest@0.16.0:
@@ -7655,7 +7655,7 @@ snapshots:
   '@nodelib/fs.walk@1.2.8':
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.19.1
+      fastq: 1.20.1
 
   '@oxc-project/types@0.139.0': {}
 
@@ -9723,7 +9723,7 @@ snapshots:
 
   fastest-levenshtein@1.0.16: {}
 
-  fastq@1.19.1:
+  fastq@1.20.1:
     dependencies:
       reusify: 1.1.0
 
@@ -11996,20 +11996,20 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
-  type-coverage-core@2.29.7(typescript@6.0.3):
+  type-coverage-core@2.30.1(typescript@6.0.3):
     dependencies:
       fast-glob: 3.3.3
-      minimatch: 10.2.5
+      minimatch: 10.2.6
       normalize-path: 3.0.0
       tslib: 2.8.1
       tsutils: 3.21.0(typescript@6.0.3)
       typescript: 6.0.3
 
-  type-coverage@2.29.7(typescript@6.0.3):
+  type-coverage@2.30.1(typescript@6.0.3):
     dependencies:
       chalk: 4.1.2
       minimist: 1.2.8
-      type-coverage-core: 2.29.7(typescript@6.0.3)
+      type-coverage-core: 2.30.1(typescript@6.0.3)
     transitivePeerDependencies:
       - typescript
 
