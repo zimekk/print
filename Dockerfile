@@ -32,7 +32,7 @@ RUN corepack enable
 FROM base AS prod
 WORKDIR $WORKDIR
 ENV CI=true
-COPY pnpm-lock.yaml .
+COPY package.json pnpm-lock.yaml ./
 # RUN pnpm fetch --prod
 RUN pnpm fetch
 
