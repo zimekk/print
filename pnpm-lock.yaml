@@ -320,13 +320,13 @@ importers:
         version: 24.13.5
       babel-loader:
         specifier: ^10.0.0
-        version: 10.1.1(@babel/core@8.0.5)(webpack@5.111.0)
+        version: 10.1.1(@babel/core@8.0.5)(webpack@5.111.1)
       css-loader:
         specifier: ^7.1.2
-        version: 7.1.5(webpack@5.111.0)
+        version: 7.1.5(webpack@5.111.1)
       file-loader:
         specifier: ^6.2.0
-        version: 6.2.0(webpack@5.111.0)
+        version: 6.2.0(webpack@5.111.1)
       require-from-string:
         specifier: ^2.0.2
         version: 2.0.2
@@ -335,10 +335,10 @@ importers:
         version: 1.104.1
       sass-loader:
         specifier: ^17.0.0
-        version: 17.0.1(sass@1.104.1)(webpack@5.111.0)
+        version: 17.0.1(sass@1.104.1)(webpack@5.111.1)
       style-loader:
         specifier: ^4.0.0
-        version: 4.0.0(webpack@5.111.0)
+        version: 4.0.0(webpack@5.111.1)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@24.13.5)(typescript@6.0.3)
@@ -347,10 +347,10 @@ importers:
         version: 6.0.3
       webpack:
         specifier: ^5.94.0
-        version: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+        version: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
       webpack-dev-middleware:
         specifier: ^8.0.0
-        version: 8.3.0(webpack@5.111.0)
+        version: 8.3.0(webpack@5.111.1)
       webpack-hot-middleware:
         specifier: ^2.25.3
         version: 2.26.1
@@ -394,10 +394,10 @@ importers:
         version: 24.13.5
       babel-loader:
         specifier: ^10.0.0
-        version: 10.1.1(@babel/core@8.0.5)(webpack@5.111.0)
+        version: 10.1.1(@babel/core@8.0.5)(webpack@5.111.1)
       css-loader:
         specifier: ^7.1.2
-        version: 7.1.5(webpack@5.111.0)
+        version: 7.1.5(webpack@5.111.1)
       isomorphic-style-loader:
         specifier: ^6.0.0
         version: 6.0.0(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -406,7 +406,7 @@ importers:
         version: 1.104.1
       sass-loader:
         specifier: ^17.0.0
-        version: 17.0.1(sass@1.104.1)(webpack@5.111.0)
+        version: 17.0.1(sass@1.104.1)(webpack@5.111.1)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@24.13.5)(typescript@6.0.3)
@@ -415,7 +415,7 @@ importers:
         version: 6.0.3
       webpack:
         specifier: ^5.94.0
-        version: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
+        version: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
       webpack-node-externals:
         specifier: ^3.0.0
         version: 3.0.0
@@ -577,7 +577,7 @@ importers:
         version: 17.0.2(react@19.3.0)
       '@types/html-webpack-plugin':
         specifier: ^4.0.0
-        version: 4.0.0(webpack@5.111.0)
+        version: 4.0.0(webpack@5.111.1)
       '@types/node':
         specifier: ^24.0.0
         version: 24.13.5
@@ -592,31 +592,31 @@ importers:
         version: 5.28.5(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
       babel-loader:
         specifier: ^10.0.0
-        version: 10.1.1(@babel/core@8.0.5)(webpack@5.111.0)
+        version: 10.1.1(@babel/core@8.0.5)(webpack@5.111.1)
       copy-webpack-plugin:
         specifier: ^14.0.0
-        version: 14.0.0(webpack@5.111.0)
+        version: 14.0.0(webpack@5.111.1)
       css-loader:
         specifier: ^7.1.2
-        version: 7.1.5(webpack@5.111.0)
+        version: 7.1.5(webpack@5.111.1)
       dotenv:
         specifier: ^17.0.0
         version: 17.4.2
       favicons-webpack-plugin:
         specifier: ^6.0.0
-        version: 6.0.1(favicons@7.2.0)(webpack@5.111.0)
+        version: 6.0.1(favicons@7.2.0)(webpack@5.111.1)
       file-loader:
         specifier: ^6.2.0
-        version: 6.2.0(webpack@5.111.0)
+        version: 6.2.0(webpack@5.111.1)
       html-webpack-plugin:
         specifier: ^5.5.0
-        version: 5.6.8(webpack@5.111.0)
+        version: 5.6.8(webpack@5.111.1)
       sass:
         specifier: ^1.77.8
         version: 1.104.1
       sass-loader:
         specifier: ^17.0.0
-        version: 17.0.1(sass@1.104.1)(webpack@5.111.0)
+        version: 17.0.1(sass@1.104.1)(webpack@5.111.1)
       serve:
         specifier: ^14.2.3
         version: 14.2.6(supports-color@8.1.1)
@@ -625,22 +625,22 @@ importers:
         version: 3.0.0
       style-loader:
         specifier: ^4.0.0
-        version: 4.0.0(webpack@5.111.0)
+        version: 4.0.0(webpack@5.111.1)
       ts-node:
         specifier: ^10.9.1
         version: 10.9.2(@types/node@24.13.5)(typescript@6.0.3)
       webpack:
         specifier: ^5.94.0
-        version: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
+        version: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
       webpack-cli:
         specifier: ^6.0.0
-        version: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.0)
+        version: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.1)
       webpack-dev-server:
         specifier: ^6.0.0
-        version: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.111.0)
+        version: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.111.1)
       workbox-webpack-plugin:
         specifier: ^7.1.0
-        version: 7.4.1(supports-color@8.1.1)(webpack@5.111.0)
+        version: 7.4.1(supports-color@8.1.1)(webpack@5.111.1)
 
   packages/wifi:
     dependencies:
@@ -2541,9 +2541,6 @@ packages:
 
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
-
-  '@types/node@24.13.4':
-    resolution: {integrity: sha512-YJ7EqCstVTzIr0fMr7qul/977en+pQHrfmuKIo6Zr9i75Be21dr3MovcfvGtyvi2HAUrRerWps5sMO9I7WaxDw==}
 
   '@types/node@24.13.5':
     resolution: {integrity: sha512-TXyindR+lBr22aJIdMQzCFHPHR6cR4js838mRDCSz5hOKWZvZwsXSSiXDmjRj4iJmgl+sR9O+1mkoVBSMadNug==}
@@ -4831,11 +4828,6 @@ packages:
   nan@2.18.0:
     resolution: {integrity: sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==}
 
-  nanoid@3.3.17:
-    resolution: {integrity: sha512-xQLf0A3HOMlgHq0n247/LRuAOYmB7dXJ/DvAxGvsSBij45XtBSmQycu+F8ODbHwns/XyFZagyL1+J0Offw1E0g==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.18:
     resolution: {integrity: sha512-DTg4MJbGMWkfi6VZFdNt2/caMbQy4Ou+Op/hJQvGEWcnVfoA1QA+xzRKAzw9jD6+GVOOeYr/mIcuDSdug6F6+w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -6185,8 +6177,8 @@ packages:
     resolution: {integrity: sha512-jyuiGJdtvY434z5bUZrjz67v76/ePNvFZTp9Mdz29IlH4+GPsgyGjiv0fKI+M7BdkU6ADjulUcKAd3tUK3WlEw==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.111.0:
-    resolution: {integrity: sha512-A2R74kfE6b3eLKS91iZiol03Ebx7avmJJBOyiP+4LePW9NNeNJGQkKeSQos4dk6R4H0YAMYlv+aOrs1CyWT3eA==}
+  webpack@5.111.1:
+    resolution: {integrity: sha512-cNypaz0RP+S4cvQVi1M/3bRUkvNP0xZpL0TjFx+c6jg64VbxD+2weWDgY9UnjRI6dhZgtaj8DU76GGFcJ79xPQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -8418,12 +8410,12 @@ snapshots:
 
   '@types/bonjour@3.5.13':
     dependencies:
-      '@types/node': 24.13.4
+      '@types/node': 24.13.5
 
   '@types/connect-history-api-fallback@1.5.4':
     dependencies:
       '@types/express-serve-static-core': 5.1.1
-      '@types/node': 24.13.4
+      '@types/node': 24.13.5
 
   '@types/connect@3.4.38':
     dependencies:
@@ -8467,7 +8459,7 @@ snapshots:
 
   '@types/express-serve-static-core@5.1.1':
     dependencies:
-      '@types/node': 24.13.4
+      '@types/node': 24.13.5
       '@types/qs': 6.15.1
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -8489,9 +8481,9 @@ snapshots:
 
   '@types/html-minifier-terser@6.1.0': {}
 
-  '@types/html-webpack-plugin@4.0.0(webpack@5.111.0)':
+  '@types/html-webpack-plugin@4.0.0(webpack@5.111.1)':
     dependencies:
-      html-webpack-plugin: 5.6.8(webpack@5.111.0)
+      html-webpack-plugin: 5.6.8(webpack@5.111.1)
     transitivePeerDependencies:
       - '@rspack/core'
       - webpack
@@ -8505,10 +8497,6 @@ snapshots:
   '@types/mime@1.3.5': {}
 
   '@types/ms@0.7.34': {}
-
-  '@types/node@24.13.4':
-    dependencies:
-      undici-types: 7.18.2
 
   '@types/node@24.13.5':
     dependencies:
@@ -8588,7 +8576,7 @@ snapshots:
     dependencies:
       '@types/node': 24.13.5
       tapable: 2.3.3
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -8608,7 +8596,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.13.4
+      '@types/node': 24.13.5
 
   '@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@10.10.0(jiti@2.6.1)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3))(eslint@10.10.0(jiti@2.6.1)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)':
     dependencies:
@@ -8789,22 +8777,22 @@ snapshots:
       '@webassemblyjs/ast': 1.14.1
       '@xtuc/long': 4.2.2
 
-  '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.111.0)':
+  '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.111.1)':
     dependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.0)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.1)
 
-  '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.111.0)':
+  '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.111.1)':
     dependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.0)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.1)
 
-  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@6.0.0)(webpack@5.111.0)':
+  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@6.0.0)(webpack@5.111.1)':
     dependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.0)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.1)
     optionalDependencies:
-      webpack-dev-server: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.111.0)
+      webpack-dev-server: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.111.1)
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -9018,12 +9006,12 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.1.0
 
-  babel-loader@10.1.1(@babel/core@8.0.5)(webpack@5.111.0):
+  babel-loader@10.1.1(@babel/core@8.0.5)(webpack@5.111.1):
     dependencies:
       '@babel/core': 8.0.5
       find-up: 5.0.0
     optionalDependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
 
   babel-plugin-polyfill-corejs2@0.4.17(@babel/core@7.29.7(supports-color@8.1.1))(supports-color@8.1.1):
     dependencies:
@@ -9369,14 +9357,14 @@ snapshots:
 
   cookie@0.7.2: {}
 
-  copy-webpack-plugin@14.0.0(webpack@5.111.0):
+  copy-webpack-plugin@14.0.0(webpack@5.111.1):
     dependencies:
       glob-parent: 6.0.2
       normalize-path: 3.0.0
       schema-utils: 4.3.3
       serialize-javascript: 7.0.5
       tinyglobby: 0.2.17
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
 
   core-js-compat@3.49.0:
     dependencies:
@@ -9422,7 +9410,7 @@ snapshots:
 
   crypto-random-string@2.0.0: {}
 
-  css-loader@7.1.5(webpack@5.111.0):
+  css-loader@7.1.5(webpack@5.111.1):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.26)
       postcss: 8.5.26
@@ -9433,7 +9421,7 @@ snapshots:
       postcss-value-parser: 4.2.0
       semver: 7.8.5
     optionalDependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
 
   css-select@4.3.0:
     dependencies:
@@ -9918,15 +9906,15 @@ snapshots:
     dependencies:
       reusify: 1.1.0
 
-  favicons-webpack-plugin@6.0.1(favicons@7.2.0)(webpack@5.111.0):
+  favicons-webpack-plugin@6.0.1(favicons@7.2.0)(webpack@5.111.1):
     dependencies:
       favicons: 7.2.0
       find-root: 1.1.0
       parse-author: 2.0.0
       parse5: 7.1.2
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
     optionalDependencies:
-      html-webpack-plugin: 5.6.8(webpack@5.111.0)
+      html-webpack-plugin: 5.6.8(webpack@5.111.1)
     transitivePeerDependencies:
       - '@rspack/core'
 
@@ -9948,11 +9936,11 @@ snapshots:
     dependencies:
       flat-cache: 6.1.23
 
-  file-loader@6.2.0(webpack@5.111.0):
+  file-loader@6.2.0(webpack@5.111.1):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
 
   filelist@1.0.6:
     dependencies:
@@ -10274,7 +10262,7 @@ snapshots:
       relateurl: 0.2.7
       terser: 5.51.2
 
-  html-webpack-plugin@5.6.8(webpack@5.111.0):
+  html-webpack-plugin@5.6.8(webpack@5.111.1):
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
@@ -10282,7 +10270,7 @@ snapshots:
       pretty-error: 4.0.0
       tapable: 2.3.3
     optionalDependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
 
   htmlparser2@6.1.0:
     dependencies:
@@ -10888,26 +10876,26 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  minimizer-webpack-plugin@5.8.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack@5.111.0):
+  minimizer-webpack-plugin@5.8.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack@5.111.1):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
-      schema-utils: 4.3.3
+      schema-utils: 4.5.0
       terser: 5.51.2
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
     optionalDependencies:
       clean-css: 5.3.3
       html-minifier-terser: 6.1.0
       lightningcss: 1.33.0
       postcss: 8.5.26
 
-  minimizer-webpack-plugin@5.8.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack@5.111.0):
+  minimizer-webpack-plugin@5.8.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack@5.111.1):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
-      schema-utils: 4.3.3
+      schema-utils: 4.5.0
       terser: 5.51.2
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
     optionalDependencies:
       clean-css: 5.3.3
       html-minifier-terser: 6.1.0
@@ -10960,8 +10948,6 @@ snapshots:
 
   nan@2.18.0:
     optional: true
-
-  nanoid@3.3.17: {}
 
   nanoid@3.3.18: {}
 
@@ -11271,7 +11257,7 @@ snapshots:
 
   postcss@8.5.26:
     dependencies:
-      nanoid: 3.3.17
+      nanoid: 3.3.18
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -11663,10 +11649,10 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sass-loader@17.0.1(sass@1.104.1)(webpack@5.111.0):
+  sass-loader@17.0.1(sass@1.104.1)(webpack@5.111.1):
     optionalDependencies:
       sass: 1.104.1
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
 
   sass@1.104.1:
     dependencies:
@@ -12027,9 +12013,9 @@ snapshots:
 
   strip-json-comments@2.0.1: {}
 
-  style-loader@4.0.0(webpack@5.111.0):
+  style-loader@4.0.0(webpack@5.111.1):
     dependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
 
   supports-color@7.2.0:
     dependencies:
@@ -12411,12 +12397,12 @@ snapshots:
 
   webidl-conversions@4.0.2: {}
 
-  webpack-cli@6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.0):
+  webpack-cli@6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.1):
     dependencies:
       '@discoveryjs/json-ext': 0.6.3
-      '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.111.0)
-      '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.111.0)
-      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@6.0.0)(webpack@5.111.0)
+      '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.111.1)
+      '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.111.1)
+      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@6.0.0)(webpack@5.111.1)
       colorette: 2.0.20
       commander: 12.1.0
       cross-spawn: 7.0.6
@@ -12425,12 +12411,12 @@ snapshots:
       import-local: 3.2.0
       interpret: 3.1.1
       rechoir: 0.8.0
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
       webpack-merge: 6.0.1
     optionalDependencies:
-      webpack-dev-server: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.111.0)
+      webpack-dev-server: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.111.1)
 
-  webpack-dev-middleware@8.3.0(webpack@5.111.0):
+  webpack-dev-middleware@8.3.0(webpack@5.111.1):
     dependencies:
       ansi-html-community: 0.0.8
       memfs: 4.69.1
@@ -12438,9 +12424,9 @@ snapshots:
       range-parser: 1.3.0
       schema-utils: 4.3.3
     optionalDependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
 
-  webpack-dev-server@6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.111.0):
+  webpack-dev-server@6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.111.1):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -12461,15 +12447,15 @@ snapshots:
       launch-editor: 2.14.1
       open: 11.0.0
       p-retry: 8.0.0
-      schema-utils: 4.3.3
+      schema-utils: 4.5.0
       selfsigned: 5.5.0
       serve-index: 1.9.2(supports-color@8.1.1)
       tinyglobby: 0.2.17
-      webpack-dev-middleware: 8.3.0(webpack@5.111.0)
+      webpack-dev-middleware: 8.3.0(webpack@5.111.1)
       ws: 8.21.3
     optionalDependencies:
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.0)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1)
+      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.1)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -12496,7 +12482,7 @@ snapshots:
 
   webpack-sources@3.5.1: {}
 
-  webpack@5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1):
+  webpack@5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack-cli@6.0.1):
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
@@ -12510,13 +12496,13 @@ snapshots:
       events: 3.3.0
       graceful-fs: 4.2.11
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.8.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack@5.111.0)
+      minimizer-webpack-plugin: 5.8.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.26)(webpack@5.111.1)
       schema-utils: 4.5.0
       tapable: 2.3.3
       watchpack: 2.5.2
       webpack-sources: 3.5.1
     optionalDependencies:
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.0)
+      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.1)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -12531,7 +12517,7 @@ snapshots:
       - postcss
       - uglify-js
 
-  webpack@5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1):
+  webpack@5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1):
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
@@ -12545,13 +12531,13 @@ snapshots:
       events: 3.3.0
       graceful-fs: 4.2.11
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.8.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack@5.111.0)
+      minimizer-webpack-plugin: 5.8.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack@5.111.1)
       schema-utils: 4.5.0
       tapable: 2.3.3
       watchpack: 2.5.2
       webpack-sources: 3.5.1
     optionalDependencies:
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.0)
+      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.111.1)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@swc/core'
@@ -12750,12 +12736,12 @@ snapshots:
 
   workbox-sw@7.4.1: {}
 
-  workbox-webpack-plugin@7.4.1(supports-color@8.1.1)(webpack@5.111.0):
+  workbox-webpack-plugin@7.4.1(supports-color@8.1.1)(webpack@5.111.1):
     dependencies:
       fast-json-stable-stringify: 2.1.0
       pretty-bytes: 5.6.0
       upath: 1.2.0
-      webpack: 5.111.0(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
+      webpack: 5.111.1(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(webpack-cli@6.0.1)
       webpack-sources: 1.4.3
       workbox-build: 7.4.1(supports-color@8.1.1)
     transitivePeerDependencies:
