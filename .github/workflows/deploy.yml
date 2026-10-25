@@ -9,12 +9,16 @@ jobs:
     steps:
       # https://docs.github.com/en/actions/guides/building-and-testing-nodejs#installing-dependencies
       - uses: actions/checkout@v7
-      - name: Use Node.js
-        uses: actions/setup-node@v7
+      # - name: Use Node.js
+      #   uses: actions/setup-node@v7
+      #   with:
+      #     node-version: "24.x"
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
         with:
-          node-version: "24.x"
-      - name: Install dependencies
-        run: npm i -g pnpm && pnpm i --frozen-lockfile
+          run_install: true
+      # - name: Install dependencies
+      #   run: pnpm install
       - name: Check type coverage
         run: pnpm coverage
       - name: Build application
