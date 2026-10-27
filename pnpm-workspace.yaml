@@ -8,3 +8,5 @@ allowBuilds:
   puppeteer: false
   sharp: false
   tesseract.js: false
+overrides:
+  webpack-cli: ^6.0.1
