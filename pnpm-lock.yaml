@@ -637,10 +637,10 @@ importers:
         version: 5.112.2(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.33.5)(webpack-cli@6.0.1)
       webpack-cli:
         specifier: ^6.0.1
-        version: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.112.2)
+        version: 6.0.1(webpack-dev-server@6.1.0)(webpack@5.112.2)
       webpack-dev-server:
         specifier: ^6.0.0
-        version: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.112.2)
+        version: 6.1.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.112.2)
       workbox-webpack-plugin:
         specifier: ^7.1.0
         version: 7.4.1(supports-color@8.1.1)(webpack@5.112.2)
@@ -6107,8 +6107,8 @@ packages:
       webpack:
         optional: true
 
-  webpack-dev-server@6.0.0:
-    resolution: {integrity: sha512-q9SD4ItOGhZLeU6EGT10caDZdHjF50Pz1DtkRZZOPsfluMXOkacWKKOtSBSLVkPqKiF67eFUC0rI88U/tSFPEw==}
+  webpack-dev-server@6.1.0:
+    resolution: {integrity: sha512-T52SEoefJWZDgiYRMeQn4q/w9EVIZjBNWfy/WNRR2+EosPwpUmdUY1Wj0b1Mk7+svgKXojdQTP425fJ+DN58yg==}
     engines: {node: '>= 22.15.0'}
     hasBin: true
     peerDependencies:
@@ -8694,19 +8694,19 @@ snapshots:
   '@webpack-cli/configtest@3.0.1(webpack-cli@6.0.1)(webpack@5.112.2)':
     dependencies:
       webpack: 5.112.2(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.33.5)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.112.2)
+      webpack-cli: 6.0.1(webpack-dev-server@6.1.0)(webpack@5.112.2)
 
   '@webpack-cli/info@3.0.1(webpack-cli@6.0.1)(webpack@5.112.2)':
     dependencies:
       webpack: 5.112.2(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.33.5)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.112.2)
+      webpack-cli: 6.0.1(webpack-dev-server@6.1.0)(webpack@5.112.2)
 
-  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@6.0.0)(webpack@5.112.2)':
+  '@webpack-cli/serve@3.0.1(webpack-cli@6.0.1)(webpack-dev-server@6.1.0)(webpack@5.112.2)':
     dependencies:
       webpack: 5.112.2(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.33.5)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.112.2)
+      webpack-cli: 6.0.1(webpack-dev-server@6.1.0)(webpack@5.112.2)
     optionalDependencies:
-      webpack-dev-server: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.112.2)
+      webpack-dev-server: 6.1.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.112.2)
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -12273,12 +12273,12 @@ snapshots:
 
   webidl-conversions@4.0.2: {}
 
-  webpack-cli@6.0.1(webpack-dev-server@6.0.0)(webpack@5.112.2):
+  webpack-cli@6.0.1(webpack-dev-server@6.1.0)(webpack@5.112.2):
     dependencies:
       '@discoveryjs/json-ext': 0.6.3
       '@webpack-cli/configtest': 3.0.1(webpack-cli@6.0.1)(webpack@5.112.2)
       '@webpack-cli/info': 3.0.1(webpack-cli@6.0.1)(webpack@5.112.2)
-      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@6.0.0)(webpack@5.112.2)
+      '@webpack-cli/serve': 3.0.1(webpack-cli@6.0.1)(webpack-dev-server@6.1.0)(webpack@5.112.2)
       colorette: 2.0.20
       commander: 12.1.0
       cross-spawn: 7.0.6
@@ -12290,7 +12290,7 @@ snapshots:
       webpack: 5.112.2(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.33.5)(webpack-cli@6.0.1)
       webpack-merge: 6.0.1
     optionalDependencies:
-      webpack-dev-server: 6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.112.2)
+      webpack-dev-server: 6.1.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.112.2)
 
   webpack-dev-middleware@8.5.0(webpack@5.112.2):
     dependencies:
@@ -12305,7 +12305,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  webpack-dev-server@6.0.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.112.2):
+  webpack-dev-server@6.1.0(supports-color@8.1.1)(webpack-cli@6.0.1)(webpack@5.112.2):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -12314,7 +12314,6 @@ snapshots:
       '@types/serve-index': 1.9.4
       '@types/serve-static': 2.2.0
       '@types/ws': 8.18.1
-      ansi-html-community: 0.0.8
       bonjour-service: 1.4.2
       chokidar: 5.0.0
       compression: 1.8.2(supports-color@8.1.1)
@@ -12334,7 +12333,7 @@ snapshots:
       ws: 8.22.0
     optionalDependencies:
       webpack: 5.112.2(clean-css@5.3.3)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@8.5.28)(sharp@0.33.5)(webpack-cli@6.0.1)
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.112.2)
+      webpack-cli: 6.0.1(webpack-dev-server@6.1.0)(webpack@5.112.2)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -12381,7 +12380,7 @@ snapshots:
       watchpack: 2.6.3
       webpack-sources: 3.6.0
     optionalDependencies:
-      webpack-cli: 6.0.1(webpack-dev-server@6.0.0)(webpack@5.112.2)
+      webpack-cli: 6.0.1(webpack-dev-server@6.1.0)(webpack@5.112.2)
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@napi-rs/image'
