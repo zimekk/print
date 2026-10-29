@@ -24,7 +24,7 @@
   "devDependencies": {
     "@babel/preset-react": "^8.0.0",
     "@babel/preset-typescript": "^8.0.0",
-    "@types/node": "^24.0.0",
+    "@types/node": "^26.0.0",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
     "isomorphic-style-loader": "^6.0.0",
